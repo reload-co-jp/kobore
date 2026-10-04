@@ -10,10 +10,14 @@ import {
   Word,
 } from "./words"
 
-const entries = () =>
-  getWords().map((w) => ({ file: `${w.id}.json`, word: structuredClone(w) }))
-const run = (e = entries()) =>
-  validate(e, getSources(), getTags(), getCategories())
+const words = () => structuredClone(getWords())
+const run = (w = words()) =>
+  validate({
+    words: w,
+    sources: getSources(),
+    tags: getTags(),
+    categories: getCategories(),
+  })
 
 describe("validate", () => {
   it("accepts the bundled data", () => {
@@ -21,16 +25,16 @@ describe("validate", () => {
   })
 
   it("rejects broken references and values", () => {
-    const e = entries()
-    const w = e[0].word as Word
+    const ws = words()
+    const w = ws[0] as Word
     w.classification.push("acronym" as never)
     w.confidence = "sure" as never
     w.related.push("nope")
     w.sources.push({ id: "missing", role: "x" })
     w.tags.push("未登録")
     w.usage_examples.push({ text: "実例", type: "newspaper", meaning: "x" })
-    e.push({ file: "dup.json", word: { ...w } })
-    const errors = run(e).join("\n")
+    ws.push({ ...w })
+    const errors = run(ws).join("\n")
     for (const s of [
       "classification",
       "confidence",
@@ -39,7 +43,6 @@ describe("validate", () => {
       "未登録",
       "source_id",
       "word id の重複",
-      "ファイル名",
     ])
       expect(errors).toContain(s)
   })

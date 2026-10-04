@@ -1,0 +1,994 @@
+{
+  "words": [
+    {
+      "id": "giga",
+      "term": "ギガ",
+      "reading": "ぎが",
+      "origin": {
+        "term": "ギガバイト",
+        "extracted": "ギガ",
+        "remaining": "バイト"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "reanalysis"
+      ],
+      "summary": "ギガバイトの一部だった「ギガ」が単独で使われ、スマートフォンの通信データ容量そのものを指すようになった例。",
+      "lead": "「ギガバイト」からこぼれた「ギガ」は、いつしかデータ容量そのものを指すようになった。",
+      "origin_meaning": {
+        "text": "ギガ（giga）は国際単位系（SI）の接頭語で、10の9乗（10億倍）を表す。単独では量を表さず、「ギガバイト」「ギガヘルツ」のように単位の前に付けて使う。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "通信データ容量",
+          "description": "スマートフォンの契約で使える月々のデータ通信量。「ギガが減る」「ギガが足りない」のように数えられる資源として扱われる。",
+          "status": "common"
+        },
+        {
+          "meaning": "ギガバイト",
+          "description": "記憶容量の単位としての省略形。「64ギガのSDカード」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "10億倍を表すSI接頭語",
+        "to": "スマートフォンの通信データ容量",
+        "mechanism": "part_extraction_and_reinterpretation",
+        "steps": [
+          "SI接頭語（10億倍）",
+          "ギガバイト（データ量の単位）",
+          "「ギガ」が独立",
+          "データ容量",
+          "通信データ容量"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1960",
+          "event": "国際単位系（SI）が採択され、ギガを含む接頭語が定められる。",
+          "source_ids": ["bipm-si-brochure"]
+        },
+        {
+          "period": "2010s",
+          "event": "スマートフォンの普及で、月ごとのデータ通信量の上限を意識する場面が日常化する。",
+          "source_ids": ["soumu-whitepaper"]
+        },
+        {
+          "period": "2019",
+          "event": "NTTドコモが新料金プラン「ギガホ」「ギガライト」を発表（4月15日、提供開始は6月1日）。事業者の商品名にも「ギガ＝データ容量」の感覚が現れる。",
+          "source_ids": ["docomo-2019-plan"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "今月はもうギガが足りない。",
+          "type": "constructed",
+          "meaning": "通信データ容量"
+        },
+        {
+          "text": "動画はWi-Fiで見ないとギガが減る。",
+          "type": "constructed",
+          "meaning": "通信データ容量"
+        },
+        {
+          "text": "128ギガのスマホに買い替えた。",
+          "type": "constructed",
+          "meaning": "ギガバイト"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ギガ」は、データ量の単位「ギガバイト」から前半だけがこぼれた言葉です。さらにさかのぼると、ギガは国際単位系（SI）で10億倍を表す接頭語にすぎません。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "接頭語は単独では量を表しません。ギガヘルツならば周波数、ギガワットならば電力というように、後ろに付く単位があって初めて意味を持ちます。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "記憶容量を「64ギガ」のように省略する言い方は、パソコンや携帯機器の容量が話題になるなかで広まったと考えられます。ただし単独用法の初出は、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "大きく変わりました。「ギガが減る」というとき、ギガはもはや10億倍でもギガバイトという単位でもなく、契約で使えるデータ通信量そのものを指しています。単位の一部が、数えられる「もの」として再解釈された例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "スマートフォン利用者の日常会話では「ギガ」はほぼデータ通信量の意味で通じます。2019年にはNTTドコモが「ギガホ」「ギガライト」という料金プラン名を採用しており、事業者側もこの感覚を前提にしていることがうかがえます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "スマートフォンの料金プランが「月◯GB」というデータ量の上限で区切られるようになり、残量を気にする場面が生活の中に増えたことが背景にあると考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "単位", "通信"],
+      "categories": ["接頭辞", "意味変化"],
+      "related": ["kilo", "net"],
+      "sources": [
+        {
+          "id": "bipm-si-brochure",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-giga",
+          "role": "definition"
+        },
+        {
+          "id": "soumu-whitepaper",
+          "role": "background"
+        },
+        {
+          "id": "docomo-2019-plan",
+          "role": "usage"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 10,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 1,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "kilo",
+      "term": "キロ",
+      "reading": "きろ",
+      "origin": {
+        "term": "キログラム",
+        "extracted": "キロ",
+        "remaining": "グラム"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "1000倍を表す接頭語「キロ」が単独で使われ、文脈によってキログラムやキロメートルを指すようになった例。",
+      "lead": "「1000倍」でしかなかった「キロ」は、こぼれて重さにも距離にもなった。",
+      "origin_meaning": {
+        "text": "キロ（kilo）は国際単位系（SI）の接頭語で、1000倍を表す。キログラム、キロメートル、キロワットのように単位の前に付けて使う。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "キログラム",
+          "description": "重さの話題で「5キロ太った」のように使う。",
+          "status": "common"
+        },
+        {
+          "meaning": "キロメートル",
+          "description": "距離の話題で「駅まで2キロ」、速さの話題で「時速60キロ」のように使う。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "1000倍を表すSI接頭語",
+        "to": "文脈に応じてキログラム・キロメートル",
+        "mechanism": "part_extraction_and_contextual_narrowing",
+        "steps": [
+          "接頭語（1000倍）",
+          "キログラム／キロメートル",
+          "「キロ」が独立",
+          "重さ・距離そのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1877",
+          "event": "久米邦武『米欧回覧実記』の例言に「『キロ』〈千〉」とあり、辞書が接頭語としての「キロ」の初出の実例として挙げている。",
+          "source_ids": ["kotobank-kilo"]
+        },
+        {
+          "period": "1885",
+          "event": "日本がメートル条約に加盟する。",
+          "source_ids": ["fukushima-keiryo"]
+        },
+        {
+          "period": "1891",
+          "event": "度量衡法が公布され、尺貫法とメートル法の併用が始まる。",
+          "source_ids": ["fukushima-keiryo"]
+        },
+        {
+          "period": "1921",
+          "event": "改正度量衡法が公布され、国内の単位をメートル法に統一する方針が示される（1924年施行）。",
+          "source_ids": ["fukushima-keiryo"]
+        },
+        {
+          "period": "1960",
+          "event": "国際単位系（SI）が採択され、キロは接頭語として整理される。",
+          "source_ids": ["bipm-si-brochure"]
+        },
+        {
+          "period": "1992",
+          "event": "現行の計量法が制定される。法令上はキログラム・キロメートルなどの正式名称が用いられる。",
+          "source_ids": ["keiryo-ho"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "正月で3キロ太った。",
+          "type": "constructed",
+          "meaning": "キログラム"
+        },
+        {
+          "text": "家から駅までは2キロくらい。",
+          "type": "constructed",
+          "meaning": "キロメートル"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「キロ」は「キログラム」「キロメートル」などの前半がこぼれた言葉です。元をたどると、1000倍を表す接頭語です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "接頭語のキロは、それだけでは重さも長さも表しません。グラムに付けば重さ、メートルに付けば長さ、ワットに付けば電力になります。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "接頭語としての「キロ」は、精選版 日本国語大辞典が1877年の『米欧回覧実記』を初出の実例として挙げています。同辞典は「キロメートル」「キログラム」などの略としての名詞用法も載せていますが、その初出は示されておらず、単独用法がいつ始まったかは現時点で確認できていません。日本がメートル条約に加盟した1885年以降、メートル法の普及とともに広まったと考えられます。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「1000倍」という抽象的な意味から、重さや距離という具体的な量へと移りました。どちらを指すかは文脈が決めます。体重の話なら重さ、道のりの話なら距離です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "日常会話では「キロ」単独の方がむしろ自然です。一方、法令や公的な文書ではキログラム・キロメートルという正式名称が使われます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "重さと距離は日常で頻繁に話題になる量であり、文脈で区別できるため、長い正式名称を言う必要がなかったことが一因と考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "単位"],
+      "categories": ["接頭辞", "意味変化", "特定対象"],
+      "related": ["giga"],
+      "sources": [
+        {
+          "id": "bipm-si-brochure",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-kilo",
+          "role": "definition"
+        },
+        {
+          "id": "fukushima-keiryo",
+          "role": "background"
+        },
+        {
+          "id": "keiryo-ho",
+          "role": "background"
+        }
+      ],
+      "confidence": "high",
+      "priority": 9,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 1,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "keitai",
+      "term": "携帯",
+      "reading": "けいたい",
+      "origin": {
+        "term": "携帯電話",
+        "extracted": "携帯",
+        "remaining": "電話"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing",
+        "reanalysis"
+      ],
+      "summary": "「携帯電話」から「携帯」がこぼれ、持ち歩くことを表す語が電話機そのものを指すようになった例。",
+      "lead": "「持ち歩く」という意味だった「携帯」は、こぼれて電話機の名前になった。",
+      "origin_meaning": {
+        "text": "「携帯」は本来、身につけて持ち歩くことを表す漢語。「携帯する」「携帯品」のように使う。「携帯電話」はその性質を表す修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "携帯電話",
+          "description": "持ち歩ける電話機。「携帯を忘れた」のように、名詞として電話機そのものを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "持ち歩くこと",
+          "description": "本来の意味。「身分証を携帯する」など、書き言葉や公的な文脈で使われる。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "持ち歩くこと（動作・性質）",
+        "to": "持ち歩ける電話機（モノ）",
+        "mechanism": "part_extraction_and_reinterpretation",
+        "steps": [
+          "持ち歩くこと",
+          "携帯電話",
+          "「携帯」が独立",
+          "電話機そのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1837",
+          "event": "「携帯」（身につけて持つこと）の用例。精選版 日本国語大辞典は『舎密開宗』（1837〜47）の「携帯に便なり」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-keitai"]
+        },
+        {
+          "period": "1987",
+          "event": "NTTが「自動車電話」ではなく「携帯電話」としてサービスを始める。端末の重さは約750g。",
+          "source_ids": ["soumu-kids-keitai"]
+        },
+        {
+          "period": "1990s",
+          "event": "1991年に小型端末mova、1994年に端末売切制度が導入されるなどして、携帯電話が一般に普及する。",
+          "source_ids": ["soumu-kids-keitai"]
+        },
+        {
+          "period": "2010s",
+          "event": "スマートフォンが主流になり、「携帯」と「スマホ」の使い分けに世代差が現れる。",
+          "source_ids": ["soumu-whitepaper"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "携帯どこに置いたっけ。",
+          "type": "constructed",
+          "meaning": "携帯電話"
+        },
+        {
+          "text": "運転免許証を携帯すること。",
+          "type": "constructed",
+          "meaning": "持ち歩くこと"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「携帯」は「携帯電話」の前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "「携帯」はもともと「身につけたり、手に持ったりすること」を意味する漢語です。精選版 日本国語大辞典は、江戸後期の『舎密開宗』（1837〜47）の「携帯に便なり」を初出の実例に挙げています。「携帯電話」では電話の性質を説明する部分で、電話機そのものを指す語ではありませんでした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "辞書は「携帯電話」の略としての「携帯」を載せていますが（デジタル大辞泉は「ケータイ」と書くことが多いと注記）、初出の実例は示していません。携帯電話が普及した1990年代以降に広まったと考えられますが、単独用法の初出は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「持ち歩く」という動作・性質を表す語が、電話機というモノを指す名詞になりました。本来の意味も消えておらず、「携帯する」は今も使われます。同じ形の言葉が二つの意味を持つことになった例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "スマートフォンが主流になった現在、「携帯」はスマートフォンを含む電話機全般を指す場合も、従来型の携帯電話だけを指す場合もあり、使い方には世代差が見られます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「電話」だけでは固定電話と区別できず、「携帯電話」は日常で言うには長い。区別に必要な部分だけが残った、と見ることができます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "通信"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["net"],
+      "sources": [
+        {
+          "id": "kotobank-keitai",
+          "role": "definition"
+        },
+        {
+          "id": "soumu-kids-keitai",
+          "role": "background"
+        },
+        {
+          "id": "soumu-whitepaper",
+          "role": "background"
+        }
+      ],
+      "confidence": "high",
+      "priority": 8,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "net",
+      "term": "ネット",
+      "reading": "ねっと",
+      "origin": {
+        "term": "インターネット",
+        "extracted": "ネット",
+        "remaining": "インター"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「インターネット」の後半「ネット」がこぼれ、「網」を意味する語がインターネットそのものを指すようになった例。",
+      "lead": "「網」を意味していた「ネット」は、こぼれて世界中をつなぐ回線の名前になった。",
+      "origin_meaning": {
+        "text": "英語の net は「網」。日本語でもテニスやバレーボールのネット、ヘアネットなど、網状のものを指す外来語として使われてきた。「インターネット」は複数のネットワークを相互接続したもの、という意味の語。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "インターネット",
+          "description": "「ネットで調べる」「ネット通販」のように、インターネットそのものを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "網",
+          "description": "スポーツのネットなど、本来の外来語としての意味。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "網・網状のもの",
+        "to": "インターネット",
+        "mechanism": "part_extraction_and_reinterpretation",
+        "steps": [
+          "網（net）",
+          "ネットワーク（放送網・通信網）",
+          "インターネット",
+          "「ネット」が独立",
+          "インターネットそのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1909",
+          "event": "「網」の意味の用例。精選版 日本国語大辞典は田山花袋『田舎教師』の「網(ネット)」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-net"]
+        },
+        {
+          "period": "1955",
+          "event": "放送網の意味の用例（「ＣＢＳのネット」）が辞書に初出の実例として記録される。",
+          "source_ids": ["kotobank-net"]
+        },
+        {
+          "period": "1990s",
+          "event": "インターネットが一般家庭に広がり始める。",
+          "source_ids": ["soumu-whitepaper"]
+        },
+        {
+          "period": "2000s",
+          "event": "常時接続の普及で、「ネット」は日常語として定着していく。",
+          "source_ids": ["soumu-whitepaper"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "わからないことはネットで調べる。",
+          "type": "constructed",
+          "meaning": "インターネット"
+        },
+        {
+          "text": "サーブがネットにかかった。",
+          "type": "constructed",
+          "meaning": "網"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ネット」は「インターネット」の後半がこぼれた言葉です。ただし辞書をたどると、それ以前から「ネットワーク」の略としての「ネット」（放送網、「パソコンネット」など）があり、インターネットの普及でその指す先が移っていったと見ることができます。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "net は英語で「網」を意味します。精選版 日本国語大辞典は、田山花袋『田舎教師』（1909）の「網(ネット)」を初出の実例に挙げています。1955年には放送網の意味での用例も記録されています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "インターネットの略としての「ネット」は、インターネットが一般に普及した1990年代後半以降に広まったと考えられます。この用法の初出は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「網」という一般的な意味から、インターネットという特定の対象を指す意味が加わりました。「ネット社会」「ネット炎上」のように、複合語の部品としても盛んに使われています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "通信の話題では「ネット」といえばまずインターネットを指します。スポーツなど文脈がはっきりしている場合は、本来の「網」の意味でも使われます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「インターネット」は7音と長く、毎日のように口にする語になったため、短い形が好まれたと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "通信"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["keitai", "giga"],
+      "sources": [
+        {
+          "id": "kotobank-net",
+          "role": "definition"
+        },
+        {
+          "id": "soumu-whitepaper",
+          "role": "background"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 7,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 1,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "mrs",
+      "term": "ミセス",
+      "reading": "みせす",
+      "origin": {
+        "term": "Mrs. GREEN APPLE",
+        "extracted": "ミセス",
+        "remaining": "GREEN APPLE",
+        "source_part": "Mrs."
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "reanalysis"
+      ],
+      "summary": "バンド名「Mrs. GREEN APPLE」の冒頭「Mrs.」がこぼれ、既婚女性への敬称だった「ミセス」がバンドそのものを指すようになった例。",
+      "lead": "既婚女性への敬称だった「ミセス」は、こぼれてひとつのバンドの呼び名になった。",
+      "origin_meaning": {
+        "text": "英語の Mrs. は既婚女性に付ける敬称。日本語の「ミセス」も既婚女性を指す外来語として、雑誌名やファッション用語などで使われてきた。バンド名の中では、名前の一部にすぎない。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "Mrs. GREEN APPLE",
+          "description": "音楽の話題で「ミセスの新曲」のように、バンドそのものを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "既婚女性",
+          "description": "本来の外来語としての意味。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "既婚女性への敬称",
+        "to": "バンド「Mrs. GREEN APPLE」",
+        "mechanism": "proper_noun_part_extraction",
+        "steps": [
+          "敬称 Mrs.",
+          "バンド名 Mrs. GREEN APPLE",
+          "「ミセス」が独立",
+          "バンドの呼び名"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "2013",
+          "event": "Mrs. GREEN APPLE が結成される（春）。",
+          "source_ids": ["wikipedia-mga"]
+        },
+        {
+          "period": "2015",
+          "event": "EMI Recordsからメジャーデビュー。",
+          "source_ids": ["wikipedia-mga"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "ミセスのライブに行ってきた。",
+          "type": "constructed",
+          "meaning": "Mrs. GREEN APPLE"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ミセス」はバンド名「Mrs. GREEN APPLE」の冒頭「Mrs.」がこぼれた呼び名です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "Mrs. は英語で既婚女性に付ける敬称です。英語版Wikipediaによると、バンド名の「Mrs.」は、「GREEN APPLE」だけでは素朴すぎると感じた大森元貴が、大人びた印象や男女の枠にとらわれない音楽を目指す意図で付け加えたものとされます。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "ファンやメディアの間で「ミセス」という略称が使われるようになった時期は、現時点で特定できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "音楽の文脈では、「ミセス」は既婚女性ではなくバンドを指します。英語の敬称がカタカナの愛称として読み替えられた、固有名詞由来の再解釈の例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "音楽の話題で「ミセス」といえば、多くの場合このバンドを指します。文脈を離れると本来の意味と区別がつきにくく、同じ語が二つの対象を持つ状態です。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "英語表記のバンド名は日常会話では言いにくく、冒頭の一語だけで十分に通じたことが一因と考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "固有名詞", "再解釈", "音楽"],
+      "categories": ["固有名詞", "特定対象"],
+      "related": ["junior"],
+      "sources": [
+        {
+          "id": "mga-official",
+          "role": "origin"
+        },
+        {
+          "id": "wikipedia-mga",
+          "role": "background"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 6,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 2,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 0,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "junior",
+      "term": "ジュニア",
+      "reading": "じゅにあ",
+      "origin": {
+        "term": "千原ジュニア",
+        "extracted": "ジュニア",
+        "remaining": "千原"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "independent_usage",
+        "reanalysis"
+      ],
+      "summary": "「千原ジュニア」からこぼれたように見える「ジュニア」。実は愛称が先にあり、のちに芸名へ取り込まれた例。",
+      "lead": "「ジュニア」は芸名からこぼれたのではなく、愛称が先にあった。",
+      "origin_meaning": {
+        "text": "英語の junior は「年少者」「息子」「下級の」などを意味する。日本語の「ジュニア」も「ジュニア選手」「ジュニアサイズ」のように使われる外来語。芸名の中では名前の一部にすぎない。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "千原ジュニア",
+          "description": "お笑いの話題で「ジュニアさん」のように、芸人・千原ジュニアを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "年少者・下位の",
+          "description": "本来の外来語としての意味。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "年少者・下位",
+        "to": "芸人・千原ジュニア",
+        "mechanism": "nickname_to_proper_noun",
+        "steps": [
+          "junior（年少者）",
+          "漫画『キャプテン』の「ジュニア」",
+          "愛称「ジュニア」",
+          "芸名 千原ジュニア（2005年）"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1989",
+          "event": "兄・千原せいじとお笑いコンビ「千原兄弟」を結成。本名の千原浩史名義で活動する。",
+          "source_ids": ["wikipedia-chihara-junior"]
+        },
+        {
+          "period": "2005",
+          "event": "芸名を「千原ジュニア」に改名する。",
+          "source_ids": ["wikipedia-chihara-junior"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "ジュニアさんのトーク、やっぱり面白い。",
+          "type": "constructed",
+          "meaning": "千原ジュニア"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ジュニア」は芸名「千原ジュニア」の後半がこぼれた呼び名に見えます。しかし調べると、順序は逆でした。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "junior は英語で「年少者」「息子」を意味します。日本語版Wikipediaによると、この愛称は漫画『キャプテン』で、イガラシの弟がチームメイトから「ジュニア」と呼ばれていたことにならい、兄・せいじのアルバイト先の店長がそう呼んだことに由来するとされます。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "千原兄弟としては本名の千原浩史名義でデビューしており、「ジュニア」は愛称でした。2005年に芸名を「千原ジュニア」に改めています。つまり「ジュニア」は芸名から切り出されたのではなく、先にあった愛称が芸名に取り込まれた形です。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "お笑いの文脈では、「ジュニア」は年少者一般ではなく特定の芸人を指します。「兄の弟」という関係を表す語が、ひとりの人物の名前になりました。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "テレビやお笑いの話題で「ジュニア」「ジュニアさん」といえば、多くの場合この芸人を指します。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "兄弟コンビでは名字の「千原」で二人を区別できないため、弟を指す愛称が名前として機能し、最終的に芸名にまでなったと考えられます。"
+        }
+      ],
+      "tags": ["固有名詞", "再解釈", "芸能"],
+      "categories": ["固有名詞", "特定対象"],
+      "related": ["mrs"],
+      "sources": [
+        {
+          "id": "yoshimoto-profile-junior",
+          "role": "origin"
+        },
+        {
+          "id": "wikipedia-chihara-junior",
+          "role": "background"
+        }
+      ],
+      "confidence": "low",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 0,
+        "independent_usage": 2,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 1,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bipm-si-brochure",
+      "type": "official",
+      "title": "The International System of Units (SI) Brochure, 9th edition",
+      "author": null,
+      "publisher": "国際度量衡局（BIPM）",
+      "published_at": "2019",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "keiryo-ho",
+      "type": "official",
+      "title": "計量法（平成4年法律第51号）",
+      "author": null,
+      "publisher": "e-Gov法令検索",
+      "published_at": "1992",
+      "url": "https://laws.e-gov.go.jp/law/404AC0000000051",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "fukushima-keiryo",
+      "type": "official",
+      "title": "計量のはなし（計量のあゆみ）",
+      "author": null,
+      "publisher": "福島県",
+      "published_at": null,
+      "url": "https://www.pref.fukushima.lg.jp/sec/32110a/keiryou-hanashi.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-giga",
+      "type": "dictionary",
+      "title": "「ギガ」（デジタル大辞泉・百科事典マイペディアほか）",
+      "author": null,
+      "publisher": "コトバンク（小学館・平凡社ほか）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%AE%E3%82%AC-2601",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-kilo",
+      "type": "dictionary",
+      "title": "「キロ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%AD%E3%83%AD-2817",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-keitai",
+      "type": "dictionary",
+      "title": "「携帯」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E6%90%BA%E5%B8%AF-488992",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-net",
+      "type": "dictionary",
+      "title": "「ネット」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%81%AD%E3%81%A4%E3%81%A8-3184383",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "soumu-kids-keitai",
+      "type": "official",
+      "title": "情報通信白書 for Kids「携帯電話の歴史」",
+      "author": null,
+      "publisher": "総務省",
+      "published_at": null,
+      "url": "https://www.soumu.go.jp/hakusho-kids/life/what/what_13.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "soumu-whitepaper",
+      "type": "official",
+      "title": "情報通信白書",
+      "author": null,
+      "publisher": "総務省",
+      "published_at": null,
+      "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "docomo-2019-plan",
+      "type": "official",
+      "title": "報道発表資料：新料金プラン「ギガホ」「ギガライト」を提供開始",
+      "author": null,
+      "publisher": "株式会社NTTドコモ",
+      "published_at": "2019-04-15",
+      "url": "https://www.docomo.ne.jp/info/news_release/2019/04/15_00.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "mga-official",
+      "type": "official",
+      "title": "Mrs. GREEN APPLE OFFICIAL SITE",
+      "author": null,
+      "publisher": "Mrs. GREEN APPLE",
+      "published_at": null,
+      "url": "https://mrsgreenapple.com/",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "wikipedia-mga",
+      "type": "web",
+      "title": "Mrs. Green Apple",
+      "author": null,
+      "publisher": "Wikipedia（英語版）",
+      "published_at": null,
+      "url": "https://en.wikipedia.org/wiki/Mrs._Green_Apple",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "yoshimoto-profile-junior",
+      "type": "official",
+      "title": "千原ジュニア プロフィール",
+      "author": null,
+      "publisher": "吉本興業",
+      "published_at": null,
+      "url": "https://profile.yoshimoto.co.jp/talent/detail?id=20",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "wikipedia-chihara-junior",
+      "type": "web",
+      "title": "千原ジュニア",
+      "author": null,
+      "publisher": "Wikipedia（日本語版）",
+      "published_at": null,
+      "url": "https://ja.wikipedia.org/wiki/%E5%8D%83%E5%8E%9F%E3%82%B8%E3%83%A5%E3%83%8B%E3%82%A2",
+      "accessed_at": "2026-10-04"
+    }
+  ],
+  "tags": [
+    {
+      "name": "部分抽出",
+      "description": "元の言葉の一部分だけが切り出された言葉。"
+    },
+    {
+      "name": "意味変化",
+      "description": "こぼれたあと、元とは違う意味で使われるようになった言葉。"
+    },
+    {
+      "name": "再解釈",
+      "description": "使う人たちによって、新しい意味を与え直された言葉。"
+    },
+    {
+      "name": "固有名詞",
+      "description": "人名・グループ名などの固有名詞からこぼれた言葉。"
+    },
+    {
+      "name": "単位",
+      "description": "計量単位や接頭語にまつわる言葉。"
+    },
+    {
+      "name": "通信",
+      "description": "電話・インターネットなど通信技術にまつわる言葉。"
+    },
+    {
+      "name": "音楽",
+      "description": "音楽・アーティストにまつわる言葉。"
+    },
+    {
+      "name": "芸能",
+      "description": "お笑い・テレビなど芸能にまつわる言葉。"
+    }
+  ],
+  "categories": [
+    {
+      "id": "単語",
+      "name": "単語からこぼれた",
+      "description": "ひとつの単語の一部分が切り出され、独立した言葉。"
+    },
+    {
+      "id": "接頭辞",
+      "name": "接頭辞からこぼれた",
+      "description": "キロ・ギガなど、本来は単独で使わない接頭辞が独立した言葉。"
+    },
+    {
+      "id": "固有名詞",
+      "name": "固有名詞からこぼれた",
+      "description": "人名やグループ名の一部分が、その人・そのものを指すようになった言葉。"
+    },
+    {
+      "id": "意味変化",
+      "name": "意味が変わった",
+      "description": "こぼれたことで、元の意味とは違うものを指すようになった言葉。"
+    },
+    {
+      "id": "意味拡張",
+      "name": "意味が広がった",
+      "description": "こぼれたあと、より広い範囲を指すようになった言葉。"
+    },
+    {
+      "id": "特定対象",
+      "name": "特定の対象を指すようになった",
+      "description": "一般的な語が、こぼれたことで特定の対象だけを指すようになった言葉。"
+    },
+    {
+      "id": "一般名詞化",
+      "name": "一般名詞になった",
+      "description": "固有名詞からこぼれ、一般的なものを指すようになった言葉。"
+    }
+  ]
+}

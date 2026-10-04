@@ -1,5 +1,4 @@
-import fs from "node:fs"
-import path from "node:path"
+import raw from "@/data/kobore.json"
 
 export const CLASSIFICATIONS = {
   part_extraction: "部分抽出",
@@ -104,9 +103,12 @@ export type Source = {
 export type Tag = { name: string; description: string }
 export type Category = { id: string; name: string; description: string }
 
-const DATA_DIR = path.join(process.cwd(), "data")
-const readJson = <T>(file: string): T =>
-  JSON.parse(fs.readFileSync(path.join(DATA_DIR, file), "utf8"))
+export type Data = {
+  words: Word[]
+  sources: Source[]
+  tags: Tag[]
+  categories: Category[]
+}
 
 const REQUIRED: (keyof Word)[] = [
   "id",
@@ -133,12 +135,12 @@ const REQUIRED: (keyof Word)[] = [
 ]
 
 /** データ全体を検証し、問題点の一覧を返す（空なら正常） */
-export const validate = (
-  entries: { file: string; word: Word }[],
-  sources: Source[],
-  tags: Tag[],
-  categories: Category[]
-): string[] => {
+export const validate = ({
+  words,
+  sources,
+  tags,
+  categories,
+}: Data): string[] => {
   const errors: string[] = []
   const sourceIds = new Set(sources.map((s) => s.id))
   const tagNames = new Set(tags.map((t) => t.name))
@@ -154,19 +156,18 @@ export const validate = (
     "source id"
   )
   dup(
-    entries.map((e) => e.word.id),
+    words.map((w) => w.id),
     "word id"
   )
-  entries.forEach(({ word }) => wordIds.add(word.id))
+  words.forEach((w) => wordIds.add(w.id))
 
-  for (const { file, word: w } of entries) {
-    const err = (msg: string) => errors.push(`${file}: ${msg}`)
+  for (const [i, w] of words.entries()) {
+    const err = (msg: string) => errors.push(`words[${i}] ${w.id}: ${msg}`)
     const missing = REQUIRED.filter((k) => w[k] === undefined || w[k] === "")
     if (missing.length) {
       err(`必須フィールドがありません: ${missing.join(", ")}`)
       continue
     }
-    if (file !== `${w.id}.json`) err(`ファイル名と id が一致しません`)
     if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(w.id))
       err(`id は英小文字・数字・ハイフンのみ: ${w.id}`)
     if (!w.origin.term.includes(w.origin.source_part ?? w.origin.extracted))
@@ -179,10 +180,10 @@ export const validate = (
     if (!(w.confidence in CONFIDENCE)) err(`不正な confidence: ${w.confidence}`)
     w.tags
       .filter((t) => !tagNames.has(t))
-      .forEach((t) => err(`tags.json にないタグ: ${t}`))
+      .forEach((t) => err(`tags にないタグ: ${t}`))
     w.categories
       .filter((c) => !categoryIds.has(c))
-      .forEach((c) => err(`categories.json にないカテゴリ: ${c}`))
+      .forEach((c) => err(`categories にないカテゴリ: ${c}`))
     w.related
       .filter((r) => !wordIds.has(r) || r === w.id)
       .forEach((r) => err(`不正な related: ${r}`))
@@ -209,24 +210,17 @@ export const validate = (
   return errors
 }
 
-const load = () => {
-  const dir = path.join(DATA_DIR, "words")
-  const entries = fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith(".json"))
-    .map((file) => ({ file, word: readJson<Word>(`words/${file}`) }))
-  const sources = readJson<Source[]>("sources.json")
-  const tags = readJson<Tag[]>("tags.json")
-  const categories = readJson<Category[]>("categories.json")
-  const errors = validate(entries, sources, tags, categories)
+const load = (): Data => {
+  const data = raw as unknown as Data
+  const errors = validate(data)
   if (errors.length)
     throw new Error(
       `データ検証エラー:\n${errors.map((e) => `- ${e}`).join("\n")}`
     )
-  const words = entries
-    .map((e) => e.word)
-    .sort((a, b) => b.priority - a.priority)
-  return { words, sources, tags, categories }
+  return {
+    ...data,
+    words: [...data.words].sort((a, b) => b.priority - a.priority),
+  }
 }
 
 // ビルド時に一度だけ読み込み・検証する。不正なデータがあればビルドが失敗する
