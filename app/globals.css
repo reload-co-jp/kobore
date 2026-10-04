@@ -49,6 +49,10 @@ main {
   margin: 0 auto;
   padding: 24px;
 }
+.site-header nav {
+  display: flex;
+  gap: 16px;
+}
 .site-header nav a {
   color: var(--muted);
   text-decoration: none;
@@ -545,4 +549,13 @@ main {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* about */
+.about {
+  font-family: var(--serif);
+  line-height: 2;
+}
+.about p + p {
+  margin-top: 1.5em;
 }
