@@ -106,7 +106,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "再解釈", "単位", "通信"],
       "categories": ["接頭辞", "意味変化"],
-      "related": ["kilo", "net"],
+      "related": ["kilo", "net", "mega", "super"],
       "sources": [
         {
           "id": "bipm-si-brochure",
@@ -253,7 +253,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "単位"],
       "categories": ["接頭辞", "意味変化", "特定対象"],
-      "related": ["giga", "senchi"],
+      "related": ["giga", "senchi", "mega", "super"],
       "sources": [
         {
           "id": "bipm-si-brochure",
@@ -391,7 +391,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "再解釈", "通信"],
       "categories": ["単語", "意味変化", "特定対象"],
-      "related": ["net", "nama", "commercial"],
+      "related": ["net", "nama", "commercial", "mail"],
       "sources": [
         {
           "id": "kotobank-keitai",
@@ -525,7 +525,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "通信"],
       "categories": ["単語", "意味変化", "特定対象"],
-      "related": ["keitai", "giga"],
+      "related": ["keitai", "giga", "home", "mail"],
       "sources": [
         {
           "id": "kotobank-net",
@@ -640,7 +640,7 @@
       ],
       "tags": ["部分抽出", "固有名詞", "再解釈", "音楽"],
       "categories": ["固有名詞", "特定対象"],
-      "related": ["junior", "hormone"],
+      "related": ["junior", "hormone", "mister", "muji", "santa"],
       "sources": [
         {
           "id": "mga-official",
@@ -753,7 +753,7 @@
       ],
       "tags": ["固有名詞", "再解釈", "芸能"],
       "categories": ["固有名詞", "特定対象"],
-      "related": ["mrs"],
+      "related": ["mrs", "mister"],
       "sources": [
         {
           "id": "yoshimoto-profile-junior",
@@ -1005,7 +1005,7 @@
       ],
       "tags": ["部分抽出", "意味変化"],
       "categories": ["単語", "意味変化", "特定対象"],
-      "related": ["keitai", "yusen"],
+      "related": ["keitai", "yusen", "reji", "punk"],
       "sources": [
         {
           "id": "kotobank-commercial",
@@ -1611,7 +1611,7 @@
       ],
       "tags": ["部分抽出", "意味変化"],
       "categories": ["単語", "意味変化", "特定対象"],
-      "related": [],
+      "related": ["range", "stand"],
       "sources": [
         {
           "id": "kotobank-automa",
@@ -1740,7 +1740,7 @@
       ],
       "tags": ["部分抽出", "固有名詞", "再解釈", "音楽"],
       "categories": ["固有名詞", "特定対象"],
-      "related": ["mrs"],
+      "related": ["mrs", "burger"],
       "sources": [
         {
           "id": "kotobank-hormone",
@@ -1765,6 +1765,2393 @@
         "historical_interest": 1,
         "usage_frequency": 1,
         "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "range",
+      "term": "レンジ",
+      "reading": "れんじ",
+      "origin": {
+        "term": "電子レンジ",
+        "extracted": "レンジ",
+        "remaining": "電子"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「電子レンジ」から「レンジ」がこぼれ、加熱調理器全般を指す語がマイクロ波の調理器を指すようになった例。",
+      "lead": "こんろ付きの調理台だった「レンジ」は、こぼれて電子レンジの名前になった。",
+      "origin_meaning": {
+        "text": "英語 range から入った「レンジ」は、こんろや天火を備えた加熱調理器具のこと。「ガスレンジ」のように使う。「電子レンジ」では、そのうちマイクロ波で加熱するものを表す後半部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "電子レンジ",
+          "description": "「レンジで温める」「レンジ対応容器」のように、単独で電子レンジを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "加熱調理器具",
+          "description": "本来の意味。「ガスレンジ」「レンジフード」など複合語の中で使われる。",
+          "status": "common"
+        },
+        {
+          "meaning": "範囲",
+          "description": "英語 range の別義。「価格レンジ」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "こんろ・天火を備えた加熱調理器具",
+        "to": "電子レンジ",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "加熱調理器具（ガスレンジ）",
+          "電子レンジ",
+          "「レンジ」が独立",
+          "電子レンジそのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1948",
+          "event": "精選版 日本国語大辞典は、加熱調理器具の「レンジ」の出典として『すまいの話』（1948）を挙げる。",
+          "source_ids": ["kotobank-range"]
+        },
+        {
+          "period": "1959",
+          "event": "東芝が国産第一号の業務用電子レンジを完成させ、1961年に市販第一号機を発売する。",
+          "source_ids": ["toshiba-microwave-history"]
+        },
+        {
+          "period": "1962",
+          "event": "精選版 日本国語大辞典は「電子レンジ」の出典として『流通革命』（1962）を挙げる。",
+          "source_ids": ["kotobank-denshi-range"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "お弁当、レンジで1分温めて。",
+          "type": "constructed",
+          "meaning": "電子レンジ"
+        },
+        {
+          "text": "キッチンのレンジフードを掃除する。",
+          "type": "constructed",
+          "meaning": "加熱調理器具"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「レンジ」は「電子レンジ」の後半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "「レンジ」は英語の range から入った外来語で、デジタル大辞泉は「こんろと天火を備えた加熱調理器具。ガスレンジなど」と説明しています。精選版 日本国語大辞典は、この意味の出典として『すまいの話』（1948）を挙げています。「電子レンジ」はその一種を表す複合語でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "東芝ライフスタイルによると、国産第一号の業務用電子レンジが完成したのは1959年、市販第一号機の発売は1961年です。講談社の『食器・調理器具がわかる辞典』は「レンジ」を「一般にガスレンジまたは電子レンジをいう」と説明しており、単独で電子レンジを指す用法は辞書にも載っています。ただし、単独用法の初出は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "もともとは「こんろ付きの調理台」全般を指す語でしたが、家庭では「レンジ」といえばまず電子レンジを思い浮かべるようになりました。広い意味の語が、こぼれたことで特定の機械を指すようになった例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「レンジでチン」「レンジ対応」のように、単独の「レンジ」はほぼ電子レンジの意味で使われます。ガスこんろの意味は「ガスレンジ」「レンジフード」など複合語の中に残っています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "家庭ではガス台を「こんろ」と呼ぶことが多く、「レンジ」という語と競合しにくかったため、電子レンジの普及とともに「レンジ＝電子レンジ」が定着したと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "暮らし"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["keitai", "automa", "mishin", "stand"],
+      "sources": [
+        {
+          "id": "kotobank-range",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-denshi-range",
+          "role": "origin"
+        },
+        {
+          "id": "toshiba-microwave-history",
+          "role": "background"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 3,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "punk",
+      "term": "パンク",
+      "reading": "ぱんく",
+      "origin": {
+        "term": "パンクチャー",
+        "extracted": "パンク",
+        "remaining": "チャー",
+        "source_part": "パンク"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion"
+      ],
+      "summary": "英語 puncture の前半「パンク」が独立し、タイヤの穴あきから処理能力を超えた状態まで指すようになった例。",
+      "lead": "タイヤに穴があくことだった「パンク」は、こぼれて「頭がパンク」まで広がった。",
+      "origin_meaning": {
+        "text": "英語 puncture は「刺してあけた穴」「穴をあけること」。日本語ではタイヤに穴があいて空気が抜けることを指した。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "タイヤの穴あき",
+          "description": "「後輪がパンクする」のように、タイヤの空気が抜けること。",
+          "status": "common"
+        },
+        {
+          "meaning": "機能のまひ",
+          "description": "「アクセス集中でサーバーがパンク」「頭がパンクしそう」のように、許容量を超えて機能しなくなること。",
+          "status": "common"
+        },
+        {
+          "meaning": "破産",
+          "description": "負債がかさんで破産すること。",
+          "status": "rare"
+        }
+      ],
+      "semantic_change": {
+        "from": "タイヤに穴があくこと",
+        "to": "許容量を超えて機能しなくなること",
+        "mechanism": "part_extraction_and_metaphor",
+        "steps": [
+          "puncture（穴をあけること）",
+          "「パンク」が独立",
+          "タイヤの空気が抜けること",
+          "許容量を超えてまひすること"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1908",
+          "event": "精選版 日本国語大辞典は、杉村楚人冠『大英游記』（1908）の「護謨輪(タイヤ)が二度迄もパンクをやったが」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-punk"]
+        },
+        {
+          "period": "1952",
+          "event": "比喩的な「度が過ぎて失敗する」意味の初出の実例として、大宅壮一『蛙のこえ』（1952）が挙げられている。",
+          "source_ids": ["kotobank-punk"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "自転車がパンクした。",
+          "type": "constructed",
+          "meaning": "タイヤの穴あき"
+        },
+        {
+          "text": "問い合わせが殺到して窓口がパンクした。",
+          "type": "constructed",
+          "meaning": "機能のまひ"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「パンク」は英語 puncture の前半がこぼれた言葉です。デジタル大辞泉・精選版 日本国語大辞典とも《puncture から》と語源を示しています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "puncture は「刺してあけた穴」のこと。日本語では、タイヤのチューブに穴があいて空気が抜けることを表しました。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は、杉村楚人冠『大英游記』（1908）の「護謨輪(タイヤ)が二度迄もパンクをやったが」を初出の実例に挙げています。少なくとも明治末には「パンク」の形で使われていたことになります。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "タイヤの話から離れ、「膨らみすぎてはちきれる」「処理能力を超えてまひする」「破産する」へと意味が広がりました。比喩的な意味の初出の実例として、同辞典は大宅壮一『蛙のこえ』（1952）を挙げています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「サーバーがパンク」「頭がパンクしそう」のように、タイヤ以外の比喩表現でよく使われます。音楽ジャンルの「パンク（punk）」は別語源の同音語です。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "語の後半を落とした短い形は言いやすく、「破裂して使えなくなる」というイメージが分かりやすかったため、比喩として広く使われるようになったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈"],
+      "categories": ["単語", "意味拡張"],
+      "related": ["reji", "commercial", "mishin"],
+      "sources": [
+        {
+          "id": "kotobank-punk",
+          "role": "definition"
+        }
+      ],
+      "confidence": "high",
+      "priority": 3,
+      "kobore_score": {
+        "part_extraction": 2,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 2,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "reji",
+      "term": "レジ",
+      "reading": "れじ",
+      "origin": {
+        "term": "レジスター",
+        "extracted": "レジ",
+        "remaining": "スター"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion"
+      ],
+      "summary": "「レジスター」から「レジ」がこぼれ、金銭登録機だけでなく会計の場所や係の人を指すようになった例。",
+      "lead": "お金を記録する機械だった「レジ」は、こぼれて会計の場所そのものになった。",
+      "origin_meaning": {
+        "text": "英語 register は「登録する（もの）」。日本語の「レジスター」は、金額を計算・記録する金銭登録器を指した。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "会計の場所",
+          "description": "「レジに並ぶ」「レジを通る」のように、支払いをする場所。",
+          "status": "common"
+        },
+        {
+          "meaning": "金銭登録器",
+          "description": "「レジを打つ」のように、機械そのもの。",
+          "status": "common"
+        },
+        {
+          "meaning": "会計係",
+          "description": "「レジの人」「レジのバイト」のように、会計を担当する人や仕事。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "金銭登録器（機械）",
+        "to": "会計の場所・係",
+        "mechanism": "part_extraction_and_metonymy",
+        "steps": [
+          "金銭登録器",
+          "支払いを受ける場所・係",
+          "「レジ」が独立",
+          "会計の場所・係の人"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1928",
+          "event": "精選版 日本国語大辞典は、金銭登録器の「レジスター」の出典として『音引正解近代新用語辞典』（1928）を挙げる。",
+          "source_ids": ["kotobank-register"]
+        },
+        {
+          "period": "1935",
+          "event": "支払い場所・係の「レジスター」の初出の実例として、高見順『故旧忘れ得べき』（1935〜36）の「喫茶店のレヂスターをやってゐて」が挙げられている。",
+          "source_ids": ["kotobank-register"]
+        },
+        {
+          "period": "1955",
+          "event": "略語「レジ」の初出の実例として、椎名麟三『愛の証言』（1955）の「レジの人が」が挙げられている。",
+          "source_ids": ["kotobank-reji"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "レジが混んでいる。",
+          "type": "constructed",
+          "meaning": "会計の場所"
+        },
+        {
+          "text": "コンビニでレジのバイトをしている。",
+          "type": "constructed",
+          "meaning": "会計係"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「レジ」は「レジスター」の前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 register は「登録する」という意味で、日本語の「レジスター」は金額を計算・記録する金銭登録器のことでした。精選版 日本国語大辞典は『音引正解近代新用語辞典』（1928）を出典に挙げています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は、略語「レジ」の初出の実例として椎名麟三『愛の証言』（1955）の「あのう、レジの人があなたにちょっとお会いしたいって…」を挙げています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "機械から、それが置かれた場所、そこで働く人へと指す範囲が広がりました。ただし同辞典は、場所・係の意味の「レジスター」も高見順『故旧忘れ得べき』（1935〜36）に見られるとしており、意味の広がりは短縮より前に始まっていたようです。「レジ」の形で定着し、今ではこちらが主な呼び名です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「レジに並ぶ」「セルフレジ」「レジ袋」のように、会計の場所や仕組みを指して日常的に使われます。一方、「レジスター」はコンピューターの記憶装置の意味で使われることが多くなりました。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "店頭で頻繁に口にする語なので短い形が好まれ、機械よりも「会計をする所」という意味で使われるうちに定着したと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "暮らし"],
+      "categories": ["単語", "意味拡張"],
+      "related": ["punk", "commercial"],
+      "sources": [
+        {
+          "id": "kotobank-reji",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-register",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 3,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 1,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "home",
+      "term": "ホーム",
+      "reading": "ほーむ",
+      "origin": {
+        "term": "プラットホーム",
+        "extracted": "ホーム",
+        "remaining": "プラット"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "reanalysis"
+      ],
+      "summary": "「プラットホーム」の後半「ホーム」がこぼれ、「家庭」を表す同音語とは別に駅の乗り場を指すようになった例。",
+      "lead": "台を意味する platform の一部だった「ホーム」は、こぼれて駅の乗り場になった。",
+      "origin_meaning": {
+        "text": "英語 platform は「平らな台」。日本語の「プラットホーム」は、乗客の乗り降りのために線路沿いに築いた駅の施設を指した。「ホーム」の部分自体に家の意味はない。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "駅の乗り場",
+          "description": "「上りのホーム」「3番ホーム」のように、プラットホームを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "家庭・本拠地",
+          "description": "英語 home に由来する同音の別語。「マイホーム」「ホームゲーム」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "platform の一部（意味を持たない部分）",
+        "to": "駅の乗り場",
+        "mechanism": "part_extraction_and_homonymy",
+        "steps": [
+          "platform（平らな台）",
+          "プラットホーム（駅の乗り場）",
+          "「ホーム」が独立",
+          "駅の乗り場"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1894",
+          "event": "精選版 日本国語大辞典は、『風俗画報』80号（1894）の「プラットフォーム」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-platform"]
+        },
+        {
+          "period": "1925",
+          "event": "略語「ホーム」の初出の実例として、土屋文明『ふゆくさ』（1925）の「蕎麦食ひにゆくホームは凍れり」が挙げられている。",
+          "source_ids": ["kotobank-home"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "3番ホームから快速が発車します。",
+          "type": "constructed",
+          "meaning": "駅の乗り場"
+        },
+        {
+          "text": "ホームで電車を待つ。",
+          "type": "constructed",
+          "meaning": "駅の乗り場"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "駅の「ホーム」は「プラットホーム」の後半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 platform は「平らな台」のことで、精選版 日本国語大辞典は「プラットホーム」の初出の実例として『風俗画報』（1894）を挙げています。後半の「ホーム（-form）」は「形」を表す部分で、家庭の home とは関係ありません。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は、略語「ホーム」の初出の実例として土屋文明の歌集『ふゆくさ』（1925）の「一日の汽車に疲れしひもじさを蕎麦食ひにゆくホームは凍れり」を挙げています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「ホーム」という音には、すでに英語 home 由来の「家庭」「本拠地」という意味がありました。platform の一部がこぼれたことで、同じ音のまったく別の言葉が生まれたことになります。デジタル大辞泉も、家庭の「ホーム」と駅の「ホーム」を別項目として載せています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「ホームドア」「ホームで待つ」のように、駅の文脈では単独で乗り場を指します。家庭の意味とは文脈で区別されています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "鉄道で毎日使う語なので短い形が好まれたと考えられます。前半の「プラット」ではなく後半が残った理由は確認できていません。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "暮らし"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["net", "keitai"],
+      "sources": [
+        {
+          "id": "kotobank-home",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-platform",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "gachi",
+      "term": "ガチ",
+      "reading": "がち",
+      "origin": {
+        "term": "ガチンコ",
+        "extracted": "ガチ",
+        "remaining": "ンコ"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion"
+      ],
+      "summary": "相撲界の隠語「ガチンコ」から「ガチ」がこぼれ、「本気で」「本当に」を表す語として広く使われるようになった例。",
+      "lead": "土俵の真剣勝負だった「ガチンコ」は、こぼれて「ガチで」になった。",
+      "origin_meaning": {
+        "text": "「がちんこ」は相撲界の隠語で、八百長ではない真剣勝負のこと。真剣に行う組み稽古も指した。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "本気で・真剣に",
+          "description": "「ガチで練習する」のように、本気であるさま。",
+          "status": "common"
+        },
+        {
+          "meaning": "本当に",
+          "description": "「ガチでおいしい」のように、強調として使う。",
+          "status": "common"
+        },
+        {
+          "meaning": "本気の人",
+          "description": "「ガチ勢」のように、本気で取り組む人。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "相撲の真剣勝負",
+        "to": "本気・本当に（強調）",
+        "mechanism": "part_extraction_and_generalization",
+        "steps": [
+          "相撲の真剣勝負（ガチンコ）",
+          "「ガチ」が独立",
+          "本気で・真剣に",
+          "本当に（強調）"
+        ]
+      },
+      "timeline": [],
+      "usage_examples": [
+        {
+          "text": "今回はガチで優勝を狙う。",
+          "type": "constructed",
+          "meaning": "本気で・真剣に"
+        },
+        {
+          "text": "この店のカレー、ガチでうまい。",
+          "type": "constructed",
+          "meaning": "本当に"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ガチ」は「ガチンコ」の前半がこぼれた言葉です。デジタル大辞泉は「がち」を《俗語。「がちんこ」から》と説明しています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "デジタル大辞泉によると「がちんこ」は《相撲界の隠語から》で、八百長ではないまじめな勝負、真剣勝負のことです。真剣に行う組み稽古も指しました。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "辞書に初出の実例はなく、「ガチ」が単独で使われ始めた時期は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "相撲の「真剣勝負」という限られた意味から、デジタル大辞泉が挙げる「真剣に。まじめに。本気で」へと広がりました。さらに「ガチでおいしい」のように、単に「本当に」と強める使い方も見られます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「ガチで」「ガチ勢」「ガチ恋」のように、日常会話やネットで広く使われます。俗語なので、改まった場面には向きません。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "短く言い切れる響きと、「八百長ではない本物」という含みが、「本気」「本当」を強調したい場面に合ったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "スポーツ"],
+      "categories": ["単語", "意味拡張"],
+      "related": ["koshien", "mister"],
+      "sources": [
+        {
+          "id": "weblio-gachi",
+          "role": "definition"
+        },
+        {
+          "id": "weblio-gachinko",
+          "role": "origin"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 3,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 2,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "taiga",
+      "term": "大河",
+      "reading": "たいが",
+      "origin": {
+        "term": "大河ドラマ",
+        "extracted": "大河",
+        "remaining": "ドラマ"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「大河ドラマ」から「大河」がこぼれ、大きな川を表す語がNHKの歴史ドラマを指すようになった例。",
+      "lead": "大きな川だった「大河」は、こぼれて日曜夜のドラマになった。",
+      "origin_meaning": {
+        "text": "「大河」は、幅が広く水量の多い大きな川のこと。「大河ドラマ」では、長く続くスケールの大きいドラマであることを川にたとえた修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "NHK大河ドラマ",
+          "description": "「今年の大河」「大河の主演」のように、NHKの大河ドラマを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "大きな川",
+          "description": "本来の意味。書き言葉で使う。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "大きな川",
+        "to": "NHKの大河ドラマ",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "大きな川",
+          "大河ドラマ（長くスケールの大きいドラマ）",
+          "「大河」が独立",
+          "NHKの大河ドラマ"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1963",
+          "event": "NHKの第1作『花の生涯』が放送される。当時の名称は「大型時代劇」だった。",
+          "source_ids": ["jprime-2025-berabou"]
+        },
+        {
+          "period": "1965",
+          "event": "精選版 日本国語大辞典は、梶山季之『罠のある季節』（1965）の「視聴者参加の大河ドラマか」を「大河ドラマ」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-taiga-drama"]
+        },
+        {
+          "period": "2025",
+          "event": "報道の見出しで「NHK大河『べらぼう』」のように単独の「大河」が使われている。",
+          "source_ids": ["jprime-2025-berabou"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "今年の大河、毎週欠かさず見ている。",
+          "type": "constructed",
+          "meaning": "NHK大河ドラマ"
+        },
+        {
+          "text": "大河のほとりに町が広がる。",
+          "type": "constructed",
+          "meaning": "大きな川"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「大河」は「大河ドラマ」の前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "「大河」は大きな川のことで、精選版 日本国語大辞典は『本朝文粋』（1060頃）を初出の実例に挙げる古い漢語です。「大河ドラマ」は、テレビなどで長期間連続して放送されるスケールの大きなドラマを、大きな川の流れにたとえた言葉でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "NHKの第1作『花の生涯』（1963）は当時「大型時代劇」と呼ばれていました（週刊女性PRIME）。「大河ドラマ」の語は、精選版 日本国語大辞典が梶山季之『罠のある季節』（1965）を初出の実例に挙げています。単独の「大河」がいつから使われたかは、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "大きな川を指していた語が、NHKの特定の番組枠を指すようになりました。辞書の「大河ドラマ」はNHKに限らない一般名詞ですが、単独の「大河」はほぼNHKの番組を指します。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「NHK大河『べらぼう』」（週刊女性PRIME、2025年）のように、報道の見出しでも単独で使われます。「大河俳優」「大河の主演」などの言い方もあります。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "1年かけて放送される看板番組で、毎年話題になるため、短い呼び名が必要とされたと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "芸能"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["keitai", "commercial"],
+      "sources": [
+        {
+          "id": "kotobank-taiga",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-taiga-drama",
+          "role": "definition"
+        },
+        {
+          "id": "jprime-2025-berabou",
+          "role": "usage"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 3,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "mega",
+      "term": "メガ",
+      "reading": "めが",
+      "origin": {
+        "term": "メガバイト",
+        "extracted": "メガ",
+        "remaining": "バイト"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion",
+        "reanalysis"
+      ],
+      "summary": "SI接頭語「メガ」が「メガバイト」などから独立し、さらに「巨大な」を表す造語要素として広がった例。",
+      "lead": "100万倍を表す接頭語だった「メガ」は、こぼれて「メガ盛り」になった。",
+      "origin_meaning": {
+        "text": "「メガ」は大きいを意味するギリシャ語 megas から。国際単位系（SI）で、単位名の上に付けて100万倍を表す接頭語。単独では使わない部品だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "メガバイト・メガヘルツなどの略",
+          "description": "「あと何メガ残ってる？」のように、単位を省いて使う。",
+          "status": "common"
+        },
+        {
+          "meaning": "巨大な",
+          "description": "「メガバンク」「メガヒット」「メガ盛り」のように、名詞の上に付けて巨大であることを表す。",
+          "status": "common"
+        },
+        {
+          "meaning": "100万倍",
+          "description": "本来のSI接頭語。「メガトン」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "100万倍を表すSI接頭語",
+        "to": "単位の略・「巨大な」",
+        "mechanism": "prefix_extraction_and_expansion",
+        "steps": [
+          "SI接頭語（100万倍）",
+          "メガバイト・メガヘルツ",
+          "「メガ」が独立",
+          "「巨大な」を表す造語要素"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1888",
+          "event": "精選版 日本国語大辞典は、接頭語「メガ」の出典として『物理学術語和英仏独対訳字書』（1888）を挙げる。",
+          "source_ids": ["kotobank-mega"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "この写真、3メガもある。",
+          "type": "constructed",
+          "meaning": "メガバイトの略"
+        },
+        {
+          "text": "メガ盛りの牛丼を頼んだ。",
+          "type": "constructed",
+          "meaning": "巨大な"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「メガ」は「メガバイト」「メガヘルツ」などの前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "デジタル大辞泉によると「メガ」は《大の意のギリシャ語 megas から》で、SIで単位名の上に付けて100万倍を表します。精選版 日本国語大辞典は『物理学術語和英仏独対訳字書』（1888）を出典に挙げています。本来は単独では使わない接頭語でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "デジタル大辞泉と精選版 日本国語大辞典は、どちらも「メガ」を「メガヘルツ」「メガバイト」などの略として載せています。単独用法の初出は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "単位の略として独立したうえで、デジタル大辞泉が「名詞の上に付いて、巨大であることを表す」と説明するように、数値と関係なく「とても大きい」を表すようになりました。ギリシャ語の「大きい」に戻ったともいえます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「メガバンク」「メガヒット」「メガ盛り」など、大きさを強調する造語に使われます。容量の単位としては「ギガ」が主流になり、単位の略としての「メガ」は以前ほど聞かれなくなりました。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "短く響きが強いうえ、もともと「大きい」という意味の語だったため、誇張表現として使いやすかったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "単位"],
+      "categories": ["接頭辞", "意味拡張"],
+      "related": ["giga", "kilo", "senchi", "super", "soft"],
+      "sources": [
+        {
+          "id": "kotobank-mega",
+          "role": "definition"
+        },
+        {
+          "id": "bipm-si-brochure",
+          "role": "background"
+        }
+      ],
+      "confidence": "high",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 2,
+        "meaning_shift": 2,
+        "semantic_expansion": 2,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "burger",
+      "term": "バーガー",
+      "reading": "ばーがー",
+      "origin": {
+        "term": "ハンバーガー",
+        "extracted": "バーガー",
+        "remaining": "ハン"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "reanalysis",
+        "generalization"
+      ],
+      "summary": "地名ハンブルクに由来する「ハンバーガー」が「ハム＋バーガー」と切り直され、「バーガー」が料理名・造語要素として独立した例。",
+      "lead": "「ハンブルクの」という意味の一部だった「バーガー」は、こぼれてパンに挟む料理の名前になった。",
+      "origin_meaning": {
+        "text": "英語 Hamburger は本来「ハンブルクの人・もの」。Hamburg ＋ -er で、「バーガー（burger）」という区切りは存在しなかった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "ハンバーガー",
+          "description": "「バーガーショップ」のように、ハンバーガーそのものを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "パンに挟んだ料理",
+          "description": "「チーズバーガー」「フィッシュバーガー」「ライスバーガー」のように、具を問わず丸いパンなどで挟んだ料理を表す造語要素。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "「ハンブルクの」を表す語の一部",
+        "to": "パンに挟んだ料理",
+        "mechanism": "reanalysis_and_suffix_extraction",
+        "steps": [
+          "Hamburger（ハンブルクの人・もの）",
+          "ハンバーガー（料理）",
+          "「バーガー」が独立",
+          "パンに挟んだ料理全般"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1909",
+          "event": "Online Etymology Dictionary によると、英語 hamburger が「バンズにパティを挟んだもの」の意味で確認される。",
+          "source_ids": ["etymonline-hamburger"]
+        },
+        {
+          "period": "1939",
+          "event": "英語で短縮形 burger が確認される。",
+          "source_ids": ["etymonline-burger", "etymonline-hamburger"]
+        },
+        {
+          "period": "1955",
+          "event": "精選版 日本国語大辞典は、古川緑波『ロッパ食談』（1955）の「ハンバーガーと称する、ハンバーグ・サンドウイッチや、チーズバーガーなんていふものが」を「ハンバーガー」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-hamburger"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "お昼はバーガーにしよう。",
+          "type": "constructed",
+          "meaning": "ハンバーガー"
+        },
+        {
+          "text": "期間限定のえびバーガーが出た。",
+          "type": "constructed",
+          "meaning": "パンに挟んだ料理"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「バーガー」は「ハンバーガー」の後半がこぼれた言葉です。デジタル大辞泉と精選版 日本国語大辞典は、どちらも「ハンバーガー」の略としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "Online Etymology Dictionary によると、英語 Hamburger は1610年代から「ハンブルクの人」を指した語です。肉料理の名前としては1880年までに hamburg steak の形で現れ、バンズに挟んだものは1909年までに確認されています。本来は Hamburg ＋ -er で、「バーガー」という区切りはありませんでした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "同辞典によると、短縮形 burger は1939年のアメリカ英語で確認されます。日本語の「バーガー」はこの短縮形を取り入れたもので、精選版 日本国語大辞典も［アメリカ］burger としています。日本語での単独用法の初出は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「ハム（ham）」を挟んだものと切り直され、残った「バーガー」が「パンに挟んだ料理」を表すようになりました。Online Etymology Dictionary は、-burger が食べ物の接尾辞として独り歩きしたと説明し、cheeseburger などを例に挙げています。日本でも、古川緑波『ロッパ食談』（1955）に「チーズバーガー」が登場します。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「チーズバーガー」「てりやきバーガー」「ライスバーガー」のように、具材や材料を前に付けた造語が次々に作られています。中身がハムでなくても、牛肉でなくても「バーガー」です。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「ハン」が意味を持たない音として受け取られ、残りの「バーガー」が料理名として切り出しやすかったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "固有名詞", "食"],
+      "categories": ["単語", "意味拡張", "一般名詞化"],
+      "related": ["hormone", "mega", "santa"],
+      "sources": [
+        {
+          "id": "kotobank-burger",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-hamburger",
+          "role": "origin"
+        },
+        {
+          "id": "etymonline-burger",
+          "role": "origin"
+        },
+        {
+          "id": "etymonline-hamburger",
+          "role": "background"
+        }
+      ],
+      "confidence": "high",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 2,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "mister",
+      "term": "ミスター",
+      "reading": "みすたー",
+      "origin": {
+        "term": "ミスタープロ野球",
+        "extracted": "ミスター",
+        "remaining": "プロ野球"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift"
+      ],
+      "summary": "「ミスタープロ野球」から「ミスター」がこぼれ、男性への敬称が長嶋茂雄その人を指すようになった例。",
+      "lead": "男性への敬称だった「ミスター」は、こぼれて長嶋茂雄の呼び名になった。",
+      "origin_meaning": {
+        "text": "「ミスター」は英語 Mr., mister から入った、男性の姓名の上に付ける敬称。ある分野を代表する男性を「ミスター〇〇」と呼ぶ使い方もある。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "長嶋茂雄",
+          "description": "野球の話題で、単独の「ミスター」が長嶋茂雄を指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "男性への敬称",
+          "description": "本来の意味。「ミスター・スミス」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "その分野を代表する男性",
+          "description": "「ミスター社会部」「ミスター年金」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "男性への敬称",
+        "to": "長嶋茂雄",
+        "mechanism": "proper_noun_part_extraction",
+        "steps": [
+          "男性への敬称",
+          "その分野を代表する男性（ミスター〇〇）",
+          "愛称「ミスタープロ野球」",
+          "「ミスター」が独立",
+          "長嶋茂雄その人"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1870s",
+          "event": "精選版 日本国語大辞典は、仮名垣魯文『西洋道中膝栗毛』（1870〜76）の「ミストル」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-mister"]
+        },
+        {
+          "period": "2025",
+          "event": "長嶋茂雄が死去。追悼記事の見出しに「なぜ人々はミスターに熱狂したか」、NHKの追悼番組名に「さよならミスタープロ野球」が使われた。",
+          "source_ids": ["forbes-2025-nagashima", "avwatch-2025-nhk-nagashima"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "ミスターの天覧試合ホームランは伝説だ。",
+          "type": "constructed",
+          "meaning": "長嶋茂雄"
+        },
+        {
+          "text": "彼は社内でミスター営業と呼ばれている。",
+          "type": "constructed",
+          "meaning": "その分野を代表する男性"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ミスター」は長嶋茂雄の愛称「ミスタープロ野球」の前半がこぼれた言葉です。「ミスター・ジャイアンツ」という愛称もあり、どちらから縮まったかは確認できていません。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "「ミスター」は英語 Mr. から入った男性への敬称です。デジタル大辞泉は、地名・団体・職業などの上に付けて「それを代表する男性」を表す用法も載せています。「ミスタープロ野球」はこの用法にあたります。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "単独の「ミスター」がいつから長嶋茂雄を指すようになったかは、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "誰にでも付けられる敬称が、単独で特定の一人を指すようになりました。Forbes JAPAN の追悼記事（2025年）は、「ミスタープロ野球」の愛称に触れたうえで、見出しで「なぜ人々はミスターに熱狂したか」と単独の「ミスター」を使っています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "野球の話題では「ミスター」だけで長嶋茂雄を指します。2025年6月の死去の際には、NHKスペシャル「さよならミスタープロ野球 長嶋茂雄」が放送されました（AV Watch）。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「ミスター〇〇」の〇〇を言わなくても誰のことか分かるほど、ひとりの存在が大きかったためと考えられます。"
+        }
+      ],
+      "tags": ["固有名詞", "部分抽出", "意味変化", "スポーツ"],
+      "categories": ["固有名詞", "意味変化", "特定対象"],
+      "related": ["mrs", "junior", "nadeshiko", "santa"],
+      "sources": [
+        {
+          "id": "kotobank-mister",
+          "role": "definition"
+        },
+        {
+          "id": "forbes-2025-nagashima",
+          "role": "usage"
+        },
+        {
+          "id": "avwatch-2025-nhk-nagashima",
+          "role": "usage"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 2,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 2,
+        "usage_frequency": 1,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "koshien",
+      "term": "甲子園",
+      "reading": "こうしえん",
+      "origin": {
+        "term": "甲子園球場",
+        "extracted": "甲子園",
+        "remaining": "球場"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion",
+        "generalization"
+      ],
+      "summary": "「甲子園球場」から「甲子園」がこぼれ、球場から高校野球大会、さらに全国大会一般のたとえへと広がった例。",
+      "lead": "球場の名前だった「甲子園」は、こぼれて「〇〇の甲子園」になった。",
+      "origin_meaning": {
+        "text": "「甲子園」は、野球場が完成した1924年（大正13年）が甲子（きのえね）の年だったことによる名前。兵庫県西宮市の地名にもなった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "高校野球の全国大会",
+          "description": "「甲子園を目指す」のように、春・夏の高校野球全国大会を指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "全国大会のたとえ",
+          "description": "「食の甲子園」「俳句甲子園」のように、高校生などの全国コンクールや全国大会一般。",
+          "status": "common"
+        },
+        {
+          "meaning": "甲子園球場",
+          "description": "「甲子園で阪神戦を見る」のように、球場そのもの。",
+          "status": "common"
+        },
+        {
+          "meaning": "地名",
+          "description": "兵庫県西宮市の地名。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "球場の名前",
+        "to": "全国大会のたとえ",
+        "mechanism": "proper_noun_part_extraction_and_generalization",
+        "steps": [
+          "甲子園球場",
+          "「甲子園」が独立",
+          "高校野球の全国大会",
+          "全国大会一般のたとえ"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1924",
+          "event": "甲子の年に野球場が完成し、「甲子園」と名付けられる。",
+          "source_ids": ["kotobank-koshien", "koshien-rekishikan"]
+        },
+        {
+          "period": "2024",
+          "event": "阪神甲子園球場が開場100周年を迎える。",
+          "source_ids": ["koshien-rekishikan"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "夏の甲子園、地元の高校が初戦突破。",
+          "type": "constructed",
+          "meaning": "高校野球の全国大会"
+        },
+        {
+          "text": "高校生が料理の腕を競う「食の甲子園」。",
+          "type": "constructed",
+          "meaning": "全国大会のたとえ"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「甲子園」は「甲子園球場」の前半がこぼれた言葉です。デジタル大辞泉は「甲子園」を「甲子園球場の略称」としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "デジタル大辞泉によると、野球場が完成した大正13年（1924）が甲子（きのえね）の年だったことから「甲子園」と名付けられ、兵庫県西宮市の地名にもなりました。甲子園歴史館（阪神電気鉄道）も、球場の開場を1924年、2024年を開場100周年としています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "辞書に初出の実例はなく、略称「甲子園」がいつから使われたかは現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "デジタル大辞泉は、球場の略称、春・夏の高校野球大会の通称、さらに「転じて、各種の全国高校コンクールのこと。また、一般に全国大会のたとえ」と、意味が段階的に広がったことを載せています。例として「食の甲子園で優勝する」が挙げられています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "高校野球では「甲子園に出る」が全国大会出場を意味します。「〇〇甲子園」は、俳句・書道・料理など、野球と関係のない全国大会の名前にも使われています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "高校野球の全国大会が毎年同じ球場で開かれ、「甲子園＝高校生の夢の舞台」という印象が強く結びついたため、場所の名前が大会そのものの名前として定着したと考えられます。"
+        }
+      ],
+      "tags": ["固有名詞", "部分抽出", "意味変化", "スポーツ"],
+      "categories": ["固有名詞", "意味拡張", "一般名詞化"],
+      "related": ["mister", "gachi", "nadeshiko"],
+      "sources": [
+        {
+          "id": "kotobank-koshien",
+          "role": "definition"
+        },
+        {
+          "id": "koshien-rekishikan",
+          "role": "background"
+        }
+      ],
+      "confidence": "high",
+      "priority": 6,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 2,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "muji",
+      "term": "無印",
+      "reading": "むじるし",
+      "origin": {
+        "term": "無印良品",
+        "extracted": "無印",
+        "remaining": "良品"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "reanalysis"
+      ],
+      "summary": "「無印良品」から「無印」がこぼれ、「しるしがない」という意味の語がブランドそのものを指すようになった例。",
+      "lead": "「しるしがない」という意味だった「無印」は、こぼれてブランドの名前になった。",
+      "origin_meaning": {
+        "text": "「無印」は、しるしがついていないこと。競馬・競輪の予想で印のない（勝つ見込みが薄い）馬や選手も指す。「無印良品」では「ノーブランド」を表す部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "無印良品",
+          "description": "「無印で買った」のように、ブランド・店を指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "しるしがないこと",
+          "description": "本来の意味。競馬の予想で「無印の馬」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "しるしがないこと（ノーブランド）",
+        "to": "ブランド「無印良品」",
+        "mechanism": "proper_noun_part_extraction",
+        "steps": [
+          "しるしがないこと",
+          "無印良品（ノーブランド商品）",
+          "「無印」が独立",
+          "ブランドそのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1897",
+          "event": "精選版 日本国語大辞典は、落語『臆病源兵衛』（1897）の「無印(ムジルシ)の右の葛籠」を「しるしのないこと」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-mujirushi"]
+        },
+        {
+          "period": "1980",
+          "event": "西友の自社開発商品として無印良品が発売される。",
+          "source_ids": ["kotobank-mujirushi-ryohin"]
+        },
+        {
+          "period": "1983",
+          "event": "青山に第1号店がオープンする。",
+          "source_ids": ["kotobank-mujirushi-ryohin"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "この収納ケース、無印で買ったんだ。",
+          "type": "constructed",
+          "meaning": "無印良品"
+        },
+        {
+          "text": "無印の馬が来て大穴になった。",
+          "type": "constructed",
+          "meaning": "しるしがないこと"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「無印」は「無印良品」の前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "「無印」は、しるしがついていないことを表します。精選版 日本国語大辞典は落語『臆病源兵衛』（1897）を初出の実例に挙げ、競馬・競輪で予想の印がない馬や選手を指す用法も載せています。百科事典マイペディアによると、無印良品は1980年に西友の自社開発商品として始まり、〈無印〉つまりノーブランド商品という名のもとで展開されました。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "辞書は「無印良品」の略としての「無印」を載せておらず、単独用法の初出は現時点で確認できていません。一方、無印良品自身も「自然、当然、無印。」という広告コピーで「無印」を使っています（無印良品「小池一子 a life with MUJI」）。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「ブランドのしるしがない」という意味の語が、それ自体ひとつのブランドの名前になりました。百科事典マイペディアは、ノーブランドという戦略が「ブランド・ブームを逆手にとった形で」受け入れられたと説明しています。意味が反転した、こぼれことばらしい例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「無印で買う」「無印っぽい」のように、店やブランド、さらにはそのシンプルな雰囲気を指して使われます。海外では「MUJI」の名前で展開されています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「良品」だけでは一般名詞と区別できず、特徴を表す「無印」のほうが残ったと考えられます。"
+        }
+      ],
+      "tags": ["固有名詞", "部分抽出", "意味変化", "再解釈", "暮らし"],
+      "categories": ["固有名詞", "意味変化", "特定対象"],
+      "related": ["mrs", "keitai", "magic"],
+      "sources": [
+        {
+          "id": "kotobank-mujirushi",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-mujirushi-ryohin",
+          "role": "background"
+        },
+        {
+          "id": "muji-koike",
+          "role": "usage"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "mishin",
+      "term": "ミシン",
+      "reading": "みしん",
+      "origin": {
+        "term": "sewing machine",
+        "extracted": "ミシン",
+        "remaining": "sewing",
+        "source_part": "machine"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "英語 sewing machine の後半 machine が「ミシン」として独立し、機械全般ではなく裁縫用の機械だけを指すようになった例。",
+      "lead": "「機械」という意味だった machine は、こぼれて縫い物の機械「ミシン」になった。",
+      "origin_meaning": {
+        "text": "英語 machine は機械全般を表す語。sewing machine（縫う機械）では、「機械」を表す後半部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "裁縫用の機械",
+          "description": "布・紙・革などを縫い合わせたり、刺繍したりする機械。",
+          "status": "common"
+        },
+        {
+          "meaning": "ミシン目",
+          "description": "紙などの切り取り線上にあけた点線状の穴。「ミシンを入れる」。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "機械全般（machine）",
+        "to": "裁縫用の機械",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "machine（機械）",
+          "sewing machine（裁縫機）",
+          "「ミシン」が独立",
+          "裁縫用の機械",
+          "点線状の切り取り穴"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1872",
+          "event": "精選版 日本国語大辞典は、『京都新聞』50号（1872）の「ミシンを以て（ミシンは西洋縫工の器械なり）」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-mishin"]
+        },
+        {
+          "period": "1963",
+          "event": "「ミシン目」の意味の初出の実例として、加藤秀俊『整理学』（1963）が挙げられている。",
+          "source_ids": ["kotobank-mishin"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "ミシンで雑巾を縫う。",
+          "type": "constructed",
+          "meaning": "裁縫用の機械"
+        },
+        {
+          "text": "ミシンに沿って切り取ってください。",
+          "type": "constructed",
+          "meaning": "ミシン目"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ミシン」は英語 sewing machine の後半 machine がこぼれた言葉です。デジタル大辞泉・精選版 日本国語大辞典とも《sewing machine から》としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "machine は機械全般を表す語で、sewing machine では「縫う」機械の「機械」の部分でした。それ自体に裁縫の意味はありません。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は、『京都新聞』50号（1872）の「ミシンを以て（ミシンは西洋縫工の器械なり）縫ふことを」を初出の実例に挙げています。説明の注記が付いており、まだ新しい言葉だったことがうかがえます。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「機械」という一般的な語が、裁縫用の機械だけを指すようになりました。さらに、ミシンで縫ったような点線状の穴「ミシン目」の意味も生まれています（同辞典は『整理学』（1963）を初出の実例に挙げる）。一方、機械全般は後に「マシン」として改めて取り入れられ、同じ語源の二つの言葉が別々に使われています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「ミシンをかける」「ミシン目」のように、裁縫や紙の切り取り線の意味で日常的に使われます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "明治初期、西洋式の裁縫機が新しい道具として入ってきたとき、聞き取った「マシーン」の音がそのまま道具の名前になったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "暮らし"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["range", "punk"],
+      "sources": [
+        {
+          "id": "kotobank-mishin",
+          "role": "definition"
+        }
+      ],
+      "confidence": "high",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 1,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "soft",
+      "term": "ソフト",
+      "reading": "そふと",
+      "origin": {
+        "term": "ソフトウェア",
+        "extracted": "ソフト",
+        "remaining": "ウェア"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion"
+      ],
+      "summary": "「柔らかい」を表す「ソフト」が、ソフトウェア・ソフトクリーム・ソフトボールなど複数の語からこぼれ、文脈ごとに別のものを指すようになった例。",
+      "lead": "「柔らかい」という意味だった「ソフト」は、こぼれてアイスにもプログラムにもなった。",
+      "origin_meaning": {
+        "text": "英語 soft は「柔らかい」。日本語でも「ソフトな語り口」のように、感触や印象が柔らかいさまを表す。複合語の中では、前半で性質を表す部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "ソフトウェア",
+          "description": "「ソフトをインストールする」「ゲームソフト」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "ソフトクリーム",
+          "description": "「バニラのソフト」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "ソフトボール",
+          "description": "スポーツの名前として。",
+          "status": "common"
+        },
+        {
+          "meaning": "柔らかいさま",
+          "description": "本来の意味。「ソフトな対応」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "柔らかいさま",
+        "to": "ソフトウェア・ソフトクリームなど",
+        "mechanism": "part_extraction_from_multiple_compounds",
+        "steps": [
+          "柔らかいさま",
+          "ソフトウェア・ソフトクリームなどの複合語",
+          "「ソフト」が独立",
+          "文脈ごとに別のもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1913",
+          "event": "精選版 日本国語大辞典は、北原白秋『桐の花』（1913）を、形容動詞「ソフト」と「ソフト帽」の略「ソフト」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-soft"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "新しいソフトをインストールした。",
+          "type": "constructed",
+          "meaning": "ソフトウェア"
+        },
+        {
+          "text": "牧場でソフトを食べた。",
+          "type": "constructed",
+          "meaning": "ソフトクリーム"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ソフト」は「ソフトウェア」「ソフトクリーム」「ソフトボール」などの前半がこぼれた言葉です。デジタル大辞泉は、これらすべてを「ソフト」の略として載せています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 soft は「柔らかい」で、日本語でも「ソフトな色合い」のように使われます。精選版 日本国語大辞典は、北原白秋『桐の花』（1913）の「素朴でソフトな官能」を初出の実例に挙げています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "同じ『桐の花』（1913）には「萌黄のソフトをかぶり」とあり、「ソフト帽」の略としての「ソフト」も大正初めには使われていました。ソフトウェアやソフトクリームの略としての初出は、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "性質を表す語が、複数の複合語からこぼれ、それぞれ別のモノを指すようになりました。どの意味かは文脈で決まります。デジタル大辞泉はソフトウェアの意味の対義語として「ハード」を挙げており、対になる言葉も一緒にこぼれています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "パソコン・ゲームの話なら「ソフト」はソフトウェア、観光地の売店ならソフトクリームです。帽子の意味は今ではあまり使われません。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「ソフト〜」で始まる複合語が多く、どれも長いため、前半だけで通じる場面が多かったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "通信", "食"],
+      "categories": ["単語", "意味拡張"],
+      "related": ["super", "mega"],
+      "sources": [
+        {
+          "id": "kotobank-soft",
+          "role": "definition"
+        }
+      ],
+      "confidence": "high",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 2,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "stand",
+      "term": "スタンド",
+      "reading": "すたんど",
+      "origin": {
+        "term": "ガソリンスタンド",
+        "extracted": "スタンド",
+        "remaining": "ガソリン"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "和製英語「ガソリンスタンド」から「スタンド」がこぼれ、「台」を表す語が給油所を指すようになった例。",
+      "lead": "物をのせる台だった「スタンド」は、こぼれて給油所になった。",
+      "origin_meaning": {
+        "text": "英語 stand は物をのせたり立てたりする台。日本語でも観覧席、屋台式の売店、電気スタンドなど多くの意味で使われる。「ガソリンスタンド」は和製英語で、英語では gas station という。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "ガソリンスタンド",
+          "description": "「スタンドで給油する」のように、給油所を指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "観覧席",
+          "description": "「スタンドを埋める観衆」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "電気スタンド",
+          "description": "机の上などに置く照明。",
+          "status": "common"
+        },
+        {
+          "meaning": "台・売店",
+          "description": "「傘スタンド」「コーヒースタンド」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "物をのせる台",
+        "to": "給油所",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "物をのせる台（stand）",
+          "ガソリンスタンド（和製英語）",
+          "「スタンド」が独立",
+          "給油所"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1902",
+          "event": "精選版 日本国語大辞典は、「台」の意味の「スタンド」の初出の実例として内田魯庵『社会百面相』（1902）を挙げる。",
+          "source_ids": ["kotobank-stand"]
+        },
+        {
+          "period": "1933",
+          "event": "「ガソリンスタンド」の初出の実例として、浅見淵『コップ酒』（1933）の「ガソリン・スタンドの隣りにある酒屋」が挙げられている。",
+          "source_ids": ["kotobank-gasoline-stand"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "次のスタンドで給油しよう。",
+          "type": "constructed",
+          "meaning": "ガソリンスタンド"
+        },
+        {
+          "text": "スタンドから声援が飛ぶ。",
+          "type": "constructed",
+          "meaning": "観覧席"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "給油所の「スタンド」は「ガソリンスタンド」の後半がこぼれた言葉です。デジタル大辞泉は「スタンド」の意味の一つに「ガソリンスタンドのこと」を挙げています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 stand は物をのせたり立てたりする台のことです。精選版 日本国語大辞典は、内田魯庵『社会百面相』（1902）の「写真立(スタンド)」を初出の実例に挙げています。「ガソリンスタンド」は和製英語で、デジタル大辞泉は英語では gas station だと補説しています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は「ガソリンスタンド」の初出の実例として浅見淵『コップ酒』（1933）を挙げています。単独の「スタンド」が給油所を指すようになった時期は、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「台」を表す語が、和製英語を経て給油所という特定の施設を指すようになりました。英語の stand にはない意味です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "車の話題では「スタンド」だけで給油所を指します。「セルフのスタンド」などとも言います。野球なら観覧席、机の上なら電気スタンドと、文脈で意味が変わります。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "ガソリンスタンドという名前自体が日本で作られたもので、さらに日常で頻繁に言う語なので後半だけが残ったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "暮らし"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["range", "automa"],
+      "sources": [
+        {
+          "id": "kotobank-stand",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-gasoline-stand",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 3,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "mail",
+      "term": "メール",
+      "reading": "めーる",
+      "origin": {
+        "term": "電子メール",
+        "extracted": "メール",
+        "remaining": "電子"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「電子メール」から「メール」がこぼれ、郵便を表す語がネットワーク上のメッセージを指すようになった例。",
+      "lead": "郵便だった「メール」は、こぼれて電子メールになった。",
+      "origin_meaning": {
+        "text": "英語 mail は郵便・郵便物。日本語でも「エアメール」「ダイレクトメール」のように郵便の意味で使われた。「電子メール」はその電子版を表す語だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "電子メール",
+          "description": "「メールを送る」「メールする」のように、電子メールやその送信を指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "郵便",
+          "description": "本来の意味。「エアメール」「ダイレクトメール」など複合語の中に残る。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "郵便",
+        "to": "電子メール",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "郵便（mail）",
+          "電子メール",
+          "「メール」が独立",
+          "電子メールそのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1899",
+          "event": "精選版 日本国語大辞典は、内田魯庵『落紅』（1899）の「汽船(メール)」を、郵便の意味の初出の実例として挙げる。",
+          "source_ids": ["kotobank-mail"]
+        },
+        {
+          "period": "1988",
+          "event": "精選版 日本国語大辞典は、「電子メール」の略としての「メール」の出典に『新・十年後』（1988）を挙げる。",
+          "source_ids": ["kotobank-mail"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "詳細はメールで送ります。",
+          "type": "constructed",
+          "meaning": "電子メール"
+        },
+        {
+          "text": "海外の友人にエアメールを出した。",
+          "type": "constructed",
+          "meaning": "郵便"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「メール」は「電子メール」の後半がこぼれた言葉です。精選版 日本国語大辞典は「メール」の意味の一つを「電子メールの略」としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 mail は郵便のことで、精選版 日本国語大辞典は内田魯庵『落紅』（1899）を初出の実例に挙げています。「電子メール」は electronic mail の訳語で、ネットワークを通じたメッセージ通信を指します。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は、略語としての「メール」の出典に『新・十年後』（1988）を挙げています。デジタル大辞泉は、電子メールはインターネットの普及に伴い一気に利用者が増えたと説明しています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "郵便を表していた語が、単独では電子メールを指すようになりました。デジタル大辞泉は「メール」の意味として郵便と電子メールの両方を載せていますが、日常で単独の「メール」と言えば、ほぼ電子メールです。郵便の意味は「エアメール」「ダイレクトメール」など複合語の中に残っています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「メールする」のように動詞としても使われ、携帯電話のメールやメッセージアプリまで含めて呼ぶこともあります。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "電子メールが郵便よりも身近な連絡手段になり、「電子」を付けて区別する必要がなくなったためと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "通信"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["net", "keitai"],
+      "sources": [
+        {
+          "id": "kotobank-mail",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-denshi-mail",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "super",
+      "term": "スーパー",
+      "reading": "すーぱー",
+      "origin": {
+        "term": "スーパーマーケット",
+        "extracted": "スーパー",
+        "remaining": "マーケット"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「超」を表す接頭語「スーパー」が「スーパーマーケット」から独立し、店の名前になった例。",
+      "lead": "「超」を表す接頭語だった「スーパー」は、こぼれて近所の店になった。",
+      "origin_meaning": {
+        "text": "英語 super- は「特にすぐれている」「超える」を表す接頭語。本来は他の語と結びついて複合語を作る部品だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "スーパーマーケット",
+          "description": "「スーパーで買い物する」のように、店を指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "字幕",
+          "description": "「字幕スーパー」のように、スーパーインポーズの略。",
+          "status": "common"
+        },
+        {
+          "meaning": "飛び抜けて優れているさま",
+          "description": "「スーパーな活躍」「スーパーヘビー級」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "「超」を表す接頭語",
+        "to": "スーパーマーケット（店）",
+        "mechanism": "prefix_extraction_and_narrowing",
+        "steps": [
+          "接頭語 super-（超）",
+          "スーパーマーケット",
+          "「スーパー」が独立",
+          "店そのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1950",
+          "event": "精選版 日本国語大辞典は、「スーパーマーケット」の出典に『新聞語辞典』（1950）を挙げる。",
+          "source_ids": ["kotobank-supermarket"]
+        },
+        {
+          "period": "1953",
+          "event": "日本では東京・青山の紀ノ国屋がスーパーマーケットの最初とされる。",
+          "source_ids": ["kotobank-supermarket"]
+        },
+        {
+          "period": "1962",
+          "event": "精選版 日本国語大辞典は、略語「スーパー」の出典に『流通革命』（1962）を挙げる。",
+          "source_ids": ["kotobank-super"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "帰りにスーパーで牛乳を買う。",
+          "type": "constructed",
+          "meaning": "スーパーマーケット"
+        },
+        {
+          "text": "映画を字幕スーパーで見る。",
+          "type": "constructed",
+          "meaning": "字幕"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「スーパー」は「スーパーマーケット」の前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "精選版 日本国語大辞典は「スーパー」を、まず「特にすぐれている、他からぬきんでているさまを表わす」造語要素として載せ、「多く他の語と結びついて複合語をつくる」と説明しています。本来は単独で使わない部品でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "同辞典の語誌によると、日本のスーパーマーケットは1953年の東京・青山の紀ノ国屋が最初です。略語「スーパー」の出典としては『流通革命』（1962）を挙げています。単独用法の初出は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「超」という程度を表す接頭語が、店という具体的なモノの名前になりました。「キロ」「ギガ」と同じく接頭語が独立した例ですが、こちらは量ではなく店を指します。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「スーパー」だけで、ほぼスーパーマーケットを指します。「字幕スーパー」（スーパーインポーズの略）や「スーパーな活躍」のような使い方もあります。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "スーパーマーケットが日常の買い物の場として広まり、毎日のように口にする長い語が短くなったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "暮らし"],
+      "categories": ["接頭辞", "意味変化", "特定対象"],
+      "related": ["mega", "giga", "kilo"],
+      "sources": [
+        {
+          "id": "kotobank-super",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-supermarket",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 1,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "magic",
+      "term": "マジック",
+      "reading": "まじっく",
+      "origin": {
+        "term": "マジックインキ",
+        "extracted": "マジック",
+        "remaining": "インキ"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift"
+      ],
+      "summary": "商標「マジックインキ」から「マジック」がこぼれ、「魔法」を表す語がフェルトペンを指すようになった例。",
+      "lead": "魔法だった「マジック」は、こぼれて油性ペンになった。",
+      "origin_meaning": {
+        "text": "英語 magic は魔法・奇術。「マジックインキ」（Magic Ink）はフェルトペンの商標名で、「魔法の」と性質をたたえる修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "フェルトペン",
+          "description": "「マジックで名前を書く」のように、マジックインキを指す。デジタル大辞泉は「マジック」も商標名と補説している。",
+          "status": "common"
+        },
+        {
+          "meaning": "奇術・手品",
+          "description": "「マジックショー」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "マジックナンバー",
+          "description": "プロ野球の優勝までに必要な勝利数。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "魔法・奇術",
+        "to": "フェルトペン",
+        "mechanism": "proper_noun_part_extraction",
+        "steps": [
+          "魔法・奇術",
+          "商標「マジックインキ」",
+          "「マジック」が独立",
+          "フェルトペン"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1894",
+          "event": "精選版 日本国語大辞典は、尾崎紅葉『冷熱』（1894）の「奇術(マジック)」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-magic"]
+        },
+        {
+          "period": "1957",
+          "event": "「マジックインキ」の略としての初出の実例として、黒田初子『山への誘い』（1957）の「外に『マジック』で大きく内容を書いておく」が挙げられている。",
+          "source_ids": ["kotobank-magic"]
+        },
+        {
+          "period": "1959",
+          "event": "「マジックインキ」の初出の実例として、三浦朱門『セルロイドの塔』（1959）が挙げられている。",
+          "source_ids": ["kotobank-magic-ink"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "段ボールにマジックで中身を書く。",
+          "type": "constructed",
+          "meaning": "フェルトペン"
+        },
+        {
+          "text": "パーティーでマジックを披露した。",
+          "type": "constructed",
+          "meaning": "奇術・手品"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "ペンの「マジック」は、フェルトペンの商標名「マジックインキ」の前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 magic は魔法・奇術のことで、精選版 日本国語大辞典は尾崎紅葉『冷熱』（1894）を初出の実例に挙げています。「マジックインキ」では、ペンの性質をたたえる修飾部分でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は、「マジックインキ」の略としての「マジック」の初出の実例に黒田初子『山への誘い』（1957）を挙げています。「マジックインキ」そのものの初出の実例は三浦朱門『セルロイドの塔』（1959）で、辞書の用例では略語の方が先に現れています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「魔法」を表す語が、文房具の名前になりました。デジタル大辞泉は「マジックインキ」「マジック」ともに商標名だと補説していますが、日常では他社の油性ペンも「マジック」と呼ばれることがあると考えられます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「マジックで書く」「黒マジック」のように、太字の油性ペンを指して使われます。奇術の意味や、野球の「マジック点灯」の意味もあり、文脈で区別されます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「インキ」の部分は道具の説明にすぎず、印象的な「マジック」の方が名前として残ったと考えられます。"
+        }
+      ],
+      "tags": ["固有名詞", "部分抽出", "意味変化", "暮らし"],
+      "categories": ["固有名詞", "意味変化", "特定対象"],
+      "related": ["muji", "hormone"],
+      "sources": [
+        {
+          "id": "kotobank-magic",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-magic-ink",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "nadeshiko",
+      "term": "なでしこ",
+      "reading": "なでしこ",
+      "origin": {
+        "term": "なでしこジャパン",
+        "extracted": "なでしこ",
+        "remaining": "ジャパン"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift"
+      ],
+      "summary": "サッカー日本女子代表の愛称「なでしこジャパン」から「なでしこ」がこぼれ、花の名前が代表チームや女子サッカーを指すようになった例。",
+      "lead": "秋の七草の花だった「なでしこ」は、こぼれて女子サッカー日本代表になった。",
+      "origin_meaning": {
+        "text": "「なでしこ」はナデシコ科の多年草で、秋の七草の一つ。「大和撫子」として日本女性をたたえる言い方にも使われる。「なでしこジャパン」では、その「大和撫子」にちなんだ部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "女子サッカー日本代表",
+          "description": "「なでしこが金メダル」のように、なでしこジャパンを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "なでしこリーグ",
+          "description": "デジタル大辞泉は「なでしこリーグ」の略も挙げる。",
+          "status": "common"
+        },
+        {
+          "meaning": "植物のナデシコ",
+          "description": "本来の意味。秋の七草の一つ。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "植物のナデシコ",
+        "to": "女子サッカー日本代表",
+        "mechanism": "proper_noun_part_extraction",
+        "steps": [
+          "植物のナデシコ",
+          "大和撫子（日本女性の美称）",
+          "愛称「なでしこジャパン」",
+          "「なでしこ」が独立",
+          "女子サッカー日本代表"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "2004",
+          "event": "アテネオリンピック予選の後、日本女子代表の愛称が公募され、「なでしこジャパン」と名付けられる。",
+          "source_ids": ["jfa-2016-athens-playback"]
+        },
+        {
+          "period": "2011",
+          "event": "FIFA女子ワールドカップで優勝。愛称は同年の流行語大賞に選ばれる。",
+          "source_ids": ["jfa-2016-athens-playback", "jfa-women-nadeshiko"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "なでしこ、次はドイツと対戦だ。",
+          "type": "constructed",
+          "meaning": "女子サッカー日本代表"
+        },
+        {
+          "text": "庭のなでしこが咲いた。",
+          "type": "constructed",
+          "meaning": "植物のナデシコ"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "スポーツの「なでしこ」は、サッカー日本女子代表の愛称「なでしこジャパン」の前半がこぼれた言葉です。デジタル大辞泉は「なでしこ」の意味の一つに「『なでしこジャパン』『なでしこリーグ』の略」を挙げています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "「なでしこ」はナデシコ科の多年草で、秋の七草の一つです。精選版 日本国語大辞典は『万葉集』を初出の実例に挙げています。日本サッカー協会によると、「なでしこジャパン」の愛称は「大和撫子」からつけられたもので、なでしこの花のように清らかで、強い日本人女性を表しています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "日本サッカー協会の記事によると、2004年のアテネオリンピック予選の後に日本女子代表の愛称が公募され、「なでしこジャパン」と名付けられました。単独の「なでしこ」が使われ始めた時期は、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "花の名前が、特定のスポーツチームを指すようになりました。デジタル大辞泉が「なでしこリーグ」の略も挙げているように、代表チームだけでなく日本の女子サッカー全体を表す語にもなっています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "スポーツの話題では「なでしこ」だけで女子サッカー日本代表を指します。日本サッカー協会の記事によると、2011年のワールドカップ優勝の年には愛称が流行語大賞にも選ばれました。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "代表チームの活躍で愛称が広く知られ、「ジャパン」を言わなくても通じるようになったためと考えられます。"
+        }
+      ],
+      "tags": ["固有名詞", "部分抽出", "意味変化", "スポーツ"],
+      "categories": ["固有名詞", "意味変化", "特定対象"],
+      "related": ["mister", "koshien"],
+      "sources": [
+        {
+          "id": "kotobank-nadeshiko",
+          "role": "definition"
+        },
+        {
+          "id": "jfa-women-nadeshiko",
+          "role": "origin"
+        },
+        {
+          "id": "jfa-2016-athens-playback",
+          "role": "background"
+        }
+      ],
+      "confidence": "high",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 1,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "santa",
+      "term": "サンタ",
+      "reading": "さんた",
+      "origin": {
+        "term": "サンタクロース",
+        "extracted": "サンタ",
+        "remaining": "クロース"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "reanalysis"
+      ],
+      "summary": "「サンタクロース」から「聖」を意味する「サンタ」がこぼれ、贈り物を届ける老人そのものを指すようになった例。",
+      "lead": "「聖」という意味だった「サンタ」は、こぼれて白ひげの老人になった。",
+      "origin_meaning": {
+        "text": "Santa Claus は、オランダ語方言の Sante Klaas（中世オランダ語 Sinter Niklaas＝聖ニコラウス）から。「サンタ」は「聖」、「クロース」は「ニコラウス」にあたる。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "サンタクロース",
+          "description": "「サンタが来る」のように、クリスマスに贈り物を届ける老人を指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "聖",
+          "description": "人名などに付けて「聖なる」の意を添える。「サンタマリア」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "聖（敬称）",
+        "to": "贈り物を届ける老人",
+        "mechanism": "proper_noun_part_extraction_and_reanalysis",
+        "steps": [
+          "聖（Saint）",
+          "聖ニコラウス（Sinter Niklaas）",
+          "サンタクロース",
+          "「サンタ」が独立",
+          "贈り物を届ける老人"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1773",
+          "event": "Online Etymology Dictionary によると、英語で St. A Claus の形が『New York Gazette』に現れる。",
+          "source_ids": ["etymonline-santa-claus"]
+        },
+        {
+          "period": "1874",
+          "event": "英語で短縮形 Santa が確認される。",
+          "source_ids": ["etymonline-santa-claus"]
+        },
+        {
+          "period": "1909",
+          "event": "精選版 日本国語大辞典は、佐々木邦訳『いたづら小僧日記』（1909）の「サンタクロウス」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-santa-claus"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "今年はサンタに何をお願いする？",
+          "type": "constructed",
+          "meaning": "サンタクロース"
+        },
+        {
+          "text": "サンタマリア号",
+          "type": "constructed",
+          "meaning": "聖"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「サンタ」は「サンタクロース」の前半がこぼれた言葉です。デジタル大辞泉・精選版 日本国語大辞典とも「サンタクロースの略」としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "Online Etymology Dictionary によると、Santa Claus はオランダ語方言の Sante Klaas から来ており、もとは中世オランダ語の Sinter Niklaas、つまり「聖ニコラウス」です。「サンタ」は「聖」、「クロース」は人名「ニコラウス」にあたります。デジタル大辞泉も、4世紀の小アジアのミラの司教セント・ニコラウスに由来すると説明しています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "同辞典によると、英語の短縮形 Santa は1874年から確認されます。日本語では、精選版 日本国語大辞典が「サンタクロース」の初出の実例に佐々木邦訳『いたづら小僧日記』（1909）を挙げています。日本語での単独の「サンタ」の初出は、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「聖」という敬称の部分が、人物そのものを指すようになりました。名前の本体である「クロース（ニコラウス）」ではなく、肩書きの方が残ったことになります。デジタル大辞泉は、人名などに冠して「聖」の意を添える「サンタ」（サンタマリアなど）も別の意味として載せています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「サンタさん」「サンタの衣装」のように、クリスマスの老人を指して日常的に使われます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「聖」の意味が日本語話者には意識されにくく、言いやすい前半が名前として受け取られたためと考えられます。英語でも同じ短縮が起きています。"
+        }
+      ],
+      "tags": ["固有名詞", "部分抽出", "意味変化", "再解釈"],
+      "categories": ["固有名詞", "意味変化", "特定対象"],
+      "related": ["mister", "mrs", "burger"],
+      "sources": [
+        {
+          "id": "kotobank-santa",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-santa-claus",
+          "role": "background"
+        },
+        {
+          "id": "etymonline-santa-claus",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
       },
       "updated_at": "2026-10-04"
     }
@@ -2099,6 +4486,426 @@
       "published_at": "2020-05-09",
       "url": "https://natalie.mu/music/news/378441",
       "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-range",
+      "type": "dictionary",
+      "title": "「レンジ」（デジタル大辞泉・精選版 日本国語大辞典・食器・調理器具がわかる辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館・講談社）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%AC%E3%83%B3%E3%82%B8",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-denshi-range",
+      "type": "dictionary",
+      "title": "「電子レンジ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E9%9B%BB%E5%AD%90%E3%83%AC%E3%83%B3%E3%82%B8",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "toshiba-microwave-history",
+      "type": "official",
+      "title": "PRODUCT HISTORY 電子レンジ・オーブンレンジ",
+      "author": null,
+      "publisher": "東芝ライフスタイル株式会社",
+      "published_at": null,
+      "url": "https://www.toshiba-lifestyle.com/jp/corporate/rd/research/history/microwaves/",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-punk",
+      "type": "dictionary",
+      "title": "「パンク」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%91%E3%83%B3%E3%82%AF",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-reji",
+      "type": "dictionary",
+      "title": "「レジ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%AC%E3%82%B8",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-register",
+      "type": "dictionary",
+      "title": "「レジスター」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%AC%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%BC",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-home",
+      "type": "dictionary",
+      "title": "「ホーム」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%9B%E3%83%BC%E3%83%A0",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-platform",
+      "type": "dictionary",
+      "title": "「プラットホーム」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%9B%E3%83%BC%E3%83%A0",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "weblio-gachi",
+      "type": "dictionary",
+      "title": "「ガチ」（デジタル大辞泉ほか）",
+      "author": null,
+      "publisher": "Weblio辞書（小学館）",
+      "published_at": null,
+      "url": "https://www.weblio.jp/content/%E3%82%AC%E3%83%81",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "weblio-gachinko",
+      "type": "dictionary",
+      "title": "「ガチンコ」（デジタル大辞泉ほか）",
+      "author": null,
+      "publisher": "Weblio辞書（小学館）",
+      "published_at": null,
+      "url": "https://www.weblio.jp/content/%E3%82%AC%E3%83%81%E3%83%B3%E3%82%B3",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-taiga",
+      "type": "dictionary",
+      "title": "「大河」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E5%A4%A7%E6%B2%B3",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-taiga-drama",
+      "type": "dictionary",
+      "title": "「大河ドラマ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E5%A4%A7%E6%B2%B3%E3%83%89%E3%83%A9%E3%83%9E",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "jprime-2025-berabou",
+      "type": "media",
+      "title": "NHK大河『べらぼう』に前代未聞の衝撃テロップ、映画界でも「性産業の女性」脚光浴びる裏に“職業差別”の変化",
+      "author": "佐々木博之",
+      "publisher": "週刊女性PRIME（主婦と生活社）",
+      "published_at": "2025-05-25",
+      "url": "https://www.jprime.jp/articles/-/36843",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-mega",
+      "type": "dictionary",
+      "title": "「メガ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%A1%E3%82%AC",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-burger",
+      "type": "dictionary",
+      "title": "「バーガー」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-hamburger",
+      "type": "dictionary",
+      "title": "「ハンバーガー」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-burger",
+      "type": "dictionary",
+      "title": "burger (n.)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/burger",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-hamburger",
+      "type": "dictionary",
+      "title": "hamburger (n.)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/hamburger",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-mister",
+      "type": "dictionary",
+      "title": "「ミスター」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%9F%E3%82%B9%E3%82%BF%E3%83%BC",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "forbes-2025-nagashima",
+      "type": "media",
+      "title": "長嶋茂雄「不滅」のリーダーシップ、なぜ人々はミスターに熱狂したか",
+      "author": "松永裕司",
+      "publisher": "Forbes JAPAN",
+      "published_at": "2025-06-03",
+      "url": "https://forbesjapan.com/articles/detail/79589",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "avwatch-2025-nhk-nagashima",
+      "type": "media",
+      "title": "NHKスペシャル「さよならミスタープロ野球 長嶋茂雄」8日夜",
+      "author": "酒井隆文",
+      "publisher": "AV Watch（インプレス）",
+      "published_at": "2025-06-05",
+      "url": "https://av.watch.impress.co.jp/docs/news/2019911.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-koshien",
+      "type": "dictionary",
+      "title": "「甲子園」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E7%94%B2%E5%AD%90%E5%9C%92",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "koshien-rekishikan",
+      "type": "official",
+      "title": "THE MUSEUM OF HANSHIN KOSHIEN STADIUM",
+      "author": null,
+      "publisher": "甲子園歴史館（阪神電気鉄道）",
+      "published_at": null,
+      "url": "https://koshien-rekishikan.hanshin.co.jp/global/en/intro/",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-mujirushi",
+      "type": "dictionary",
+      "title": "「無印」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E7%84%A1%E5%8D%B0",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-mujirushi-ryohin",
+      "type": "dictionary",
+      "title": "「無印良品」（百科事典マイペディア）",
+      "author": null,
+      "publisher": "コトバンク（平凡社）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E7%84%A1%E5%8D%B0%E8%89%AF%E5%93%81",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "muji-koike",
+      "type": "official",
+      "title": "無印良品とクリエイター 小池一子",
+      "author": null,
+      "publisher": "無印良品（良品計画）",
+      "published_at": null,
+      "url": "https://www.muji.com/jp/flagship/huaihai755/archive/koike.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-mishin",
+      "type": "dictionary",
+      "title": "「ミシン」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%9F%E3%82%B7%E3%83%B3",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-soft",
+      "type": "dictionary",
+      "title": "「ソフト」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%BD%E3%83%95%E3%83%88",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-stand",
+      "type": "dictionary",
+      "title": "「スタンド」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-gasoline-stand",
+      "type": "dictionary",
+      "title": "「ガソリンスタンド」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%AC%E3%82%BD%E3%83%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-mail",
+      "type": "dictionary",
+      "title": "「メール」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%A1%E3%83%BC%E3%83%AB",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-denshi-mail",
+      "type": "dictionary",
+      "title": "「電子メール」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E9%9B%BB%E5%AD%90%E3%83%A1%E3%83%BC%E3%83%AB",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-super",
+      "type": "dictionary",
+      "title": "「スーパー」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-supermarket",
+      "type": "dictionary",
+      "title": "「スーパーマーケット」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-magic",
+      "type": "dictionary",
+      "title": "「マジック」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-magic-ink",
+      "type": "dictionary",
+      "title": "「マジックインキ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AD",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-nadeshiko",
+      "type": "dictionary",
+      "title": "「撫子」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E6%92%AB%E5%AD%90",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "jfa-women-nadeshiko",
+      "type": "official",
+      "title": "女子サッカー 観る／応援する",
+      "author": null,
+      "publisher": "公益財団法人日本サッカー協会",
+      "published_at": null,
+      "url": "https://www.jfa.jp/women/women_new01.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "jfa-2016-athens-playback",
+      "type": "official",
+      "title": "再びともされた、女子サッカーの灯～女子オリンピック予選プレイバック 2004年アテネ大会～",
+      "author": null,
+      "publisher": "公益財団法人日本サッカー協会",
+      "published_at": "2016-02-26",
+      "url": "https://jfa.jp/nadeshikojapan/news/00008953/",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-santa",
+      "type": "dictionary",
+      "title": "「サンタ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%B5%E3%83%B3%E3%82%BF",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-santa-claus",
+      "type": "dictionary",
+      "title": "「サンタクロース」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%B5%E3%83%B3%E3%82%BF%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%B9",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-santa-claus",
+      "type": "dictionary",
+      "title": "Santa Claus (n.)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/Santa%20Claus",
+      "accessed_at": "2026-10-04"
     }
   ],
   "tags": [
@@ -2133,6 +4940,18 @@
     {
       "name": "芸能",
       "description": "お笑い・テレビなど芸能にまつわる言葉。"
+    },
+    {
+      "name": "暮らし",
+      "description": "家電・お店・駅など日々の暮らしにまつわる言葉。"
+    },
+    {
+      "name": "スポーツ",
+      "description": "野球・相撲などスポーツにまつわる言葉。"
+    },
+    {
+      "name": "食",
+      "description": "食べもの・料理にまつわる言葉。"
     }
   ],
   "categories": [
