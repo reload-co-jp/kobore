@@ -1,0 +1,72 @@
+[
+  {
+    "id": "bipm-si-brochure",
+    "type": "official",
+    "title": "The International System of Units (SI) Brochure, 9th edition",
+    "author": null,
+    "publisher": "国際度量衡局（BIPM）",
+    "published_at": "2019",
+    "url": "https://www.bipm.org/en/publications/si-brochure",
+    "accessed_at": "2026-10-04"
+  },
+  {
+    "id": "keiryo-ho",
+    "type": "official",
+    "title": "計量法（平成4年法律第51号）",
+    "author": null,
+    "publisher": "e-Gov法令検索",
+    "published_at": "1992",
+    "url": "https://laws.e-gov.go.jp/law/404AC0000000051",
+    "accessed_at": "2026-10-04"
+  },
+  {
+    "id": "kojien-7",
+    "type": "dictionary",
+    "title": "広辞苑 第七版",
+    "author": "新村出（編）",
+    "publisher": "岩波書店",
+    "published_at": "2018",
+    "url": null,
+    "accessed_at": "2026-10-04"
+  },
+  {
+    "id": "soumu-whitepaper",
+    "type": "official",
+    "title": "情報通信白書",
+    "author": null,
+    "publisher": "総務省",
+    "published_at": null,
+    "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/",
+    "accessed_at": "2026-10-04"
+  },
+  {
+    "id": "docomo-2019-plan",
+    "type": "official",
+    "title": "新料金プラン「ギガホ」「ギガライト」に関する報道発表資料",
+    "author": null,
+    "publisher": "株式会社NTTドコモ",
+    "published_at": "2019",
+    "url": null,
+    "accessed_at": "2026-10-04"
+  },
+  {
+    "id": "mga-official",
+    "type": "official",
+    "title": "Mrs. GREEN APPLE オフィシャルサイト",
+    "author": null,
+    "publisher": "Mrs. GREEN APPLE",
+    "published_at": null,
+    "url": "https://mrsgreenapple.com/",
+    "accessed_at": "2026-10-04"
+  },
+  {
+    "id": "yoshimoto-profile-junior",
+    "type": "official",
+    "title": "千原ジュニア プロフィール",
+    "author": null,
+    "publisher": "吉本興業",
+    "published_at": null,
+    "url": null,
+    "accessed_at": "2026-10-04"
+  }
+]

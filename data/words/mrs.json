@@ -1,0 +1,94 @@
+{
+  "id": "mrs",
+  "term": "ミセス",
+  "reading": "みせす",
+  "origin": {
+    "term": "Mrs. GREEN APPLE",
+    "extracted": "ミセス",
+    "remaining": "GREEN APPLE",
+    "source_part": "Mrs."
+  },
+  "classification": ["proper_noun_origin", "part_extraction", "independent_usage", "reanalysis"],
+  "summary": "バンド名「Mrs. GREEN APPLE」の冒頭「Mrs.」がこぼれ、既婚女性への敬称だった「ミセス」がバンドそのものを指すようになった例。",
+  "lead": "既婚女性への敬称だった「ミセス」は、こぼれてひとつのバンドの呼び名になった。",
+  "origin_meaning": {
+    "text": "英語の Mrs. は既婚女性に付ける敬称。日本語の「ミセス」も既婚女性を指す外来語として、雑誌名やファッション用語などで使われてきた。バンド名の中では、名前の一部にすぎない。"
+  },
+  "current_meanings": [
+    {
+      "meaning": "Mrs. GREEN APPLE",
+      "description": "音楽の話題で「ミセスの新曲」のように、バンドそのものを指す。",
+      "status": "common"
+    },
+    {
+      "meaning": "既婚女性",
+      "description": "本来の外来語としての意味。",
+      "status": "common"
+    }
+  ],
+  "semantic_change": {
+    "from": "既婚女性への敬称",
+    "to": "バンド「Mrs. GREEN APPLE」",
+    "mechanism": "proper_noun_part_extraction",
+    "steps": ["敬称 Mrs.", "バンド名 Mrs. GREEN APPLE", "「ミセス」が独立", "バンドの呼び名"]
+  },
+  "timeline": [
+    {
+      "period": "2013",
+      "event": "Mrs. GREEN APPLE が結成される。",
+      "source_ids": ["mga-official"]
+    },
+    {
+      "period": "2015",
+      "event": "メジャーデビュー。",
+      "source_ids": ["mga-official"]
+    }
+  ],
+  "usage_examples": [
+    { "text": "ミセスのライブに行ってきた。", "type": "constructed", "meaning": "Mrs. GREEN APPLE" }
+  ],
+  "article": [
+    {
+      "heading": "何からこぼれた？",
+      "body": "「ミセス」はバンド名「Mrs. GREEN APPLE」の冒頭「Mrs.」がこぼれた呼び名です。"
+    },
+    {
+      "heading": "元々どういう意味だった？",
+      "body": "Mrs. は英語で既婚女性に付ける敬称です。バンド名の中では、名前を構成する一部分にすぎませんでした。"
+    },
+    {
+      "heading": "いつ独立した？",
+      "body": "ファンやメディアの間で「ミセス」という略称が使われるようになった時期は、現時点で特定できていません。"
+    },
+    {
+      "heading": "意味は変わった？",
+      "body": "音楽の文脈では、「ミセス」は既婚女性ではなくバンドを指します。英語の敬称がカタカナの愛称として読み替えられた、固有名詞由来の再解釈の例です。"
+    },
+    {
+      "heading": "今はどう使われる？",
+      "body": "音楽の話題で「ミセス」といえば、多くの場合このバンドを指します。文脈を離れると本来の意味と区別がつきにくく、同じ語が二つの対象を持つ状態です。"
+    },
+    {
+      "heading": "なぜ定着した？",
+      "body": "英語表記のバンド名は日常会話では言いにくく、冒頭の一語だけで十分に通じたことが一因と考えられます。"
+    }
+  ],
+  "tags": ["部分抽出", "固有名詞", "再解釈", "音楽"],
+  "categories": ["固有名詞", "特定対象"],
+  "related": ["junior"],
+  "sources": [
+    { "id": "mga-official", "role": "origin" }
+  ],
+  "confidence": "medium",
+  "priority": 6,
+  "kobore_score": {
+    "part_extraction": 3,
+    "independent_usage": 2,
+    "meaning_shift": 2,
+    "semantic_expansion": 0,
+    "historical_interest": 0,
+    "usage_frequency": 2,
+    "source_availability": 1
+  },
+  "updated_at": "2026-10-04"
+}
