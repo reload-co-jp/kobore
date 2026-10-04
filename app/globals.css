@@ -310,7 +310,6 @@ main {
   font-family: var(--serif);
   font-size: 1.15rem;
   margin-top: 32px;
-  max-width: 32em;
 }
 
 /* こぼれ方 */
@@ -413,7 +412,6 @@ main {
 }
 
 .prose {
-  max-width: 40em;
 }
 .prose h2 {
   font-family: var(--serif);
