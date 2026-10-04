@@ -78,7 +78,7 @@ describe("search", () => {
       search(docs, "固有名詞")
         .map((d) => d.id)
         .sort()
-    ).toEqual(["junior", "mrs"])
+    ).toEqual(["hormone", "junior", "mrs"])
     expect(search(docs, "キロ").map((d) => d.id)).toContain("kilo")
     expect(search(docs, "")).toEqual([])
   })

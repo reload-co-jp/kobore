@@ -253,7 +253,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "単位"],
       "categories": ["接頭辞", "意味変化", "特定対象"],
-      "related": ["giga"],
+      "related": ["giga", "senchi"],
       "sources": [
         {
           "id": "bipm-si-brochure",
@@ -391,7 +391,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "再解釈", "通信"],
       "categories": ["単語", "意味変化", "特定対象"],
-      "related": ["net"],
+      "related": ["net", "nama", "commercial"],
       "sources": [
         {
           "id": "kotobank-keitai",
@@ -640,7 +640,7 @@
       ],
       "tags": ["部分抽出", "固有名詞", "再解釈", "音楽"],
       "categories": ["固有名詞", "特定対象"],
-      "related": ["junior"],
+      "related": ["junior", "hormone"],
       "sources": [
         {
           "id": "mga-official",
@@ -768,6 +768,997 @@
       "priority": 5,
       "kobore_score": {
         "part_extraction": 0,
+        "independent_usage": 2,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 1,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "nama",
+      "term": "生",
+      "reading": "なま",
+      "origin": {
+        "term": "生ビール",
+        "extracted": "生",
+        "remaining": "ビール"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「生ビール」から「生」がこぼれ、加熱していない状態を表す語が単独でビールを指すようになった例。",
+      "lead": "「火を通していない」という意味だった「生」は、こぼれて居酒屋の一杯目になった。",
+      "origin_meaning": {
+        "text": "「生」は本来、食物などを煮たり焼いたりしていないこと、加熱・殺菌などの処理をしていないことを表す語。「生ビール」は、加熱殺菌をしていないというビールの性質を表す修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "生ビール",
+          "description": "飲食店などで「生ください」「とりあえず生」のように、名詞として生ビールそのものを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "加熱・加工していないこと",
+          "description": "本来の意味。「魚を生で食べる」「生の声」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "加熱・殺菌していない状態（性質）",
+        "to": "生ビール（モノ）",
+        "mechanism": "part_extraction_and_contextual_narrowing",
+        "steps": [
+          "加熱していない状態",
+          "生ビール",
+          "「生」が独立",
+          "生ビールそのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1903",
+          "event": "「生ビール」の用例。精選版 日本国語大辞典は都新聞（1903年3月28日）の「札幌麦酒株式会社〈略〉生ビールを発売する由にて」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-nama-beer"]
+        },
+        {
+          "period": "1979",
+          "event": "「ビールの表示に関する公正競争規約」が制定され、「生ビール」「ドラフトビール」は熱処理（パストリゼーション）をしていないビールの表示と定められる。",
+          "source_ids": ["brewers-display"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "とりあえず生ふたつ。",
+          "type": "constructed",
+          "meaning": "生ビール"
+        },
+        {
+          "text": "刺身は生で食べる。",
+          "type": "constructed",
+          "meaning": "加熱していないこと"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「生」は「生ビール」の前半がこぼれた言葉です。よく聞く「生中」は「生ビールの中ジョッキ」を縮めた言い方で、「生」と「中」の二か所を組み合わせた略語です。ここでは、こぼれた部分である「生」を取り上げます。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "デジタル大辞泉は「生」を、食物などを煮たり焼いたりしていないこと、加熱・殺菌などの処理をしていないこととしています。「生ビール」は精選版 日本国語大辞典によれば「醸造したままで加熱殺菌をしていないビール」で、初出の実例として都新聞（1903年）の記事を挙げています。ビール酒造組合も、「生ビール」「ドラフトビール」を熱による処理をしていないビールと説明しています。「生」はビールの性質を説明する部分でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "デジタル大辞泉は「生」の意味のひとつに「『生ビール』の略」を挙げ、「ビールは生がうまい」という例を示しています。デジタル大辞泉・精選版 日本国語大辞典とも「生ビール」の項に「なま」と添えていますが、単独用法の初出の実例は示していません。単独で使われ始めた時期は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「加熱していない」という状態を表す語が、生ビールという特定の飲み物を指す名詞になりました。生魚も生クリームも「生」ですが、飲食店で「生」と言えばビールのことです。文脈によって指すものが絞り込まれた例と言えます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "居酒屋などで「とりあえず生」「生ふたつ」のように注文するときに使われます。ジョッキの大きさと組み合わせた「生中」「生大」という言い方も広く使われますが、これらは辞書の見出しには見当たりませんでした（コトバンクの「生中」は「なまなか」の項です）。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "飲食店で注文する場面では、飲み物の話をしていることが前提になるため、「ビール」を言わなくても通じます。短く言える「生」だけで用が足りたことが、定着の理由と考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["keitai"],
+      "sources": [
+        {
+          "id": "kotobank-nama",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-nama-beer",
+          "role": "origin"
+        },
+        {
+          "id": "brewers-display",
+          "role": "background"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "commercial",
+      "term": "コマーシャル",
+      "reading": "こまーしゃる",
+      "origin": {
+        "term": "コマーシャルメッセージ",
+        "extracted": "コマーシャル",
+        "remaining": "メッセージ"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「コマーシャルメッセージ」から「コマーシャル」がこぼれ、「商業の」を表す語が単独で放送広告を指すようになった例。",
+      "lead": "「商業の」という意味だった「コマーシャル」は、こぼれて番組の合間に流れる広告になった。",
+      "origin_meaning": {
+        "text": "英語 commercial は「商業の」を表す語。日本語の「コマーシャル」も、商業・通商に関すること、商業を主眼としたさまを表していた。「コマーシャルメッセージ」では、メッセージの性質を説明する修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "放送広告",
+          "description": "民間放送の番組の前後や途中に流れる広告。「コマーシャルのあとで」のように名詞として使う。CMとも。",
+          "status": "common"
+        },
+        {
+          "meaning": "商業上の",
+          "description": "他の語に付いて、商業上の・宣伝のための、の意を表す。「コマーシャルソング」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "商業に関すること（性質）",
+        "to": "放送広告（モノ）",
+        "mechanism": "part_extraction_and_reinterpretation",
+        "steps": [
+          "商業に関すること",
+          "コマーシャルメッセージ",
+          "「コマーシャル」が独立",
+          "放送広告そのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1914",
+          "event": "精選版 日本国語大辞典は、「商業、通商に関すること」の意の「コマーシャル」について『外来語辞典』（1914）を挙げる。",
+          "source_ids": ["kotobank-commercial"]
+        },
+        {
+          "period": "1951",
+          "event": "日本初の民放ラジオ放送として中部日本放送が開局し、同日に時報コマーシャルを流す（日本大百科全書による）。",
+          "source_ids": ["kotobank-commercial"]
+        },
+        {
+          "period": "1953",
+          "event": "日本テレビ放送網が本放送を始め、同日に日本初のテレビコマーシャルを流す（日本大百科全書による）。",
+          "source_ids": ["kotobank-commercial"]
+        },
+        {
+          "period": "1955",
+          "event": "「コマーシャルメッセージ」の略としての「コマーシャル」の用例。精選版 日本国語大辞典は古川ロッパ日記（1955年7月17日）の「ヘンなコムマーシャルが出ないからとＮＨＫにしたら」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-commercial"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "コマーシャルの間にお茶をいれてくる。",
+          "type": "constructed",
+          "meaning": "放送広告"
+        },
+        {
+          "text": "あの曲はもともとコマーシャルソングだった。",
+          "type": "constructed",
+          "meaning": "商業上の"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「コマーシャル」は「コマーシャルメッセージ」の前半がこぼれた言葉です。同じ言葉の頭文字をとった「CM」もありますが、こちらは二か所を組み合わせた略語です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語の commercial は「商業の」という意味の語です。精選版 日本国語大辞典も「コマーシャル」の意味に「商業、通商に関すること。また、商業を主眼としたさま」を挙げ、『外来語辞典』（1914）を示しています。日本大百科全書によれば、民間放送の草創期には「コマーシャル・メッセージ」は「商業文」と訳され、宣伝広告文一般を指していました。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "日本大百科全書によれば、日本初のラジオコマーシャルは1951年、テレビコマーシャルは1953年に流れました。精選版 日本国語大辞典は「コマーシャルメッセージ」の略としての「コマーシャル」について、古川ロッパの日記（1955年）を初出の実例に挙げています。民放が発達するにつれ、放送広告の代名詞として広く使われるようになったと日本大百科全書は説明しています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「商業の」という性質を表す語が、放送広告という具体的なものを指す名詞になりました。商業に関わるものはいくらでもありますが、日本語で「コマーシャル」と言えばほぼ放送広告です。「コマーシャルソング」のように他の語に付く使い方には、本来の「商業上の」という意味が残っています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "テレビやラジオの広告を指して「コマーシャル」とも「CM」とも言います。デジタル大辞泉は、民間放送などで番組の前後や途中に行う広告と説明しています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「メッセージ」の部分は、言わなくても放送で流れるものだと分かります。広告を区別するのに必要な「コマーシャル」だけが残ったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["keitai", "yusen"],
+      "sources": [
+        {
+          "id": "kotobank-commercial",
+          "role": "definition"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 3,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "senchi",
+      "term": "センチ",
+      "reading": "せんち",
+      "origin": {
+        "term": "センチメートル",
+        "extracted": "センチ",
+        "remaining": "メートル"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「センチメートル」から「センチ」がこぼれ、100分の1を表す接頭語が単独で長さの単位を指すようになった例。",
+      "lead": "「100分の1」という意味だった「センチ」は、こぼれて長さの単位になった。",
+      "origin_meaning": {
+        "text": "「センチ」はラテン語の「百」に由来する接頭語で、単位の上に付けてその100分の1を表す。それだけでは長さも重さも表さない。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "センチメートル",
+          "description": "長さの話題で「身長が3センチ伸びた」のように使う。",
+          "status": "common"
+        },
+        {
+          "meaning": "感傷的なさま",
+          "description": "「センチメンタル」の略。「センチな気分」。単位の「センチ」とは別の言葉からこぼれた同音の語。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "100分の1を表すSI接頭語",
+        "to": "センチメートル（長さ）",
+        "mechanism": "part_extraction_and_contextual_narrowing",
+        "steps": [
+          "接頭語（100分の1）",
+          "センチメートル",
+          "「センチ」が独立",
+          "長さの単位そのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1935",
+          "event": "「センチメートル」の略としての「センチ」の用例。精選版 日本国語大辞典は豊田三郎『弔花』（1935）の「彼等の頭から十五センチと離れてゐない天井が」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-senchi"]
+        },
+        {
+          "period": "1939",
+          "event": "「センチメンタル」の略としての「センチ」の用例。精選版 日本国語大辞典は井上友一郎『残夢』（1939）を初出の実例として挙げる。",
+          "source_ids": ["kotobank-senchi"]
+        },
+        {
+          "period": "1960",
+          "event": "国際単位系（SI）が採択され、センチは接頭語として整理される。",
+          "source_ids": ["bipm-si-brochure"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "この1年で背が5センチ伸びた。",
+          "type": "constructed",
+          "meaning": "センチメートル"
+        },
+        {
+          "text": "秋になると、ついセンチな気分になる。",
+          "type": "constructed",
+          "meaning": "感傷的なさま"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「センチ」は「センチメートル」の前半がこぼれた言葉です。元をたどると、100分の1を表す接頭語です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "精選版 日本国語大辞典は「センチ」を、メートル法の諸単位の上に付けてその100分の1を表す語と説明しています。デジタル大辞泉によれば、ラテン語で「百」を意味する centum に由来します。接頭語のセンチは、それだけでは長さを表しません。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は「センチメートル」の略としての「センチ」を名詞として載せ、豊田三郎『弔花』（1935）の「十五センチと離れてゐない」を初出の実例に挙げています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「100分の1」という抽象的な倍率から、長さという具体的な量へと移りました。センチグラムのような単位もありますが、日常で「センチ」と言えばセンチメートルです。また、「センチメンタル」の前半がこぼれた「センチ」（感傷的なさま）もあります。精選版 日本国語大辞典は、こちらの初出の実例に井上友一郎『残夢』（1939）を挙げています。別々の言葉から同じ形がこぼれた例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "身長や物の大きさを言うとき、日常会話では「センチ」単独で使われます。接頭語が単位そのものを指すようになった点で、「キロ」と同じ型です。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "日常でセンチを付けて使う単位はほぼセンチメートルに限られるため、言わなくても分かる「メートル」が落ちたと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "単位"],
+      "categories": ["接頭辞", "意味変化", "特定対象"],
+      "related": ["kilo"],
+      "sources": [
+        {
+          "id": "kotobank-senchi",
+          "role": "definition"
+        },
+        {
+          "id": "bipm-si-brochure",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 2,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "yusen",
+      "term": "有線",
+      "reading": "ゆうせん",
+      "origin": {
+        "term": "有線放送",
+        "extracted": "有線",
+        "remaining": "放送"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「有線放送」から「有線」がこぼれ、電線を使うことを表す語が単独で店などに流れる音楽放送を指すようになった例。",
+      "lead": "「電線を使う」という意味だった「有線」は、こぼれてお店に流れる音楽になった。",
+      "origin_meaning": {
+        "text": "「有線」は本来、電線を用いること、特に電線を使う通信方式を表す語で、「無線」と対になる。「有線放送」では、放送の方式を説明する修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "有線放送",
+          "description": "飲食店や商店などに電線を通じて音楽を流す放送。「有線で流れていた曲」のように使う。",
+          "status": "common"
+        },
+        {
+          "meaning": "電線を使うこと",
+          "description": "本来の意味。「有線LAN」「有線のイヤホン」など、無線と対比して使う。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "電線を使うこと（方式）",
+        "to": "店などに流れる音楽放送（モノ）",
+        "mechanism": "part_extraction_and_reinterpretation",
+        "steps": [
+          "電線を使うこと",
+          "有線放送",
+          "「有線」が独立",
+          "店に流れる音楽放送"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1929",
+          "event": "「有線」（電線を用いること）の用例。精選版 日本国語大辞典は今和次郎『新版大東京案内』（1929）の「各放送所間に有線連絡がついて」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-yusen"]
+        },
+        {
+          "period": "1961",
+          "event": "現在の株式会社USENが創業する。同社は音楽配信事業を祖業としている。",
+          "source_ids": ["usen-message"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "この曲、昔よく有線で流れてたよね。",
+          "type": "constructed",
+          "meaning": "有線放送"
+        },
+        {
+          "text": "回線が不安定なので有線でつなぐ。",
+          "type": "constructed",
+          "meaning": "電線を使うこと"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「有線」は「有線放送」の前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "デジタル大辞泉は「有線」を、金属線を用いること、特に電線を使う通信方式と説明し、「無線」と対にしています。精選版 日本国語大辞典は、今和次郎『新版大東京案内』（1929）の「各放送所間に有線連絡がついて」を初出の実例に挙げています。「有線放送」では、放送の方式を説明する部分でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "デジタル大辞泉・精選版 日本国語大辞典とも、「有線放送」の略としての「有線」を載せていますが、初出の実例は示していません。単独で使われ始めた時期は現時点で確認できていません。なお、両辞典は「有線電信」「有線電話」の略としての「有線」も挙げており、こぼれた先はもともと一つではありませんでした。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「電線を使う」という方式を表す語が、放送そのものを指す名詞になりました。ブリタニカ国際大百科事典 小項目事典によれば、有線放送には告知放送や街頭放送、テレビの共同受信なども含まれますが、日常で「有線」と言うと、飲食店や理容院などに音楽を流すサービスを指すことが多いと考えられます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「有線で流れていた曲」のように、お店で耳にする音楽を指して使われます。USENは1961年創業で、音楽配信事業を祖業とし、自社サイトでも「店舗BGM（有線放送）」と表記しています。一方、「有線LAN」「有線イヤホン」のように、無線と対比する本来の意味も広く使われています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "有線電信や有線電話が日常で話題にならなくなる一方、お店に流れる音楽は身近だったため、「有線」だけで通じるようになったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "通信"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["commercial"],
+      "sources": [
+        {
+          "id": "kotobank-yusen",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-yusen-hoso",
+          "role": "background"
+        },
+        {
+          "id": "usen-message",
+          "role": "usage"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 1,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 1,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "kosoku",
+      "term": "高速",
+      "reading": "こうそく",
+      "origin": {
+        "term": "高速道路",
+        "extracted": "高速",
+        "remaining": "道路"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「高速道路」から「高速」がこぼれ、速度の速さを表す語が単独で道路そのものを指すようになった例。",
+      "lead": "「速い」という意味だった「高速」は、こぼれて道路の名前になった。",
+      "origin_meaning": {
+        "text": "「高速」は本来、速度の速いことを表す語で、「低速」と対になる。「高速道路」では、道路の性質を説明する修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "高速道路",
+          "description": "「高速に乗る」「高速で行く」のように、名詞として道路そのものを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "速度の速いこと",
+          "description": "本来の意味。「高速運転」「高速通信」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "速度の速いこと（性質）",
+        "to": "高速道路（モノ）",
+        "mechanism": "part_extraction_and_reinterpretation",
+        "steps": [
+          "速度の速いこと",
+          "高速道路",
+          "「高速」が独立",
+          "道路そのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1903",
+          "event": "「高速」（速度の速いこと）の用例。精選版 日本国語大辞典は『風俗画報』275号（1903）の「高速廻転汽機」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-kosoku"]
+        },
+        {
+          "period": "1957",
+          "event": "「高速道路」の用例。精選版 日本国語大辞典は加藤秀俊『中間文化』（1957）の「日本国中を高速道路が貫通し」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-kosoku-doro"]
+        },
+        {
+          "period": "1963",
+          "event": "名神高速道路の栗東IC〜尼崎IC間が開通する。日本で初めての高速道路の開通。",
+          "source_ids": ["cnexco-2015-meishin"]
+        },
+        {
+          "period": "1968",
+          "event": "「高速道路」の略としての「高速」の用例。精選版 日本国語大辞典は五木寛之『裸の町』（1968）の「高速を百五十キロで来たわ」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-kosoku"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "渋滞してるから高速で行こう。",
+          "type": "constructed",
+          "meaning": "高速道路"
+        },
+        {
+          "text": "このプリンターは高速で印刷できる。",
+          "type": "constructed",
+          "meaning": "速度の速いこと"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「高速」は「高速道路」の前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "デジタル大辞泉は「高速」を、速度の速いことと説明し、「低速」と対にしています。精選版 日本国語大辞典は『風俗画報』（1903）の「高速廻転汽機」を初出の実例に挙げています。「高速道路」では、道路の性質を説明する部分でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は「高速道路」の初出の実例に加藤秀俊『中間文化』（1957）を挙げています。中日本高速道路によれば、日本で初めての高速道路は1963年に開通した名神高速道路の栗東IC〜尼崎IC間です。「高速道路」の略としての「高速」については、同辞典が五木寛之『裸の町』（1968）の「高速を百五十キロで来たわ」を初出の実例に挙げています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「速い」という性質を表す語が、道路というモノを指す名詞になりました。「高速に乗る」の「高速」は速さではなく道路です。本来の意味も消えておらず、「高速通信」「高速運転」のように使われます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「高速に乗る」「高速を降りる」のように、日常会話では「高速」単独で使われます。デジタル大辞泉・精選版 日本国語大辞典とも、「高速道路」の項に「高速」を言い換えとして添えています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "車での移動の話では、「高速」と言えば道路のことだと文脈で分かります。言わなくても分かる「道路」が落ちたと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["keitai"],
+      "sources": [
+        {
+          "id": "kotobank-kosoku",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-kosoku-doro",
+          "role": "origin"
+        },
+        {
+          "id": "cnexco-2015-meishin",
+          "role": "background"
+        }
+      ],
+      "confidence": "high",
+      "priority": 1,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "all",
+      "term": "オール",
+      "reading": "おーる",
+      "origin": {
+        "term": "オールナイト",
+        "extracted": "オール",
+        "remaining": "ナイト"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「オールナイト」から「オール」がこぼれ、「全部」を表す語が単独で夜通し起きていることを指すようになった例。",
+      "lead": "「全部」という意味だった「オール」は、こぼれて朝まで遊ぶことになった。",
+      "origin_meaning": {
+        "text": "英語 all は「全部」を表す語。日本語の「オール」も、多く複合語の形で「すべて」「全」の意を表す（「オールA」「オールスター」）。「オールナイト」では、「夜」を修飾して「一晩中」の意をつくる部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "夜通し起きていること",
+          "description": "「オールで飲み明かす」「昨日オールした」のように、夜通し遊んだり起きていたりすることを指す。俗な言い方。",
+          "status": "common"
+        },
+        {
+          "meaning": "全部・全",
+          "description": "本来の意味。「オールA」「オール日本チーム」など、複合語の形で使う。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "全部・すべて（数量）",
+        "to": "夜通し起きていること（行為）",
+        "mechanism": "part_extraction_and_reinterpretation",
+        "steps": [
+          "全部・すべて",
+          "オールナイト（一晩中）",
+          "「オール」が独立",
+          "夜通し起きていること"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1952",
+          "event": "「オールナイト」の用例。精選版 日本国語大辞典は井上友一郎『午前零時』（1952）を初出の実例として挙げる。",
+          "source_ids": ["kotobank-allnight"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "カラオケでオールして、そのまま授業に出た。",
+          "type": "constructed",
+          "meaning": "夜通し起きていること"
+        },
+        {
+          "text": "通知表がオールAだった。",
+          "type": "constructed",
+          "meaning": "全部・全"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「オール」は「オールナイト」の前半がこぼれた言葉です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語の all は「全部」という意味です。デジタル大辞泉は「オール」を、多く複合語の形で用い、すべて・全部の意を表す語と説明し、「オールA」などの例を挙げています。「オールナイト」は精選版 日本国語大辞典によれば「一晩中。終夜」で、映画館や飲食業などが夜通し営業することを指しました。「オール」は「夜」を修飾して「一晩中」の意をつくる部分でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は「オールナイト」の初出の実例に井上友一郎『午前零時』（1952）を挙げています。「オールナイト」の略としての「オール」については、デジタル大辞泉が「俗に」と断ったうえで「オールで飲み明かす」という例とともに載せていますが、初出の実例は示されていません。単独で使われ始めた時期は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「全部」という数量を表す語が、夜通し起きているという行為を指すようになりました。「オールする」のように動詞としても使われます。元の英語の意味から離れた、日本語の中での使い方と考えられます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「カラオケでオールした」「オールで飲む」のように、友人と朝まで遊ぶ場面などで使われます。デジタル大辞泉が「俗に」と注記しているように、くだけた話し言葉です。一方、「オールA」「オールスター」のような本来の使い方も残っています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「オールナイト」は営業時間を表す言葉でしたが、夜通し遊ぶ側の体験として話すとき、短い「オール」が好まれたと考えられます。「オールする」と動詞にしやすかったことも一因と考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": [],
+      "sources": [
+        {
+          "id": "kotobank-all",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-allnight",
+          "role": "origin"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 1,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 0,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "automa",
+      "term": "オートマ",
+      "reading": "おーとま",
+      "origin": {
+        "term": "オートマチックトランスミッション",
+        "extracted": "オートマ",
+        "remaining": "トランスミッション",
+        "source_part": "オートマチック"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「オートマチックトランスミッション」から「オートマ」がこぼれ、「自動的」を表す語が単独で自動変速の車を指すようになった例。",
+      "lead": "「自動的」という意味だった「オートマ」は、こぼれてクルマの種類になった。",
+      "origin_meaning": {
+        "text": "英語 automatic は「自動的な」を表す語。日本語の「オートマチック」も、人の手で操作せず機械が自動的にするさまを表す。「オートマチックトランスミッション」では、変速機の性質を説明する修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "自動変速の車・変速機",
+          "description": "「オートマの車」「オートマ限定」のように、自動変速機やそれを積んだ車を指す。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "自動的であること（性質）",
+        "to": "自動変速の車・変速機（モノ）",
+        "mechanism": "part_extraction_and_reinterpretation",
+        "steps": [
+          "自動的であること",
+          "オートマチックトランスミッション",
+          "「オートマチック」が独立",
+          "「オートマ」に縮まる",
+          "自動変速の車"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1991",
+          "event": "AT（オートマチック）車限定の運転免許が導入される。",
+          "source_ids": ["jimin-2025-at-license"]
+        },
+        {
+          "period": "2024",
+          "event": "第1種普通免許の受験者の約7割がAT限定免許を希望する（警視庁「運転免許統計」による）。",
+          "source_ids": ["jimin-2025-at-license"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "免許はオートマ限定で取った。",
+          "type": "constructed",
+          "meaning": "自動変速の車・変速機"
+        },
+        {
+          "text": "今の車はほとんどオートマだ。",
+          "type": "constructed",
+          "meaning": "自動変速の車・変速機"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「オートマ」は「オートマチックトランスミッション」の前半がこぼれ、さらに縮まった言葉です。デジタル大辞泉は「オートマ」を「オートマチック」「オートマチックコントロール」「オートマチックトランスミッション」などの略としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語の automatic は「自動的な」という意味です。デジタル大辞泉も「オートマチック」の形容動詞の用法として、人間の手で操作せず機械が自動的にするさまを挙げています。「オートマチックトランスミッション」では、変速機の性質を説明する部分でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "デジタル大辞泉は「オートマチック」単独の意味のひとつに「『オートマチック‐トランスミッション』の略」を挙げています。精選版 日本国語大辞典も「オートマ」を「オートマチック」の略として載せていますが、初出の実例は示していません。単独で使われ始めた時期は現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「自動的」という性質を表す語が、自動変速機やそれを積んだ車というモノを指すようになりました。自動で動く機械はほかにもたくさんありますが、「オートマ」と言えば多くの場合は車のことです。デジタル大辞泉が挙げるように、「オートマチック」には自動拳銃の意味もありますが、「オートマ」の形では車の話で使われることが多いと考えられます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "「オートマ限定」「オートマ車」のように使われ、手動で変速する「マニュアル」と対になります。機関紙「自由民主」によれば、AT限定免許は1991年（平成3年）に導入され、2024年には第1種普通免許の受験者の約7割がAT限定を希望しています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「オートマチックトランスミッション」は日常で言うには長すぎます。車の話では変速の方式が話題になることが多く、区別に必要な「オートマ」だけで通じるようになったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": [],
+      "sources": [
+        {
+          "id": "kotobank-automa",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-automatic",
+          "role": "origin"
+        },
+        {
+          "id": "jimin-2025-at-license",
+          "role": "background"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 1,
+      "kobore_score": {
+        "part_extraction": 2,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 0,
+        "usage_frequency": 2,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "hormone",
+      "term": "ホルモン",
+      "reading": "ほるもん",
+      "origin": {
+        "term": "マキシマム ザ ホルモン",
+        "extracted": "ホルモン",
+        "remaining": "マキシマム ザ"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "reanalysis"
+      ],
+      "summary": "バンド名「マキシマム ザ ホルモン」の末尾「ホルモン」がこぼれ、内分泌物質や焼肉を指す語がバンドそのものを指すようになった例。",
+      "lead": "焼肉の名前だった「ホルモン」は、こぼれてひとつのバンドの呼び名になった。",
+      "origin_meaning": {
+        "text": "「ホルモン」はドイツ語 Hormon に由来し、体内の内分泌腺から分泌される物質を指す。日本語では「ホルモン焼き」の略として、牛や豚の臓物の料理も指す。バンド名の中では、名前の一部にすぎない。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "マキシマム ザ ホルモン",
+          "description": "音楽の話題で「ホルモンの新曲」のように、バンドそのものを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "内分泌物質・ホルモン焼き",
+          "description": "本来の意味。「女性ホルモン」「ホルモンを焼く」など。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "内分泌物質・ホルモン焼き",
+        "to": "バンド「マキシマム ザ ホルモン」",
+        "mechanism": "proper_noun_part_extraction",
+        "steps": [
+          "内分泌物質・ホルモン焼き",
+          "バンド名 マキシマム ザ ホルモン",
+          "「ホルモン」が独立",
+          "バンドの呼び名"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1934",
+          "event": "「ホルモン」（内分泌物質）の用例。精選版 日本国語大辞典は横光利一『紋章』（1934）を初出の実例として挙げる。",
+          "source_ids": ["kotobank-hormone"]
+        },
+        {
+          "period": "1997",
+          "event": "マキシマム ザ ホルモンが活動を始める（東京都八王子市出身）。",
+          "source_ids": ["wikipedia-mth"]
+        },
+        {
+          "period": "2020",
+          "event": "音楽ナタリーが「ホルモンがファンアートコンテスト開催」の見出しで報じるなど、メディアでも略称「ホルモン」が使われる。",
+          "source_ids": ["natalie-2020-hormone"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "フェスでホルモンを観てきた。",
+          "type": "constructed",
+          "meaning": "マキシマム ザ ホルモン"
+        },
+        {
+          "text": "ホルモンがファンアートコンテスト開催、優勝賞品はダイスケはん実家お泊り会",
+          "type": "web",
+          "meaning": "マキシマム ザ ホルモン",
+          "source_id": "natalie-2020-hormone"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ホルモン」はバンド名「マキシマム ザ ホルモン」の末尾がこぼれた呼び名です。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "精選版 日本国語大辞典によれば、「ホルモン」はドイツ語 Hormon に由来し、内分泌腺から分泌されて他の器官に作用する物質の総称です。同辞典は「ホルモン焼き」の略として、臓物料理を指す意味も載せています。Wikipediaによると、バンド名の由来は「脳内分泌物（ホルモン）が最大級に分泌される」音楽という説明が知られていますが、これは後付けで、実際にはメンバーが焼肉のホルモンを好んでいたことから選ばれたとされます。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "Wikipediaはバンドの略称を「ホルモン」としています。音楽ナタリーも2020年の記事で「ホルモンがファンアートコンテスト開催」と見出しに使っています。略称が使われ始めた時期は、現時点で特定できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "音楽の文脈では、「ホルモン」は体内の物質でも焼肉でもなく、バンドを指します。「ホルモン」自体がすでに「ホルモン焼き」からこぼれて臓物料理を指すようになった言葉であり、その言葉がバンド名に取り込まれ、さらにこぼれてバンドの呼び名になったという、二重のこぼれを経た例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "音楽ニュースでは、見出しなどで「ホルモン」とだけ書かれることがあります。Wikipediaによれば、ファンの総称は「腹ペコ」、バンドのキャッチフレーズは「三度の飯より飯が好き」で、食べ物にちなむ言葉がバンドの周りに並んでいます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「マキシマム ザ ホルモン」は長く、最後の「ホルモン」が名前の中でいちばん印象に残る語だったため、そこだけで通じるようになったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "固有名詞", "再解釈", "音楽"],
+      "categories": ["固有名詞", "特定対象"],
+      "related": ["mrs"],
+      "sources": [
+        {
+          "id": "kotobank-hormone",
+          "role": "definition"
+        },
+        {
+          "id": "wikipedia-mth",
+          "role": "background"
+        },
+        {
+          "id": "natalie-2020-hormone",
+          "role": "usage"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 1,
+      "kobore_score": {
+        "part_extraction": 3,
         "independent_usage": 2,
         "meaning_shift": 2,
         "semantic_expansion": 0,
@@ -917,6 +1908,196 @@
       "publisher": "Wikipedia（日本語版）",
       "published_at": null,
       "url": "https://ja.wikipedia.org/wiki/%E5%8D%83%E5%8E%9F%E3%82%B8%E3%83%A5%E3%83%8B%E3%82%A2",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-nama",
+      "type": "dictionary",
+      "title": "「生（なま）」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E7%94%9F-78786",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-nama-beer",
+      "type": "dictionary",
+      "title": "「生ビール」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E7%94%9F%E3%81%B3%E3%83%BC%E3%82%8B-3162023",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "brewers-display",
+      "type": "official",
+      "title": "ビールの豆知識「ビールの表示」",
+      "author": null,
+      "publisher": "ビール酒造組合",
+      "published_at": null,
+      "url": "https://www.brewers.or.jp/tips/display.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-commercial",
+      "type": "dictionary",
+      "title": "「コマーシャル」（デジタル大辞泉・精選版 日本国語大辞典・日本大百科全書）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%B3%E3%83%9E%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-senchi",
+      "type": "dictionary",
+      "title": "「センチ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%BB%E3%83%B3%E3%83%81",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-yusen",
+      "type": "dictionary",
+      "title": "「有線」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E6%9C%89%E7%B7%9A",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-yusen-hoso",
+      "type": "dictionary",
+      "title": "「有線放送」（デジタル大辞泉・ブリタニカ国際大百科事典 小項目事典ほか）",
+      "author": null,
+      "publisher": "コトバンク（小学館・ブリタニカ・ジャパンほか）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E6%9C%89%E7%B7%9A%E6%94%BE%E9%80%81",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "usen-message",
+      "type": "official",
+      "title": "社長メッセージ",
+      "author": null,
+      "publisher": "株式会社USEN",
+      "published_at": null,
+      "url": "https://usen.com/company/message.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-kosoku",
+      "type": "dictionary",
+      "title": "「高速」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E9%AB%98%E9%80%9F",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-kosoku-doro",
+      "type": "dictionary",
+      "title": "「高速道路」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E9%AB%98%E9%80%9F%E9%81%93%E8%B7%AF",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "cnexco-2015-meishin",
+      "type": "official",
+      "title": "名神高速道路は全線開通50周年を迎えます",
+      "author": null,
+      "publisher": "中日本高速道路株式会社",
+      "published_at": "2015-04-23",
+      "url": "https://www.c-nexco.co.jp/corporate/pressroom/news_release/3641.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-all",
+      "type": "dictionary",
+      "title": "「オール」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%AA%E3%83%BC%E3%83%AB",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-allnight",
+      "type": "dictionary",
+      "title": "「オールナイト」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%AA%E3%83%BC%E3%83%AB%E3%83%8A%E3%82%A4%E3%83%88",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-automa",
+      "type": "dictionary",
+      "title": "「オートマ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-automatic",
+      "type": "dictionary",
+      "title": "「オートマチック」（デジタル大辞泉）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%83%81%E3%83%83%E3%82%AF",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "jimin-2025-at-license",
+      "type": "newspaper",
+      "title": "4月からAT車限定免許枠が拡大 慢性的な職業ドライバー不足の解消にも期待",
+      "author": null,
+      "publisher": "自由民主党（機関紙「自由民主」）",
+      "published_at": "2025-12-18",
+      "url": "https://www.jimin.jp/news/information/212115.html",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-hormone",
+      "type": "dictionary",
+      "title": "「ホルモン」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "wikipedia-mth",
+      "type": "web",
+      "title": "マキシマム ザ ホルモン",
+      "author": null,
+      "publisher": "Wikipedia",
+      "published_at": null,
+      "url": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%AD%E3%82%B7%E3%83%9E%E3%83%A0_%E3%82%B6_%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "natalie-2020-hormone",
+      "type": "media",
+      "title": "ホルモンがファンアートコンテスト開催、優勝賞品はダイスケはん実家お泊り会",
+      "author": null,
+      "publisher": "音楽ナタリー",
+      "published_at": "2020-05-09",
+      "url": "https://natalie.mu/music/news/378441",
       "accessed_at": "2026-10-04"
     }
   ],
