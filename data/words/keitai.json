@@ -7,7 +7,13 @@
     "extracted": "携帯",
     "remaining": "電話"
   },
-  "classification": ["part_extraction", "independent_usage", "meaning_shift", "semantic_narrowing", "reanalysis"],
+  "classification": [
+    "part_extraction",
+    "independent_usage",
+    "meaning_shift",
+    "semantic_narrowing",
+    "reanalysis"
+  ],
   "summary": "「携帯電話」から「携帯」がこぼれ、持ち歩くことを表す語が電話機そのものを指すようになった例。",
   "lead": "「持ち歩く」という意味だった「携帯」は、こぼれて電話機の名前になった。",
   "origin_meaning": {
@@ -33,14 +39,19 @@
   },
   "timeline": [
     {
+      "period": "1837",
+      "event": "「携帯」（身につけて持つこと）の用例。精選版 日本国語大辞典は『舎密開宗』（1837〜47）の「携帯に便なり」を初出の実例として挙げる。",
+      "source_ids": ["kotobank-keitai"]
+    },
+    {
       "period": "1987",
-      "event": "日本で携帯電話サービスが始まる。",
-      "source_ids": ["soumu-whitepaper"]
+      "event": "NTTが「自動車電話」ではなく「携帯電話」としてサービスを始める。端末の重さは約750g。",
+      "source_ids": ["soumu-kids-keitai"]
     },
     {
       "period": "1990s",
-      "event": "端末の小型化・低価格化で携帯電話が一般に普及する。",
-      "source_ids": ["soumu-whitepaper"]
+      "event": "1991年に小型端末mova、1994年に端末売切制度が導入されるなどして、携帯電話が一般に普及する。",
+      "source_ids": ["soumu-kids-keitai"]
     },
     {
       "period": "2010s",
@@ -49,8 +60,16 @@
     }
   ],
   "usage_examples": [
-    { "text": "携帯どこに置いたっけ。", "type": "constructed", "meaning": "携帯電話" },
-    { "text": "運転免許証を携帯すること。", "type": "constructed", "meaning": "持ち歩くこと" }
+    {
+      "text": "携帯どこに置いたっけ。",
+      "type": "constructed",
+      "meaning": "携帯電話"
+    },
+    {
+      "text": "運転免許証を携帯すること。",
+      "type": "constructed",
+      "meaning": "持ち歩くこと"
+    }
   ],
   "article": [
     {
@@ -59,11 +78,11 @@
     },
     {
       "heading": "元々どういう意味だった？",
-      "body": "「携帯」はもともと「持ち歩くこと」を意味する漢語で、「携帯電話」では電話の性質を説明する部分でした。電話機そのものを指す語ではありません。"
+      "body": "「携帯」はもともと「身につけたり、手に持ったりすること」を意味する漢語です。精選版 日本国語大辞典は、江戸後期の『舎密開宗』（1837〜47）の「携帯に便なり」を初出の実例に挙げています。「携帯電話」では電話の性質を説明する部分で、電話機そのものを指す語ではありませんでした。"
     },
     {
       "heading": "いつ独立した？",
-      "body": "携帯電話が一般に普及した1990年代以降、「携帯」単独で電話機を指す言い方が広まったと考えられます。単独用法の初出は現時点で確認できていません。"
+      "body": "辞書は「携帯電話」の略としての「携帯」を載せていますが（デジタル大辞泉は「ケータイ」と書くことが多いと注記）、初出の実例は示していません。携帯電話が普及した1990年代以降に広まったと考えられますが、単独用法の初出は現時点で確認できていません。"
     },
     {
       "heading": "意味は変わった？",
@@ -82,8 +101,18 @@
   "categories": ["単語", "意味変化", "特定対象"],
   "related": ["net"],
   "sources": [
-    { "id": "kojien-7", "role": "definition" },
-    { "id": "soumu-whitepaper", "role": "background" }
+    {
+      "id": "kotobank-keitai",
+      "role": "definition"
+    },
+    {
+      "id": "soumu-kids-keitai",
+      "role": "background"
+    },
+    {
+      "id": "soumu-whitepaper",
+      "role": "background"
+    }
   ],
   "confidence": "high",
   "priority": 8,

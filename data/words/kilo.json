@@ -7,7 +7,12 @@
     "extracted": "キロ",
     "remaining": "グラム"
   },
-  "classification": ["part_extraction", "independent_usage", "meaning_shift", "semantic_narrowing"],
+  "classification": [
+    "part_extraction",
+    "independent_usage",
+    "meaning_shift",
+    "semantic_narrowing"
+  ],
   "summary": "1000倍を表す接頭語「キロ」が単独で使われ、文脈によってキログラムやキロメートルを指すようになった例。",
   "lead": "「1000倍」でしかなかった「キロ」は、こぼれて重さにも距離にもなった。",
   "origin_meaning": {
@@ -29,13 +34,33 @@
     "from": "1000倍を表すSI接頭語",
     "to": "文脈に応じてキログラム・キロメートル",
     "mechanism": "part_extraction_and_contextual_narrowing",
-    "steps": ["接頭語（1000倍）", "キログラム／キロメートル", "「キロ」が独立", "重さ・距離そのもの"]
+    "steps": [
+      "接頭語（1000倍）",
+      "キログラム／キロメートル",
+      "「キロ」が独立",
+      "重さ・距離そのもの"
+    ]
   },
   "timeline": [
     {
+      "period": "1877",
+      "event": "久米邦武『米欧回覧実記』の例言に「『キロ』〈千〉」とあり、辞書が接頭語としての「キロ」の初出の実例として挙げている。",
+      "source_ids": ["kotobank-kilo"]
+    },
+    {
       "period": "1885",
-      "event": "日本がメートル条約に加入する。",
-      "source_ids": ["kojien-7"]
+      "event": "日本がメートル条約に加盟する。",
+      "source_ids": ["fukushima-keiryo"]
+    },
+    {
+      "period": "1891",
+      "event": "度量衡法が公布され、尺貫法とメートル法の併用が始まる。",
+      "source_ids": ["fukushima-keiryo"]
+    },
+    {
+      "period": "1921",
+      "event": "改正度量衡法が公布され、国内の単位をメートル法に統一する方針が示される（1924年施行）。",
+      "source_ids": ["fukushima-keiryo"]
     },
     {
       "period": "1960",
@@ -49,8 +74,16 @@
     }
   ],
   "usage_examples": [
-    { "text": "正月で3キロ太った。", "type": "constructed", "meaning": "キログラム" },
-    { "text": "家から駅までは2キロくらい。", "type": "constructed", "meaning": "キロメートル" }
+    {
+      "text": "正月で3キロ太った。",
+      "type": "constructed",
+      "meaning": "キログラム"
+    },
+    {
+      "text": "家から駅までは2キロくらい。",
+      "type": "constructed",
+      "meaning": "キロメートル"
+    }
   ],
   "article": [
     {
@@ -63,7 +96,7 @@
     },
     {
       "heading": "いつ独立した？",
-      "body": "日本ではメートル法の導入とともに、キログラムやキロメートルを「キロ」と略す言い方が広まったと考えられます。かつては「瓩（キログラム）」「粁（キロメートル）」のような漢字表記も使われました。単独用法の初出は現時点で確認できていません。"
+      "body": "接頭語としての「キロ」は、精選版 日本国語大辞典が1877年の『米欧回覧実記』を初出の実例として挙げています。同辞典は「キロメートル」「キログラム」などの略としての名詞用法も載せていますが、その初出は示されておらず、単独用法がいつ始まったかは現時点で確認できていません。日本がメートル条約に加盟した1885年以降、メートル法の普及とともに広まったと考えられます。"
     },
     {
       "heading": "意味は変わった？",
@@ -82,9 +115,22 @@
   "categories": ["接頭辞", "意味変化", "特定対象"],
   "related": ["giga"],
   "sources": [
-    { "id": "bipm-si-brochure", "role": "origin" },
-    { "id": "keiryo-ho", "role": "background" },
-    { "id": "kojien-7", "role": "definition" }
+    {
+      "id": "bipm-si-brochure",
+      "role": "origin"
+    },
+    {
+      "id": "kotobank-kilo",
+      "role": "definition"
+    },
+    {
+      "id": "fukushima-keiryo",
+      "role": "background"
+    },
+    {
+      "id": "keiryo-ho",
+      "role": "background"
+    }
   ],
   "confidence": "high",
   "priority": 9,

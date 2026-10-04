@@ -8,7 +8,12 @@
     "remaining": "GREEN APPLE",
     "source_part": "Mrs."
   },
-  "classification": ["proper_noun_origin", "part_extraction", "independent_usage", "reanalysis"],
+  "classification": [
+    "proper_noun_origin",
+    "part_extraction",
+    "independent_usage",
+    "reanalysis"
+  ],
   "summary": "バンド名「Mrs. GREEN APPLE」の冒頭「Mrs.」がこぼれ、既婚女性への敬称だった「ミセス」がバンドそのものを指すようになった例。",
   "lead": "既婚女性への敬称だった「ミセス」は、こぼれてひとつのバンドの呼び名になった。",
   "origin_meaning": {
@@ -30,22 +35,31 @@
     "from": "既婚女性への敬称",
     "to": "バンド「Mrs. GREEN APPLE」",
     "mechanism": "proper_noun_part_extraction",
-    "steps": ["敬称 Mrs.", "バンド名 Mrs. GREEN APPLE", "「ミセス」が独立", "バンドの呼び名"]
+    "steps": [
+      "敬称 Mrs.",
+      "バンド名 Mrs. GREEN APPLE",
+      "「ミセス」が独立",
+      "バンドの呼び名"
+    ]
   },
   "timeline": [
     {
       "period": "2013",
-      "event": "Mrs. GREEN APPLE が結成される。",
-      "source_ids": ["mga-official"]
+      "event": "Mrs. GREEN APPLE が結成される（春）。",
+      "source_ids": ["wikipedia-mga"]
     },
     {
       "period": "2015",
-      "event": "メジャーデビュー。",
-      "source_ids": ["mga-official"]
+      "event": "EMI Recordsからメジャーデビュー。",
+      "source_ids": ["wikipedia-mga"]
     }
   ],
   "usage_examples": [
-    { "text": "ミセスのライブに行ってきた。", "type": "constructed", "meaning": "Mrs. GREEN APPLE" }
+    {
+      "text": "ミセスのライブに行ってきた。",
+      "type": "constructed",
+      "meaning": "Mrs. GREEN APPLE"
+    }
   ],
   "article": [
     {
@@ -54,7 +68,7 @@
     },
     {
       "heading": "元々どういう意味だった？",
-      "body": "Mrs. は英語で既婚女性に付ける敬称です。バンド名の中では、名前を構成する一部分にすぎませんでした。"
+      "body": "Mrs. は英語で既婚女性に付ける敬称です。英語版Wikipediaによると、バンド名の「Mrs.」は、「GREEN APPLE」だけでは素朴すぎると感じた大森元貴が、大人びた印象や男女の枠にとらわれない音楽を目指す意図で付け加えたものとされます。"
     },
     {
       "heading": "いつ独立した？",
@@ -77,7 +91,14 @@
   "categories": ["固有名詞", "特定対象"],
   "related": ["junior"],
   "sources": [
-    { "id": "mga-official", "role": "origin" }
+    {
+      "id": "mga-official",
+      "role": "origin"
+    },
+    {
+      "id": "wikipedia-mga",
+      "role": "background"
+    }
   ],
   "confidence": "medium",
   "priority": 6,

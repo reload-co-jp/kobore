@@ -7,7 +7,12 @@
     "extracted": "ギガ",
     "remaining": "バイト"
   },
-  "classification": ["part_extraction", "independent_usage", "meaning_shift", "reanalysis"],
+  "classification": [
+    "part_extraction",
+    "independent_usage",
+    "meaning_shift",
+    "reanalysis"
+  ],
   "summary": "ギガバイトの一部だった「ギガ」が単独で使われ、スマートフォンの通信データ容量そのものを指すようになった例。",
   "lead": "「ギガバイト」からこぼれた「ギガ」は、いつしかデータ容量そのものを指すようになった。",
   "origin_meaning": {
@@ -29,7 +34,13 @@
     "from": "10億倍を表すSI接頭語",
     "to": "スマートフォンの通信データ容量",
     "mechanism": "part_extraction_and_reinterpretation",
-    "steps": ["SI接頭語（10億倍）", "ギガバイト（データ量の単位）", "「ギガ」が独立", "データ容量", "通信データ容量"]
+    "steps": [
+      "SI接頭語（10億倍）",
+      "ギガバイト（データ量の単位）",
+      "「ギガ」が独立",
+      "データ容量",
+      "通信データ容量"
+    ]
   },
   "timeline": [
     {
@@ -44,14 +55,26 @@
     },
     {
       "period": "2019",
-      "event": "NTTドコモが「ギガホ」「ギガライト」という名称の料金プランを発表。事業者側の商品名にも「ギガ＝データ容量」の感覚が現れる。",
+      "event": "NTTドコモが新料金プラン「ギガホ」「ギガライト」を発表（4月15日、提供開始は6月1日）。事業者の商品名にも「ギガ＝データ容量」の感覚が現れる。",
       "source_ids": ["docomo-2019-plan"]
     }
   ],
   "usage_examples": [
-    { "text": "今月はもうギガが足りない。", "type": "constructed", "meaning": "通信データ容量" },
-    { "text": "動画はWi-Fiで見ないとギガが減る。", "type": "constructed", "meaning": "通信データ容量" },
-    { "text": "128ギガのスマホに買い替えた。", "type": "constructed", "meaning": "ギガバイト" }
+    {
+      "text": "今月はもうギガが足りない。",
+      "type": "constructed",
+      "meaning": "通信データ容量"
+    },
+    {
+      "text": "動画はWi-Fiで見ないとギガが減る。",
+      "type": "constructed",
+      "meaning": "通信データ容量"
+    },
+    {
+      "text": "128ギガのスマホに買い替えた。",
+      "type": "constructed",
+      "meaning": "ギガバイト"
+    }
   ],
   "article": [
     {
@@ -83,9 +106,22 @@
   "categories": ["接頭辞", "意味変化"],
   "related": ["kilo", "net"],
   "sources": [
-    { "id": "bipm-si-brochure", "role": "origin" },
-    { "id": "soumu-whitepaper", "role": "background" },
-    { "id": "docomo-2019-plan", "role": "usage" }
+    {
+      "id": "bipm-si-brochure",
+      "role": "origin"
+    },
+    {
+      "id": "kotobank-giga",
+      "role": "definition"
+    },
+    {
+      "id": "soumu-whitepaper",
+      "role": "background"
+    },
+    {
+      "id": "docomo-2019-plan",
+      "role": "usage"
+    }
   ],
   "confidence": "medium",
   "priority": 10,

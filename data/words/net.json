@@ -7,7 +7,12 @@
     "extracted": "ネット",
     "remaining": "インター"
   },
-  "classification": ["part_extraction", "independent_usage", "meaning_shift", "semantic_narrowing"],
+  "classification": [
+    "part_extraction",
+    "independent_usage",
+    "meaning_shift",
+    "semantic_narrowing"
+  ],
   "summary": "「インターネット」の後半「ネット」がこぼれ、「網」を意味する語がインターネットそのものを指すようになった例。",
   "lead": "「網」を意味していた「ネット」は、こぼれて世界中をつなぐ回線の名前になった。",
   "origin_meaning": {
@@ -29,9 +34,25 @@
     "from": "網・網状のもの",
     "to": "インターネット",
     "mechanism": "part_extraction_and_reinterpretation",
-    "steps": ["網（net）", "ネットワーク／インターネット", "「ネット」が独立", "インターネットそのもの"]
+    "steps": [
+      "網（net）",
+      "ネットワーク（放送網・通信網）",
+      "インターネット",
+      "「ネット」が独立",
+      "インターネットそのもの"
+    ]
   },
   "timeline": [
+    {
+      "period": "1909",
+      "event": "「網」の意味の用例。精選版 日本国語大辞典は田山花袋『田舎教師』の「網(ネット)」を初出の実例として挙げる。",
+      "source_ids": ["kotobank-net"]
+    },
+    {
+      "period": "1955",
+      "event": "放送網の意味の用例（「ＣＢＳのネット」）が辞書に初出の実例として記録される。",
+      "source_ids": ["kotobank-net"]
+    },
     {
       "period": "1990s",
       "event": "インターネットが一般家庭に広がり始める。",
@@ -44,21 +65,29 @@
     }
   ],
   "usage_examples": [
-    { "text": "わからないことはネットで調べる。", "type": "constructed", "meaning": "インターネット" },
-    { "text": "サーブがネットにかかった。", "type": "constructed", "meaning": "網" }
+    {
+      "text": "わからないことはネットで調べる。",
+      "type": "constructed",
+      "meaning": "インターネット"
+    },
+    {
+      "text": "サーブがネットにかかった。",
+      "type": "constructed",
+      "meaning": "網"
+    }
   ],
   "article": [
     {
       "heading": "何からこぼれた？",
-      "body": "「ネット」は「インターネット」の後半がこぼれた言葉です。「ネットワーク」の前半とも形が同じで、どちらの影響もあったと考えられます。"
+      "body": "「ネット」は「インターネット」の後半がこぼれた言葉です。ただし辞書をたどると、それ以前から「ネットワーク」の略としての「ネット」（放送網、「パソコンネット」など）があり、インターネットの普及でその指す先が移っていったと見ることができます。"
     },
     {
       "heading": "元々どういう意味だった？",
-      "body": "net は英語で「網」を意味します。日本語でも、テニスのネットや防球ネットなど、網そのものを指す外来語として使われていました。"
+      "body": "net は英語で「網」を意味します。精選版 日本国語大辞典は、田山花袋『田舎教師』（1909）の「網(ネット)」を初出の実例に挙げています。1955年には放送網の意味での用例も記録されています。"
     },
     {
       "heading": "いつ独立した？",
-      "body": "インターネットが一般に普及した1990年代後半以降に、「ネット」単独でインターネットを指す用法が広まったと考えられます。初出は現時点で確認できていません。"
+      "body": "インターネットの略としての「ネット」は、インターネットが一般に普及した1990年代後半以降に広まったと考えられます。この用法の初出は現時点で確認できていません。"
     },
     {
       "heading": "意味は変わった？",
@@ -77,8 +106,14 @@
   "categories": ["単語", "意味変化", "特定対象"],
   "related": ["keitai", "giga"],
   "sources": [
-    { "id": "kojien-7", "role": "definition" },
-    { "id": "soumu-whitepaper", "role": "background" }
+    {
+      "id": "kotobank-net",
+      "role": "definition"
+    },
+    {
+      "id": "soumu-whitepaper",
+      "role": "background"
+    }
   ],
   "confidence": "medium",
   "priority": 7,

@@ -7,9 +7,9 @@
     "extracted": "ジュニア",
     "remaining": "千原"
   },
-  "classification": ["proper_noun_origin", "part_extraction", "independent_usage", "reanalysis"],
-  "summary": "芸名「千原ジュニア」の後半「ジュニア」がこぼれ、「年少者」を意味する語がひとりの芸人を指すようになった例。",
-  "lead": "「年下」を意味する「ジュニア」は、こぼれてひとりの芸人の呼び名になった。",
+  "classification": ["proper_noun_origin", "independent_usage", "reanalysis"],
+  "summary": "「千原ジュニア」からこぼれたように見える「ジュニア」。実は愛称が先にあり、のちに芸名へ取り込まれた例。",
+  "lead": "「ジュニア」は芸名からこぼれたのではなく、愛称が先にあった。",
   "origin_meaning": {
     "text": "英語の junior は「年少者」「息子」「下級の」などを意味する。日本語の「ジュニア」も「ジュニア選手」「ジュニアサイズ」のように使われる外来語。芸名の中では名前の一部にすぎない。"
   },
@@ -28,35 +28,49 @@
   "semantic_change": {
     "from": "年少者・下位",
     "to": "芸人・千原ジュニア",
-    "mechanism": "proper_noun_part_extraction",
-    "steps": ["junior（年少者）", "芸名 千原ジュニア", "「ジュニア」が独立", "ひとりの芸人の呼び名"]
+    "mechanism": "nickname_to_proper_noun",
+    "steps": [
+      "junior（年少者）",
+      "漫画『キャプテン』の「ジュニア」",
+      "愛称「ジュニア」",
+      "芸名 千原ジュニア（2005年）"
+    ]
   },
   "timeline": [
     {
       "period": "1989",
-      "event": "兄・千原せいじとお笑いコンビ「千原兄弟」を結成する。",
-      "source_ids": ["yoshimoto-profile-junior"]
+      "event": "兄・千原せいじとお笑いコンビ「千原兄弟」を結成。本名の千原浩史名義で活動する。",
+      "source_ids": ["wikipedia-chihara-junior"]
+    },
+    {
+      "period": "2005",
+      "event": "芸名を「千原ジュニア」に改名する。",
+      "source_ids": ["wikipedia-chihara-junior"]
     }
   ],
   "usage_examples": [
-    { "text": "ジュニアさんのトーク、やっぱり面白い。", "type": "constructed", "meaning": "千原ジュニア" }
+    {
+      "text": "ジュニアさんのトーク、やっぱり面白い。",
+      "type": "constructed",
+      "meaning": "千原ジュニア"
+    }
   ],
   "article": [
     {
       "heading": "何からこぼれた？",
-      "body": "「ジュニア」は芸名「千原ジュニア」の後半がこぼれた呼び名です。"
+      "body": "「ジュニア」は芸名「千原ジュニア」の後半がこぼれた呼び名に見えます。しかし調べると、順序は逆でした。"
     },
     {
       "heading": "元々どういう意味だった？",
-      "body": "junior は英語で「年少者」「息子」を意味します。芸名の中では、名字「千原」に続く名前の部分でした。"
+      "body": "junior は英語で「年少者」「息子」を意味します。日本語版Wikipediaによると、この愛称は漫画『キャプテン』で、イガラシの弟がチームメイトから「ジュニア」と呼ばれていたことにならい、兄・せいじのアルバイト先の店長がそう呼んだことに由来するとされます。"
     },
     {
       "heading": "いつ独立した？",
-      "body": "「ジュニア」単独でこの芸人を指す用法がいつ定着したかは、現時点で確認できていません。"
+      "body": "千原兄弟としては本名の千原浩史名義でデビューしており、「ジュニア」は愛称でした。2005年に芸名を「千原ジュニア」に改めています。つまり「ジュニア」は芸名から切り出されたのではなく、先にあった愛称が芸名に取り込まれた形です。"
     },
     {
       "heading": "意味は変わった？",
-      "body": "お笑いの文脈では、「ジュニア」は年少者一般ではなく特定の芸人を指します。兄の千原せいじと同じ名字を持つため、区別に使える後半部分が呼び名として残った、と見ることもできます。"
+      "body": "お笑いの文脈では、「ジュニア」は年少者一般ではなく特定の芸人を指します。「兄の弟」という関係を表す語が、ひとりの人物の名前になりました。"
     },
     {
       "heading": "今はどう使われる？",
@@ -64,19 +78,26 @@
     },
     {
       "heading": "なぜ定着した？",
-      "body": "コンビ「千原兄弟」の中で「千原」では二人を区別できないことが、名前の後半が呼び名になった背景として考えられます。"
+      "body": "兄弟コンビでは名字の「千原」で二人を区別できないため、弟を指す愛称が名前として機能し、最終的に芸名にまでなったと考えられます。"
     }
   ],
-  "tags": ["部分抽出", "固有名詞", "再解釈", "芸能"],
+  "tags": ["固有名詞", "再解釈", "芸能"],
   "categories": ["固有名詞", "特定対象"],
   "related": ["mrs"],
   "sources": [
-    { "id": "yoshimoto-profile-junior", "role": "origin" }
+    {
+      "id": "yoshimoto-profile-junior",
+      "role": "origin"
+    },
+    {
+      "id": "wikipedia-chihara-junior",
+      "role": "background"
+    }
   ],
-  "confidence": "medium",
+  "confidence": "low",
   "priority": 5,
   "kobore_score": {
-    "part_extraction": 3,
+    "part_extraction": 0,
     "independent_usage": 2,
     "meaning_shift": 2,
     "semantic_expansion": 0,
