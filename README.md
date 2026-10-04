@@ -164,53 +164,68 @@ Markdown / MDXをコンテンツ管理の中心にはしない。
 │   ├── categories/
 │   │   └── [category]/
 │   │       └── page.tsx
-│   └── search/
-│       └── page.tsx
+│   ├── search/
+│   │   ├── page.tsx
+│   │   └── SearchResults.tsx   # クライアント検索
+│   ├── og/
+│   │   └── [file]/
+│   │       └── route.tsx       # OGP画像（/og/giga.png）
+│   ├── layout.tsx
+│   ├── not-found.tsx
+│   ├── robots.ts
+│   ├── sitemap.ts
+│   └── globals.css
 │
 ├── data/
-│   ├── words/
-│   │   ├── giga.json
-│   │   ├── kilo.json
-│   │   ├── keitai.json
-│   │   ├── net.json
-│   │   ├── mrs.json
-│   │   └── junior.json
-│   │
-│   ├── sources.json
-│   ├── categories.json
-│   └── tags.json
+│   └── kobore.json             # 全コンテンツの正本
 │
 ├── components/
 │   ├── WordCard.tsx
 │   ├── WordTimeline.tsx
-│   ├── WordOrigin.tsx
+│   ├── WordOrigin.tsx          # こぼれ方・意味変化フロー
 │   ├── SourceList.tsx
 │   ├── RelatedWords.tsx
-│   └── SearchBox.tsx
+│   ├── SearchBox.tsx
+│   └── JsonLd.tsx
 │
-├── lib/
-│   ├── words.ts
-│   ├── sources.ts
-│   └── search.ts
-│
-└── public/
+└── lib/
+    ├── words.ts                # 型定義・読み込み・検証
+    ├── words.test.ts
+    ├── search.ts
+    └── site.ts                 # サイト定数・URL・SEO文言
 ```
+
+## 開発コマンド
+
+```text
+pnpm dev        開発サーバー
+pnpm build      静的書き出し（out/）。データ検証もここで実行
+pnpm test       データ検証・検索のテスト
+pnpm lint
+pnpm typecheck
+```
+
+OGP画像の生成時にGoogle Fontsからフォントを取得するため、ビルドにはネットワーク接続が必要。
 
 ---
 
 # 6. JSONデータ設計
 
-## 6.1 1語1JSON
+## 6.1 データファイル
 
-単語ごとに独立したJSONファイルを作成する。
+全コンテンツを `data/kobore.json` の1ファイルで管理する。
 
-例：
-
-```text
-data/words/giga.json
-data/words/kilo.json
-data/words/keitai.json
+```json
+{
+  "words": [ /* 6.2 の単語データ */ ],
+  "sources": [ /* 9. 出典データ */ ],
+  "tags": [{ "name": "部分抽出", "description": "…" }],
+  "categories": [{ "id": "固有名詞", "name": "固有名詞からこぼれた", "description": "…" }]
+}
 ```
+
+* `words` の並び順は問わない（表示は `priority` の降順）
+* `tags[].name` と `categories[].id` はそのままURLになる（`/tags/部分抽出/`）
 
 ---
 
@@ -236,6 +251,8 @@ data/words/keitai.json
 
   "summary": "ギガバイトなどの一部だった「ギガ」が単独で使われるようになった例。",
 
+  "lead": "「ギガバイト」からこぼれた「ギガ」は、いつしかデータ容量そのものを指すようになった。",
+
   "origin_meaning": {
     "text": "元となる言葉における意味"
   },
@@ -251,7 +268,8 @@ data/words/keitai.json
   "semantic_change": {
     "from": "元の意味",
     "to": "現在の意味",
-    "mechanism": "part_extraction_and_reinterpretation"
+    "mechanism": "part_extraction_and_reinterpretation",
+    "steps": ["SI接頭語", "ギガバイト", "「ギガ」が独立", "通信データ容量"]
   },
 
   "timeline": [
@@ -272,8 +290,17 @@ data/words/keitai.json
     }
   ],
 
+  "article": [
+    { "heading": "何からこぼれた？", "body": "本文" }
+  ],
+
   "tags": [
     "部分抽出",
+    "意味変化"
+  ],
+
+  "categories": [
+    "接頭辞",
     "意味変化"
   ],
 
@@ -292,9 +319,30 @@ data/words/keitai.json
 
   "priority": 10,
 
+  "kobore_score": {
+    "part_extraction": 3,
+    "independent_usage": 3,
+    "meaning_shift": 3,
+    "semantic_expansion": 1,
+    "historical_interest": 1,
+    "usage_frequency": 2,
+    "source_availability": 1
+  },
+
   "updated_at": "2026-10-04"
 }
 ```
+
+補足フィールド：
+
+* `lead`：単語ページHero下の短い説明（14.1）
+* `semantic_change.steps`：意味変化フロー（16）。2つ以上
+* `article`：記事本文（18）。見出しと本文の配列
+* `categories`：所属カテゴリ（`categories[].id`）
+* `kobore_score`：こぼれ度（31）。非表示
+* `origin.source_part`：元の言葉の中での表記が `extracted` と異なる場合に指定（例：`"Mrs. GREEN APPLE"` の `"Mrs."` → `"ミセス"`）
+* `usage_examples[].source_id`：`constructed` 以外では必須
+* `timeline[].period`：`"1990s"`（年代）または `"2019"`（年）。不明なら省略
 
 ---
 
@@ -352,7 +400,7 @@ multiple_part_extraction
 
 # 9. 出典データ
 
-出典は `sources.json` に集約する。
+出典は `data/kobore.json` の `sources` に集約する。
 
 ```json
 [
@@ -369,7 +417,7 @@ multiple_part_extraction
 ]
 ```
 
-各単語JSONからIDで参照する。
+各単語の `sources` / `timeline[].source_ids` / `usage_examples[].source_id` からIDで参照する。URLが無い資料は `url: null`。
 
 ---
 
@@ -1008,20 +1056,24 @@ meaning_shift
 
 # 33. データ検証
 
-JSON SchemaまたはTypeScriptの型定義を作成する。
+TypeScriptの型定義（`lib/words.ts`）を作成する。
 
-ビルド時に以下を検証する。
+ビルド時に以下を検証する（`validate()`）。
 
 * 必須フィールド
 * classificationの値
 * confidenceの値
+* 用例typeの値
 * source IDの存在
 * related IDの存在
+* tags / categories の存在
 * 重複ID
-* 重複slug
-* URL生成可能性
+* slug形式（英小文字・数字・ハイフン）
+* `origin.term` に切り出し部分が含まれるか
+* 実在の用例に出典があるか
+* `kobore_score` の範囲
 
-不正なJSONが存在する場合はビルドを失敗させる。
+不正なJSONが存在する場合はビルドを失敗させる。`pnpm test` でも同じ検証を実行する。
 
 ---
 
@@ -1032,10 +1084,10 @@ JSONはコンテンツデータのみを保持し、Reactコンポーネント�
 例えば、
 
 ```text
-data/words/giga.json
+data/kobore.json
 ```
 
-を変更するだけで、
+の `words` を変更するだけで、
 
 * トップページ
 * 単語ページ
