@@ -1,8 +1,11 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Script from "next/script"
 import { JsonLd } from "@/components/JsonLd"
 import { SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site"
 import "./globals.css"
+
+const GA_ID = "G-0YMPKPWBBD"
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -49,6 +52,13 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
         </p>
         <p>&copy; Reload Inc.</p>
       </footer>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="ga" strategy="afterInteractive">
+        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","${GA_ID}");`}
+      </Script>
     </body>
   </html>
 )
