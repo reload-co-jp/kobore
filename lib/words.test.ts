@@ -79,7 +79,9 @@ describe("search", () => {
         .map((d) => d.id)
         .sort()
     ).toEqual([
+      "athon",
       "burger",
+      "gate",
       "hormone",
       "junior",
       "koshien",

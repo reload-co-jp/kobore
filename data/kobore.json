@@ -2732,7 +2732,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "再解釈", "固有名詞", "食"],
       "categories": ["単語", "意味拡張", "一般名詞化"],
-      "related": ["hormone", "mega", "santa"],
+      "related": ["hormone", "mega", "santa", "bus", "gate", "aholic"],
       "sources": [
         {
           "id": "kotobank-burger",
@@ -3000,7 +3000,7 @@
       ],
       "tags": ["固有名詞", "部分抽出", "意味変化", "スポーツ"],
       "categories": ["固有名詞", "意味拡張", "一般名詞化"],
-      "related": ["mister", "gachi", "nadeshiko"],
+      "related": ["mister", "gachi", "nadeshiko", "gate", "athon"],
       "sources": [
         {
           "id": "kotobank-koshien",
@@ -4154,6 +4154,767 @@
         "source_availability": 2
       },
       "updated_at": "2026-10-04"
+    },
+    {
+      "id": "bus",
+      "term": "bus",
+      "reading": "ばす",
+      "origin": {
+        "term": "omnibus",
+        "extracted": "bus",
+        "remaining": "omni"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "reanalysis"
+      ],
+      "summary": "ラテン語で「すべての人のために」を意味する omnibus から、格語尾にすぎない「-bus」が乗り物の名前として独立した例。",
+      "lead": "ラテン語の語尾にすぎなかった「-bus」は、こぼれて乗り合い自動車になった。",
+      "origin_meaning": {
+        "text": "omnibus はラテン語 omnis（すべて）の与格複数形で「すべての人のために」。フランス語の voiture omnibus（みんなのための乗り物）から、乗合馬車を指すようになった。-bus の部分は文法上の語尾で、それ自体に意味はない。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "乗り合い自動車",
+          "description": "「路線バス」「観光バス」のように、多くの人を運ぶ大型車。",
+          "status": "common"
+        },
+        {
+          "meaning": "コンピューターの信号路",
+          "description": "デジタル大辞泉は、コンピューター内部で各装置を結ぶ信号路の意味も挙げる。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "「すべての人のために」（ラテン語の語尾）",
+        "to": "乗り合い自動車",
+        "mechanism": "inflectional_ending_extraction",
+        "steps": [
+          "omnibus（すべての人のために）",
+          "乗合馬車 omnibus",
+          "「bus」が独立",
+          "乗り合い自動車"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1829",
+          "event": "Online Etymology Dictionary によると、乗合馬車 omnibus がロンドンで使われ始める。パリでの導入は1819〜20年頃。",
+          "source_ids": ["etymonline-omnibus"]
+        },
+        {
+          "period": "1832",
+          "event": "omnibus の口語的な略として bus が確認される。",
+          "source_ids": ["etymonline-bus"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "I took the bus to work.",
+          "type": "constructed",
+          "meaning": "乗り合い自動車"
+        },
+        {
+          "text": "駅前からバスに乗る。",
+          "type": "constructed",
+          "meaning": "乗り合い自動車"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "英語の bus は omnibus の後半がこぼれた言葉です。Online Etymology Dictionary は bus を「omnibus の口語的な略」とし、1832年から確認されるとしています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "同辞典によると omnibus はラテン語で「すべての人のために」を意味し、omnis（すべて）の与格複数形です。フランス語の voiture omnibus（みんなのための乗り物）を経て、1829年からロンドンで乗合馬車を指すようになりました。デジタル大辞泉も「オムニバス」の項で《乗合自動車の意から》と説明しています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "Online Etymology Dictionary は、bus を1832年から確認される略語としています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "Online Etymology Dictionary は「現代英語の名詞 bus は、ラテン語の与格複数の語尾にすぎない」と書いています。意味を持たない文法上の語尾が、乗り物そのものの名前になりました。一方、もとの omnibus は「オムニバス映画」のように「いくつもの作品をまとめたもの」という意味で残っています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "英語でも日本語でも、bus（バス）は大型の乗り合い自動車を指します。日本語の「バス」は、すでに短くなった英語の bus を取り入れたものです。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "omnibus は長く、日常的に乗る乗り物の名前としては言いにくかったため、語末だけが残ったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "海外"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["burger", "commercial"],
+      "sources": [
+        {
+          "id": "etymonline-bus",
+          "role": "definition"
+        },
+        {
+          "id": "etymonline-omnibus",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-omnibus",
+          "role": "background"
+        }
+      ],
+      "confidence": "high",
+      "priority": 6,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 1,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "gate",
+      "term": "-gate",
+      "reading": "げーと",
+      "origin": {
+        "term": "Watergate",
+        "extracted": "gate",
+        "remaining": "Water"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion",
+        "generalization"
+      ],
+      "summary": "ウォーターゲート事件の建物名から「-gate」がこぼれ、「門」を表す語が「〜にまつわるスキャンダル」を表す接尾辞になった例。",
+      "lead": "「門」だった gate は、ウォーターゲート事件からこぼれて「スキャンダル」になった。",
+      "origin_meaning": {
+        "text": "watergate は中世英語で「水路」「水門」のこと。のちにワシントンD.C.の建物群の名前になり、1972年に民主党本部への侵入事件の舞台となった。gate の部分は本来「門」の意味。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "〜にまつわるスキャンダル",
+          "description": "語の後ろに付けて「〜をめぐる疑惑・不祥事」を表す接尾辞。",
+          "status": "common"
+        },
+        {
+          "meaning": "門・出入り口",
+          "description": "本来の意味。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "門・水門",
+        "to": "〜にまつわるスキャンダル",
+        "mechanism": "proper_noun_suffix_extraction",
+        "steps": [
+          "watergate（水門）",
+          "建物群 Watergate",
+          "ウォーターゲート事件",
+          "「-gate」が独立",
+          "スキャンダルを表す接尾辞"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1972",
+          "event": "Online Etymology Dictionary によると、6月17日にウォーターゲートの民主党全国本部に侵入事件が起き、のちにニクソン大統領が辞任する。",
+          "source_ids": ["etymonline-watergate", "etymonline-gate-suffix"]
+        },
+        {
+          "period": "1973",
+          "event": "「〜にまつわるスキャンダル」を表す接尾辞 -gate が確認される。",
+          "source_ids": ["etymonline-gate-suffix"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "The press dubbed it \"Deflategate.\"",
+          "type": "constructed",
+          "meaning": "〜にまつわるスキャンダル"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "接尾辞 -gate は、ウォーターゲート事件の Watergate の後半がこぼれた言葉です。Online Etymology Dictionary は -gate を「Watergate から切り出された」としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "同辞典によると watergate は14世紀から「水路」「水門」を意味する語で、water（水）と gate（門）の組み合わせです。のちにワシントンD.C.の建物群の名前になりました。この建物には1972年の大統領選で民主党全国本部が入っており、6月17日に侵入事件が起きます。これがニクソン大統領の辞任につながりました。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "Online Etymology Dictionary は、接尾辞 -gate を1973年から確認されるとしています。事件の翌年には、もう別の語に付けて使われていたことになります。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「門」を表していた gate が、「〜をめぐるスキャンダル」を表すようになりました。同辞典は、どんな語にも付けられる接尾辞だと説明しています。建物の名前の一部が、事件の性質そのものを表す部品になった例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "英語では、疑惑や不祥事の名前に「〜gate」を付ける形で使われます。日本語の「ゲート」には、デジタル大辞泉・精選版 日本国語大辞典ともスキャンダルの意味は載っていません。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "事件の衝撃が大きく、「Watergate＝政治スキャンダル」という連想が強く結びついたため、後半だけで「スキャンダル」が伝わるようになったと考えられます。"
+        }
+      ],
+      "tags": ["固有名詞", "部分抽出", "意味変化", "再解釈", "海外"],
+      "categories": ["固有名詞", "意味拡張", "一般名詞化"],
+      "related": ["burger", "koshien"],
+      "sources": [
+        {
+          "id": "etymonline-gate-suffix",
+          "role": "definition"
+        },
+        {
+          "id": "etymonline-watergate",
+          "role": "origin"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 2,
+        "meaning_shift": 3,
+        "semantic_expansion": 2,
+        "historical_interest": 2,
+        "usage_frequency": 1,
+        "source_availability": 1
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "athon",
+      "term": "-athon",
+      "reading": "あそん",
+      "origin": {
+        "term": "marathon",
+        "extracted": "athon",
+        "remaining": "mar"
+      },
+      "classification": [
+        "proper_noun_origin",
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion",
+        "reanalysis"
+      ],
+      "summary": "古代ギリシャの地名に由来する marathon から「-athon」がこぼれ、「長時間続く催し」を表す接尾辞になった例。",
+      "lead": "ギリシャの地名の一部だった「-athon」は、こぼれて「長時間の催し」になった。",
+      "origin_meaning": {
+        "text": "Marathōn はアッティカ地方の町の名前で、ギリシャ語で「ウイキョウの野」の意味とされる。古代の戦いの舞台で、1896年に長距離走の名前 marathon race になった。-athon の部分は地名の一部で、それ自体に意味はない。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "長時間続く催し",
+          "description": "telethon（長時間のテレビ番組）、walkathon、swimathon のように、長さと持久力を伴う活動を表す接尾辞。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "地名の一部",
+        "to": "長時間続く催し",
+        "mechanism": "proper_noun_suffix_extraction",
+        "steps": [
+          "地名 Marathōn",
+          "長距離走 marathon",
+          "「-athon」が独立",
+          "長時間続く催し"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1896",
+          "event": "Online Etymology Dictionary によると、近代オリンピックの第1回大会で長距離走 marathon race が競技として導入される。",
+          "source_ids": ["etymonline-marathon"]
+        },
+        {
+          "period": "1931",
+          "event": "-athon を使った語の例として walkathon（1931）が確認される。",
+          "source_ids": ["etymonline-athon"]
+        },
+        {
+          "period": "1949",
+          "event": "telethon（長時間のテレビ募金番組）が確認される。",
+          "source_ids": ["etymonline-telethon"]
+        },
+        {
+          "period": "1955",
+          "event": "精選版 日本国語大辞典は、平井常次郎『マイクのたわごと』（1955）の「テレソン」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-telethon"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "The charity raised millions in its annual telethon.",
+          "type": "constructed",
+          "meaning": "長時間続く催し"
+        },
+        {
+          "text": "チャリティーのテレソンに出演した。",
+          "type": "constructed",
+          "meaning": "長時間続く催し"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "接尾辞 -athon は marathon の後半がこぼれた言葉です。Online Etymology Dictionary は -athon（-thon とも）を「marathon から切り出された」語形成要素としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "同辞典によると marathon は、古代の有名な戦いの舞台となったアッティカ地方の町 Marathōn にちなみます。地名は文字どおりには「ウイキョウの野」とされます。1896年の近代オリンピック復活の際に長距離走の競技名になりました。-athon は地名の一部で、意味の区切りではありませんでした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "Online Etymology Dictionary は -athon を使った語の例として、walkathon（1931）、talkathon（1934）、telethon（1949）などを挙げています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "地名の一部だった音のかたまりが、「長時間続き、持久力を要する活動」を表す接尾辞になりました。デジタル大辞泉と精選版 日本国語大辞典も、「テレソン」をテレビジョンとマラソンの合成語としています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "英語では telethon のほか、Online Etymology Dictionary が挙げる swimathon（1968）など、さまざまな語が作られてきました。日本語でも「テレソン」として取り入れられています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "マラソンが「長く、つらいが、やり遂げるもの」の代名詞になったため、その語尾だけで同じイメージを伝えられるようになったと考えられます。"
+        }
+      ],
+      "tags": [
+        "固有名詞",
+        "部分抽出",
+        "意味変化",
+        "再解釈",
+        "スポーツ",
+        "海外"
+      ],
+      "categories": ["固有名詞", "意味拡張", "一般名詞化"],
+      "related": ["koshien", "burger", "gate"],
+      "sources": [
+        {
+          "id": "etymonline-athon",
+          "role": "definition"
+        },
+        {
+          "id": "etymonline-marathon",
+          "role": "origin"
+        },
+        {
+          "id": "etymonline-telethon",
+          "role": "usage"
+        },
+        {
+          "id": "kotobank-telethon",
+          "role": "usage"
+        }
+      ],
+      "confidence": "high",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 2,
+        "meaning_shift": 3,
+        "semantic_expansion": 2,
+        "historical_interest": 2,
+        "usage_frequency": 1,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "aholic",
+      "term": "-aholic",
+      "reading": "あほりっく",
+      "origin": {
+        "term": "alcoholic",
+        "extracted": "holic",
+        "remaining": "alco"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion",
+        "reanalysis"
+      ],
+      "summary": "alcoholic を「alco＋holic」と切り直し、「-aholic」が「〜中毒の人」を表す接尾辞として独立した例。",
+      "lead": "alcohol に -ic が付いただけだった語の後半は、こぼれて「〜中毒」になった。",
+      "origin_meaning": {
+        "text": "alcoholic は alcohol（アルコール）＋ -ic（〜の）で、「アルコールの」という形容詞。のちに「アルコール依存の人」を指すようになった。本来の区切りは alcohol-ic で、-holic という部分は存在しなかった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "〜中毒の人",
+          "description": "workaholic（仕事中毒）、shopaholic（買い物中毒）、chocoholic（チョコ中毒）のように、多く冗談めかして使う接尾辞。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "「アルコールの」（alcohol＋-ic）",
+        "to": "〜中毒の人",
+        "mechanism": "reanalysis_and_suffix_extraction",
+        "steps": [
+          "alcohol＋-ic（アルコールの）",
+          "アルコール依存の人",
+          "「-aholic」が独立",
+          "〜中毒の人"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1790",
+          "event": "Online Etymology Dictionary によると、alcoholic が「アルコールの」の意味で確認される。依存者を指す名詞用法は1891年から。",
+          "source_ids": ["etymonline-aholic"]
+        },
+        {
+          "period": "1965",
+          "event": "-aholic を使った最初の例として sugarholic、foodoholic（1965）が確認される。",
+          "source_ids": ["etymonline-aholic"]
+        },
+        {
+          "period": "1979",
+          "event": "精選版 日本国語大辞典は、小林信彦『紳士同盟』（1979）の「働き中毒(ワーク・ホリック)」を「ワーカホリック」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-workaholic"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "She admits she's a bit of a shopaholic.",
+          "type": "constructed",
+          "meaning": "〜中毒の人"
+        },
+        {
+          "text": "彼は典型的なワーカホリックだ。",
+          "type": "constructed",
+          "meaning": "〜中毒の人"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "接尾辞 -aholic は alcoholic の後半がこぼれた言葉です。Online Etymology Dictionary は -aholic を「alcoholic から切り出された」語形成要素としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "同辞典によると alcoholic は alcohol ＋ -ic で、1790年から「アルコールの」という意味で確認されます。「アルコール依存の人」を指す名詞の用法は1891年からです。本来の区切りは alcohol-ic で、-holic という部分はありませんでした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "Online Etymology Dictionary は、-aholic の最初の例として sugarholic と foodoholic（1965）を挙げ、続いて workaholic、chocoholic、shopaholic（1984）などを挙げています。一方、workaholic の成立時期は出典によって違います。同辞典は workaholic の項で1961年の造語とし、デジタル大辞泉と精選版 日本国語大辞典は1970年代にアメリカの作家オーツが作った語としています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "語の切れ目ではない場所で切り直された -aholic が、「〜に依存している人」を表す部品になりました。同辞典は、多くは軽蔑的または冗談めかした使い方だと説明しています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "英語では shopaholic、chocoholic など、身近な依存を冗談めかして言う語が作られています。日本語でも「ワーカホリック」は仕事中毒の意味で定着しています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "alcoholic という語が「依存」のイメージと強く結びついていたため、その語尾が依存を表す部品として受け取られたと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "海外"],
+      "categories": ["単語", "意味拡張"],
+      "related": ["burger", "athon"],
+      "sources": [
+        {
+          "id": "etymonline-aholic",
+          "role": "definition"
+        },
+        {
+          "id": "etymonline-workaholic",
+          "role": "background"
+        },
+        {
+          "id": "kotobank-workaholic",
+          "role": "background"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 2,
+        "meaning_shift": 2,
+        "semantic_expansion": 2,
+        "historical_interest": 1,
+        "usage_frequency": 1,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "piano",
+      "term": "piano",
+      "reading": "ぴあの",
+      "origin": {
+        "term": "pianoforte",
+        "extracted": "piano",
+        "remaining": "forte"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「弱く・強く」を意味する pianoforte から「piano（弱く）」がこぼれ、楽器そのものを指すようになった例。",
+      "lead": "「弱く」という意味だった piano は、こぼれて鍵盤楽器の名前になった。",
+      "origin_meaning": {
+        "text": "pianoforte はイタリア語 piano e forte（弱くと強く）から。正式には gravicembalo col piano e forte（弱音と強音の出るハープシコード）。音の強弱を自在に出せることを表した名前で、piano は「弱く」の意味だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "鍵盤楽器のピアノ",
+          "description": "ハンマーで弦を打って音を出す鍵盤楽器。",
+          "status": "common"
+        },
+        {
+          "meaning": "弱く（強弱記号）",
+          "description": "本来の意味。記号 p。⇔ forte。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "弱く",
+        "to": "鍵盤楽器",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "piano（弱く）",
+          "pianoforte（弱音と強音の出る楽器）",
+          "「piano」が独立",
+          "鍵盤楽器そのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1710s",
+          "event": "Online Etymology Dictionary によると、バルトロメオ・クリストフォリが gravicembalo col piano e forte と名付けたとされる（1710年頃）。",
+          "source_ids": ["etymonline-pianoforte"]
+        },
+        {
+          "period": "1767",
+          "event": "英語で pianoforte が確認される。",
+          "source_ids": ["etymonline-pianoforte"]
+        },
+        {
+          "period": "1803",
+          "event": "英語で、pianoforte の短縮形として楽器の piano が確認される。",
+          "source_ids": ["etymonline-piano"]
+        },
+        {
+          "period": "1861",
+          "event": "精選版 日本国語大辞典は、『玉石志林』（1861〜64）の「ピアノの遊をなせり」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-piano"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "She plays the piano every evening.",
+          "type": "constructed",
+          "meaning": "鍵盤楽器のピアノ"
+        },
+        {
+          "text": "ここはピアノで弾いてください。",
+          "type": "constructed",
+          "meaning": "弱く（強弱記号）"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "楽器の piano は pianoforte の前半がこぼれた言葉です。Online Etymology Dictionary は piano を pianoforte の短縮形とし、デジタル大辞泉も「ピアノフォルテの略」としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "Online Etymology Dictionary によると pianoforte はイタリア語 piano e forte（弱くと強く）から来ています。発明者のクリストフォリが gravicembalo col piano e forte（弱音と強音の出るハープシコード）と名付けたとされ、ダンパーで音の強弱を変えられることが、ハープシコードからの大きな変化でした。デジタル大辞泉も、弱音（ピアノ）と強音（フォルテ）が自在に出せるところからの名前だと説明しています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "Online Etymology Dictionary は、英語の pianoforte を1767年、楽器名の piano を1803年から確認されるとしています。日本語の「ピアノ」は、精選版 日本国語大辞典が『玉石志林』（1861〜64）を初出の実例に挙げています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「弱く」という演奏の指示を表す語が、楽器そのものの名前になりました。楽器の特徴は「弱くも強くも弾ける」ことなのに、残ったのは「弱く」の半分だけです。強弱記号の piano（p）の意味も別に残っています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "英語でも日本語でも、piano（ピアノ）といえばまず楽器を指します。楽譜の上では今も「弱く」の意味で使われます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "pianoforte は長く、楽器が広く普及するにつれて前半だけで呼ばれるようになったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "音楽", "海外"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["cello", "bus"],
+      "sources": [
+        {
+          "id": "etymonline-piano",
+          "role": "definition"
+        },
+        {
+          "id": "etymonline-pianoforte",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-piano",
+          "role": "definition"
+        }
+      ],
+      "confidence": "high",
+      "priority": 6,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
+    },
+    {
+      "id": "cello",
+      "term": "cello",
+      "reading": "ちぇろ",
+      "origin": {
+        "term": "violoncello",
+        "extracted": "cello",
+        "remaining": "violon"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "reanalysis"
+      ],
+      "summary": "violoncello から、「小さい」を表す語尾にすぎない「-cello」がこぼれ、楽器そのものの名前になった例。",
+      "lead": "「小さい」を表す語尾だった -cello は、こぼれて大型の弦楽器になった。",
+      "origin_meaning": {
+        "text": "violoncello はイタリア語で、violone（大きなヴィオール）に「小さい」を表す語尾 -cello が付いた形。violone 自体も viola に「大きい」を表す -one が付いた語で、violoncello は「小さな大ヴィオラ」という意味になる。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "弦楽器のチェロ",
+          "description": "バイオリン属の大型の低音楽器。奏者は椅子に座り、楽器を両膝の間に挟んで弾く。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "「小さい」を表す語尾",
+        "to": "低音の弦楽器",
+        "mechanism": "diminutive_suffix_extraction",
+        "steps": [
+          "viola＋-one（大きなヴィオール）",
+          "violone＋-cello（小さな大ヴィオール）",
+          "「cello」が独立",
+          "弦楽器そのもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1724",
+          "event": "Online Etymology Dictionary によると、英語で violoncello が確認される。",
+          "source_ids": ["etymonline-violoncello"]
+        },
+        {
+          "period": "1857",
+          "event": "violoncello の短縮形として cello が確認される。",
+          "source_ids": ["etymonline-cello"]
+        },
+        {
+          "period": "1955",
+          "event": "精選版 日本国語大辞典は、井上靖『黒い蝶』（1955）の「チェロのカザルス」を初出の実例として挙げる。",
+          "source_ids": ["kotobank-cello"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "He has played the cello since he was six.",
+          "type": "constructed",
+          "meaning": "弦楽器のチェロ"
+        },
+        {
+          "text": "チェロの低い音が好きだ。",
+          "type": "constructed",
+          "meaning": "弦楽器のチェロ"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "cello は violoncello の後半がこぼれた言葉です。Online Etymology Dictionary は cello を violoncello の短縮形としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "同辞典によると violoncello はイタリア語で、violone（大きなヴィオール）に「小さい」を表す語尾が付いた形です。violone は viola に「大きい」を表す接尾辞 -one が付いた語なので、violoncello は「小さな大ヴィオラ」という意味になります。-cello は、本来は大きさを表す語尾にすぎませんでした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "Online Etymology Dictionary は、英語の violoncello を1724年、短縮形の cello を1857年から確認されるとしています。日本語の「チェロ」は、精選版 日本国語大辞典が井上靖『黒い蝶』（1955）を初出の実例に挙げています。同辞典は別名として「ビオロンチェロ」も載せています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「小さい」という意味の語尾が、全長約120センチの大きな楽器の名前になりました。楽器の本体を表す violon の部分は消え、大きさを表す語尾だけが残っています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "英語でも日本語でも、cello（チェロ）は弦楽器の名前として定着しています。日本語では、精選版 日本国語大辞典・デジタル大辞泉とも「セロ」という別の形も載せています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "violoncello は長く言いにくいため、短く響きのよい語尾が名前として残ったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "音楽", "海外"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["piano", "bus"],
+      "sources": [
+        {
+          "id": "etymonline-cello",
+          "role": "definition"
+        },
+        {
+          "id": "etymonline-violoncello",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-cello",
+          "role": "definition"
+        }
+      ],
+      "confidence": "high",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 2,
+        "usage_frequency": 1,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-04"
     }
   ],
   "sources": [
@@ -4906,6 +5667,186 @@
       "published_at": null,
       "url": "https://www.etymonline.com/word/Santa%20Claus",
       "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-omnibus",
+      "type": "dictionary",
+      "title": "omnibus (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/omnibus",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-bus",
+      "type": "dictionary",
+      "title": "bus (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/bus",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-omnibus",
+      "type": "dictionary",
+      "title": "「オムニバス」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%82%AA%E3%83%A0%E3%83%8B%E3%83%90%E3%82%B9",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-gate-suffix",
+      "type": "dictionary",
+      "title": "-gate (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/-gate",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-watergate",
+      "type": "dictionary",
+      "title": "watergate (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/Watergate",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-athon",
+      "type": "dictionary",
+      "title": "-athon (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/-athon",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-marathon",
+      "type": "dictionary",
+      "title": "marathon (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/marathon",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-telethon",
+      "type": "dictionary",
+      "title": "telethon (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/telethon",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-telethon",
+      "type": "dictionary",
+      "title": "「テレソン」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%86%E3%83%AC%E3%82%BD%E3%83%B3",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-aholic",
+      "type": "dictionary",
+      "title": "-aholic (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/-aholic",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-workaholic",
+      "type": "dictionary",
+      "title": "workaholic (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/workaholic",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-workaholic",
+      "type": "dictionary",
+      "title": "「ワーカホリック」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%AF%E3%83%BC%E3%82%AB%E3%83%9B%E3%83%AA%E3%83%83%E3%82%AF",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-piano",
+      "type": "dictionary",
+      "title": "piano (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/piano",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-pianoforte",
+      "type": "dictionary",
+      "title": "pianoforte (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/pianoforte",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-piano",
+      "type": "dictionary",
+      "title": "「ピアノ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%94%E3%82%A2%E3%83%8E",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-cello",
+      "type": "dictionary",
+      "title": "cello (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/cello",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "etymonline-violoncello",
+      "type": "dictionary",
+      "title": "violoncello (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/violoncello",
+      "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-cello",
+      "type": "dictionary",
+      "title": "「チェロ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%81%E3%82%A7%E3%83%AD",
+      "accessed_at": "2026-10-04"
     }
   ],
   "tags": [
@@ -4952,6 +5893,10 @@
     {
       "name": "食",
       "description": "食べもの・料理にまつわる言葉。"
+    },
+    {
+      "name": "海外",
+      "description": "英語など、日本語以外の言語で起きたこぼれことば。"
     }
   ],
   "categories": [
