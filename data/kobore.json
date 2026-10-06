@@ -3370,7 +3370,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "再解釈", "通信", "食"],
       "categories": ["単語", "意味拡張"],
-      "related": ["super", "mega"],
+      "related": ["super", "mega", "outer", "half"],
       "sources": [
         {
           "id": "kotobank-soft",
@@ -5192,6 +5192,668 @@
         "source_availability": 2
       },
       "updated_at": "2026-10-06"
+    },
+    {
+      "id": "outer",
+      "term": "アウター",
+      "reading": "あうたー",
+      "origin": {
+        "term": "アウターウエア",
+        "extracted": "アウター",
+        "remaining": "ウエア"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「外側の」を表す「アウター」が「アウターウエア」から単独で使われ、上に着る衣類を指すようになった例。",
+      "lead": "「外側」という意味だった「アウター」は、こぼれてコートやジャケットになった。",
+      "origin_meaning": {
+        "text": "英語 outer は「外側の」。日本語でも「アウターマッスル」のように、外側にあることを表す。複合語「アウターウエア」の中では、前半で「外側に着る」という位置を表す部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "上に着る衣類",
+          "description": "「アウターを羽織る」「冬のアウター」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "外側にあること",
+          "description": "本来の意味。「アウターマッスル」など、複合語の中で使われる。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "外側にあること",
+        "to": "上に着る衣類",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "outer（外側の）",
+          "アウターウエア（上着類）",
+          "「アウター」が独立",
+          "上に着る衣類"
+        ]
+      },
+      "timeline": [
+        {
+          "event": "デジタル大辞泉は「アウター」の語義に「外側にあること」と「『アウターウエア』の略」を、精選版 日本国語大辞典は「outerwear から」の名詞として「アウトウエア」と同じ意味を載せる。",
+          "source_ids": ["kotobank-outer"]
+        },
+        {
+          "period": "2024",
+          "event": "All About の記事が、コートを指して「ジャケットの上に着るアウター」と書く。",
+          "source_ids": ["allabout-2024-outer"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "テーラードジャケットの上に着るアウター",
+          "type": "web",
+          "source_id": "allabout-2024-outer",
+          "meaning": "上に着る衣類"
+        },
+        {
+          "text": "寒くなってきたので、厚手のアウターを出した。",
+          "type": "constructed",
+          "meaning": "上に着る衣類"
+        },
+        {
+          "text": "体幹のアウターマッスルを鍛える。",
+          "type": "constructed",
+          "meaning": "外側にあること"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「アウター」は「アウターウエア（outerwear）」の前半がこぼれた言葉です。デジタル大辞泉は「アウター」の語義のひとつに「『アウターウエア』の略」を載せ、精選版 日本国語大辞典も「outerwear から」としています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 outer は「外側の」という意味です。デジタル大辞泉は「アウター」の最初の語義として「外側にあること。外部」を挙げ、「アウターマッスル」を例にしています。「アウターウエア」の中では、服を着る位置を表す部分でした。デジタル大辞泉は「アウターウエア」を「上着類。カーディガン・スーツ・コートなど、上にはおる衣類」と説明しています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "「アウター」が単独で上着を指すようになった時期や初出は、現時点で確認できていません。精選版 日本国語大辞典は「アウトウエア」の説明にも「アウター」を並べており、辞書に載るほど定着していることはわかります。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「外側の」という位置を表す語が、こぼれて衣類そのものを指す名詞になりました。広い「外側」から「外側に着る服」へ、指す範囲が狭まった例です。精選版 日本国語大辞典は対になる語として「インナー」を挙げており、反対側もいっしょにこぼれています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "服の話で「アウター」といえば、いちばん外側に着るものです。All About の記事（2024）は、コートを「ジャケットの上に着るアウター」と書いています。辞書はカーディガンやスーツも上着類に含めますが、日常ではコートやジャケットなど、防寒用の外側の服を指すことが多いと考えられます。「外側」の意味は「アウターマッスル」など複合語の中に残っています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「アウターウエア」は長く、服の話をしている場面では「ウエア」がなくても衣類のことだとわかります。さらに「インナー」と対で使えるため、重ね着の説明に便利だったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "暮らし"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["soft"],
+      "sources": [
+        {
+          "id": "kotobank-outer",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-outerwear",
+          "role": "origin"
+        },
+        {
+          "id": "allabout-2024-outer",
+          "role": "usage"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 3,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-06"
+    },
+    {
+      "id": "american",
+      "term": "アメリカン",
+      "reading": "あめりかん",
+      "origin": {
+        "term": "アメリカンコーヒー",
+        "extracted": "アメリカン",
+        "remaining": "コーヒー"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「アメリカの」を表す「アメリカン」が「アメリカンコーヒー」から単独で使われ、浅煎りで薄めにいれたコーヒーを指すようになった例。",
+      "lead": "「アメリカの」という意味だった「アメリカン」は、こぼれて薄めのコーヒーになった。",
+      "origin_meaning": {
+        "text": "英語 American は「アメリカの」「アメリカ人」。日本語でも「アメリカンスタイル」のように、ほかの外来語の上について「アメリカ合衆国の」「米国風の」を表す。複合語「アメリカンコーヒー」の中では、前半でコーヒーの種類を表す部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "アメリカンコーヒー",
+          "description": "喫茶店で「アメリカンひとつ」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "アメリカの・米国風の",
+          "description": "本来の意味。「アメリカンスタイル」など、複合語の中で使われる。",
+          "status": "common"
+        },
+        {
+          "meaning": "アメリカ人",
+          "description": "デジタル大辞泉が最初の語義に挙げる。",
+          "status": "rare"
+        }
+      ],
+      "semantic_change": {
+        "from": "アメリカの・米国風の",
+        "to": "浅煎りで薄めにいれたコーヒー",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "American（アメリカの）",
+          "アメリカンコーヒー（薄めのコーヒー）",
+          "「アメリカン」が独立",
+          "浅煎りで薄めのコーヒー"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1948",
+          "event": "精選版 日本国語大辞典は、大岡昇平『俘虜記』（1948）の「アメリカン‐スタイルの理髪」を、造語要素「アメリカン」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-american"]
+        },
+        {
+          "event": "デジタル大辞泉は「アメリカン」の語義に「アメリカンコーヒーのこと」を載せる。",
+          "source_ids": ["kotobank-american"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "ホットのアメリカンをひとつください。",
+          "type": "constructed",
+          "meaning": "アメリカンコーヒー"
+        },
+        {
+          "text": "アメリカンスタイルの朝食。",
+          "type": "constructed",
+          "meaning": "アメリカの・米国風の"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「アメリカン」は「アメリカンコーヒー」の前半がこぼれた言葉です。デジタル大辞泉は「アメリカン」の語義のひとつに「アメリカンコーヒーのこと」を載せています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 American は「アメリカの」「アメリカ人」という意味です。精選版 日本国語大辞典は「アメリカン」を、ほかの外来語の上について「アメリカ合衆国の」「アメリカ合衆国風の」の意の複合語をつくる造語要素として載せ、大岡昇平『俘虜記』（1948）の「アメリカン‐スタイルの理髪」を初出の実例に挙げています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "「アメリカンコーヒー」の略として「アメリカン」が単独で使われ始めた時期や初出は、現時点で確認できていません。飲み物がわかる辞典は「アメリカンコーヒー」を和製語としており、この略し方も日本で生まれたものと考えられます。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "国や様式を表す語が、こぼれて特定の飲み物を指す名詞になりました。精選版 日本国語大辞典は「アメリカンコーヒー」を「豆を浅く炒り、薄めにいれたコーヒー」と説明しています。百科事典マイペディアによると、アメリカ人好みのコーヒーということで日本ではこの名があるそうです。「アメリカの」から「薄めのコーヒー」へ、指す範囲が大きく狭まった例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "喫茶店で「アメリカン」とだけ言えば、ふつうはコーヒーの注文です。一方で「アメリカンスタイル」のように、複合語の中では今も「アメリカの」「米国風の」という意味で使われます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "喫茶店のメニューでは、すでにコーヒーを頼む場面なので、「コーヒー」を言わなくても通じます。ブレンドなどほかのコーヒーと並べて呼び分けるのに、前半だけで十分だったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "食"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": [],
+      "sources": [
+        {
+          "id": "kotobank-american",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-american-coffee",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-06"
+    },
+    {
+      "id": "major",
+      "term": "メジャー",
+      "reading": "めじゃー",
+      "origin": {
+        "term": "メジャーリーグ",
+        "extracted": "メジャー",
+        "remaining": "リーグ"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「大きい・主要な」を表す「メジャー」が「メジャーリーグ」から単独で使われ、アメリカのプロ野球の最上位リーグを指すようになった例。",
+      "lead": "「大きい」という意味だった「メジャー」は、こぼれてアメリカの野球になった。",
+      "origin_meaning": {
+        "text": "英語 major は「大きい方の」「主要な」。日本語でも「メジャーレーベル」「メジャーな曲」のように、規模が大きいことや広く知られていることを表す。複合語「メジャーリーグ」の中では、前半でリーグの格を表す部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "メジャーリーグ",
+          "description": "「メジャーに挑戦する」「メジャー移籍」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "規模が大きいさま・有名なさま",
+          "description": "「メジャーな曲」「メジャーデビュー」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "長調",
+          "description": "音楽用語として。",
+          "status": "common"
+        },
+        {
+          "meaning": "国際石油資本",
+          "description": "英語 Majors から。",
+          "status": "rare"
+        }
+      ],
+      "semantic_change": {
+        "from": "大きい・主要な",
+        "to": "アメリカのプロ野球の最上位リーグ",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "major（大きい方の・主要な）",
+          "メジャーリーグ（最上位のリーグ）",
+          "「メジャー」が独立",
+          "アメリカのプロ野球の最上位リーグ"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1934",
+          "event": "精選版 日本国語大辞典は、飛田穂洲『熱球三十年』（1934）の「メイヂャーリーグ」を「メジャーリーグ」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-major-league"]
+        },
+        {
+          "event": "デジタル大辞泉は「メジャー」の語義に「（the majors）メジャーリーグのこと」を載せる。",
+          "source_ids": ["kotobank-major"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "高校時代からメジャーで投げるのが夢だった。",
+          "type": "constructed",
+          "meaning": "メジャーリーグ"
+        },
+        {
+          "text": "あのバンドはもうメジャーだ。",
+          "type": "constructed",
+          "meaning": "有名なさま"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "野球の話の「メジャー」は「メジャーリーグ」の前半がこぼれた言葉です。デジタル大辞泉は「メジャー」の語義のひとつに「（the majors）メジャーリーグのこと」を載せ、反対の語として「マイナー」を挙げています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 major は「大きい方の」「主要な」という意味です。デジタル大辞泉は「規模の大きなこと。主要な位置を占めること」「広く知られているさま」「長調」などを挙げています。「メジャーリーグ」は、精選版 日本国語大辞典によると「アメリカのプロ野球の最上位のリーグ」で、飛田穂洲『熱球三十年』（1934）の「メイヂャーリーグ」を初出の実例に挙げています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "日本語で「メジャー」が単独でメジャーリーグを指すようになった時期や初出は、現時点で確認できていません。デジタル大辞泉が英語の the majors を添えていることから、英語でも同じ略し方があり、日本語はそれを取り入れたと考えられます。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「大きい方の」という形容の語が、こぼれて特定のリーグを指す名詞になりました。広い「大きい・主要な」から、アメリカのプロ野球の最上位リーグへと、指す対象が狭まった例です。精選版 日本国語大辞典は、英語 Majors から来た「国際石油資本」の意味も載せており、「大きい方の」が別の分野でもこぼれています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "スポーツの話で「メジャーに行く」と言えば、メジャーリーグへの移籍のことです。「メジャーな曲」のように形容の意味でも使われます。なお、巻き尺の「メジャー」は英語 measure から来た別の語で、デジタル大辞泉・精選版 日本国語大辞典とも別の見出しに分けています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "日本人選手の移籍が話題になる場面では、「メジャーリーグ」と言わなくても野球の話だとわかります。英語でも the majors と言うため、そのまま略した形が受け入れやすかったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "スポーツ"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["minor"],
+      "sources": [
+        {
+          "id": "kotobank-major",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-major-league",
+          "role": "origin"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-06"
+    },
+    {
+      "id": "minor",
+      "term": "マイナー",
+      "reading": "まいなー",
+      "origin": {
+        "term": "マイナーリーグ",
+        "extracted": "マイナー",
+        "remaining": "リーグ"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「小さい・重要でない」を表す「マイナー」が「マイナーリーグ」から単独で使われ、アメリカのプロ野球の下位リーグを指すようになった例。",
+      "lead": "「小さい」という意味だった「マイナー」は、こぼれてメジャーを目指す選手たちの場所になった。",
+      "origin_meaning": {
+        "text": "英語 minor は「小さい方の」「重要でない」。日本語でも「マイナーチェンジ」「マイナーなスポーツ」のように、小さいことやあまり知られていないことを表す。複合語「マイナーリーグ」の中では、前半でリーグの格を表す部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "マイナーリーグ",
+          "description": "「マイナー契約」「マイナーに降格」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "小さいさま・有名でないさま",
+          "description": "「マイナーな作家」「マイナーチェンジ」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "短調",
+          "description": "音楽用語として。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "小さい・重要でない",
+        "to": "アメリカのプロ野球の下位リーグ",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "minor（小さい方の）",
+          "マイナーリーグ（下位のリーグ）",
+          "「マイナー」が独立",
+          "アメリカのプロ野球の下位リーグ"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1914",
+          "event": "精選版 日本国語大辞典は、形容の「マイナー」が『外来語辞典』（1914）に載っていることを示す。",
+          "source_ids": ["kotobank-minor"]
+        },
+        {
+          "period": "1928",
+          "event": "精選版 日本国語大辞典は、飛田穂洲『野球生活の思ひ出』（1928）を「マイナーリーグ」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-minor-league"]
+        },
+        {
+          "event": "デジタル大辞泉は「マイナー」の語義に「（the minors）マイナーリーグのこと」を載せる。",
+          "source_ids": ["kotobank-minor"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "マイナー契約からメジャー昇格を目指す。",
+          "type": "constructed",
+          "meaning": "マイナーリーグ"
+        },
+        {
+          "text": "知る人ぞ知るマイナーな映画。",
+          "type": "constructed",
+          "meaning": "有名でないさま"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "野球の話の「マイナー」は「マイナーリーグ」の前半がこぼれた言葉です。デジタル大辞泉は「マイナー」の語義のひとつに「（the minors）マイナーリーグのこと」を載せ、反対の語として「メジャー」を挙げています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 minor は「小さい方の」「重要でない」という意味です。精選版 日本国語大辞典は「小さいさま。少ないさま。あまり重要でないさま」を挙げ、『外来語辞典』（1914）に載っていることを示しています。「マイナーリーグ」は同じ辞典によると「メジャーリーグを除いた下位リーグの総称」で、飛田穂洲『野球生活の思ひ出』（1928）を初出の実例に挙げています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "日本語で「マイナー」が単独でマイナーリーグを指すようになった時期や初出は、現時点で確認できていません。デジタル大辞泉が英語の the minors を添えていることから、英語でも同じ略し方があり、日本語はそれを取り入れたと考えられます。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「小さい方の」という形容の語が、こぼれて特定のリーグを指す名詞になりました。世界大百科事典（旧版）によると、マイナーリーグは3A・2A・Aなど、大リーグ球団の傘下にある二軍組織の総称です。「小さい」から「メジャーの下の階層」へと、指す対象が狭まった例です。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "スポーツの話で「マイナー契約」「マイナー降格」と言えば、マイナーリーグのことです。一方で「マイナーな作家」のように、あまり知られていないという形容の意味でも広く使われます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「メジャー」と対で使われるため、片方が略されればもう片方も略しやすかったと考えられます。英語でも the minors と言うことも、略した形を受け入れやすくしたと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "スポーツ"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["major"],
+      "sources": [
+        {
+          "id": "kotobank-minor",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-minor-league",
+          "role": "origin"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 3,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 2,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 1,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-06"
+    },
+    {
+      "id": "half",
+      "term": "ハーフ",
+      "reading": "はーふ",
+      "origin": {
+        "term": "half-blood",
+        "extracted": "ハーフ",
+        "remaining": "blood",
+        "source_part": "half"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion"
+      ],
+      "summary": "「半分」を表す「ハーフ」が half-blood やハーフバックなど複数の語から単独で使われ、人やスポーツのポジションなどを指すようになった例。",
+      "lead": "「半分」という意味だった「ハーフ」は、こぼれて人を指す言葉にもなった。",
+      "origin_meaning": {
+        "text": "英語 half は「半分」「二分の一」。日本語でも「ハーフサイズ」「ハーフボトル」のように、ほかの外来語について「半分の」を表す。複合語の中では、前半で量や位置を表す部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "親の一方が外国出身の人",
+          "description": "日本語独自の用法。使う相手や状況に注意が必要とされる。",
+          "status": "common"
+        },
+        {
+          "meaning": "試合の前半・後半",
+          "description": "サッカーやラグビーで「45分ハーフ」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "ハーフバック",
+          "description": "ラグビーなどのポジション名として。",
+          "status": "common"
+        },
+        {
+          "meaning": "ゴルフの9ホール",
+          "description": "1ラウンドの半分。",
+          "status": "common"
+        },
+        {
+          "meaning": "半分",
+          "description": "本来の意味。「ハーフサイズ」など、複合語の中で使われる。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "半分",
+        "to": "人・試合の区切り・ポジションなど",
+        "mechanism": "part_extraction_from_multiple_compounds",
+        "steps": [
+          "half（半分）",
+          "half-blood・ハーフバックなどの複合語",
+          "「ハーフ」が独立",
+          "文脈ごとに別のもの"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1914",
+          "event": "精選版 日本国語大辞典は、「半分」の意味の「ハーフ」が『外来語辞典』（1914）に載っていることを示す。",
+          "source_ids": ["kotobank-half"]
+        },
+        {
+          "period": "1935",
+          "event": "精選版 日本国語大辞典は、横光利一『家族会議』（1935）の「ハーフだけ廻りませう」を、ゴルフの意味の初出の実例として挙げる。",
+          "source_ids": ["kotobank-half"]
+        },
+        {
+          "period": "1970s",
+          "event": "人を指す「ハーフ」が一般に使われ始めたのは1970年ごろとされる。田口（2017）は、1970〜80年代に「混血児」に代わって「ハーフ」の言説が現れたと整理している。",
+          "source_ids": ["jsr-2017-half", "gendai-2018-half"]
+        },
+        {
+          "period": "1972",
+          "event": "精選版 日本国語大辞典は、畑山博『いつか汽笛を鳴らして』（1972）を、half-blood の略としての「ハーフ」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-half"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "ハーフだけ廻りませう",
+          "type": "book",
+          "source_id": "kotobank-half",
+          "meaning": "ゴルフの9ホール"
+        },
+        {
+          "text": "前半のハーフを1点リードで折り返した。",
+          "type": "constructed",
+          "meaning": "試合の前半・後半"
+        },
+        {
+          "text": "ランチはハーフサイズにした。",
+          "type": "constructed",
+          "meaning": "半分"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「ハーフ」は、half を前半にもつ複数の語からこぼれた言葉です。精選版 日本国語大辞典は、人を指す「ハーフ」を英語 half-blood の略とし、スポーツでは「ハーフバックのこと」も載せています。デジタル大辞泉も「『ハーフバック』の略」を挙げています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 half は「半分」「二分の一」という意味です。精選版 日本国語大辞典によると、この意味の「ハーフ」は『外来語辞典』（1914）に載っており、「ハーフサイズ」のように他の外来語とともに語素的に用いるとしています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は、ゴルフの9ホールの意味で横光利一『家族会議』（1935）の「ハーフだけ廻りませう」を、人を指す意味で畑山博『いつか汽笛を鳴らして』（1972）を初出の実例に挙げています。現代ビジネスの記事で下地ローレンス吉孝さんは、人を指す「ハーフ」が使われ始めたのは歴史学や社会学では1970年ごろといわれている、と書いています。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「半分」という量を表す語が、こぼれて人やポジション、試合の区切りなど、文脈ごとに別のものを指すようになりました。デジタル大辞泉は、人を指す用法を「日本語での用法」とし、英語では mixed-blood、mixed-nationalities などというと補足しています。田口ローレンス吉孝さんの論文（2017）は、1970〜80年代に、それまでの「混血児」に代わって「ハーフ」の言説が現れたと整理しています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "サッカーやラグビーの「45分ハーフ」、ゴルフの「ハーフ」など、スポーツでは今もふつうに使われます。人を指す「ハーフ」について、デジタル大辞泉は「使う相手・状況に注意が必要な言葉」としています。下地さんの記事も、差別用語と受け取られる場合も肯定的な意味で使われる場合もあり、「ダブル」という呼び方にも受け止め方の違いがあるとして、本人たちが自らを語る言葉を大切にしたいと書いています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "下地さんの記事は、テレビで人気を集めたグループ「ゴールデン・ハーフ」が、日常語になるきっかけだったといわれていると紹介しています。スポーツの意味については、「ハーフ〜」で始まる長い用語が多く、前半だけで通じる場面が多かったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "再解釈", "スポーツ"],
+      "categories": ["単語", "意味拡張"],
+      "related": ["soft"],
+      "sources": [
+        {
+          "id": "kotobank-half",
+          "role": "definition"
+        },
+        {
+          "id": "jsr-2017-half",
+          "role": "background"
+        },
+        {
+          "id": "gendai-2018-half",
+          "role": "background"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 2,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-06"
     }
   ],
   "sources": [
@@ -6183,6 +6845,126 @@
       "publisher": "乗りものニュース",
       "published_at": "2019-12-04",
       "url": "https://trafficnews.jp/post/91845",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-outer",
+      "type": "dictionary",
+      "title": "「アウター」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/アウター",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-outerwear",
+      "type": "dictionary",
+      "title": "「アウターウエア」「アウトウエア」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%81%82%E3%81%86%E3%81%9F%E3%83%BC%E3%81%86%E3%81%88%E3%81%82-422046",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "allabout-2024-outer",
+      "type": "media",
+      "title": "ジャケットの上に着るコートとは？アウターで着こなすコーデ術",
+      "author": "森井良行",
+      "publisher": "All About",
+      "published_at": "2024-01-04",
+      "url": "https://allabout.co.jp/gm/gc/466711/",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-american",
+      "type": "dictionary",
+      "title": "「アメリカン」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/アメリカン",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-american-coffee",
+      "type": "dictionary",
+      "title": "「アメリカンコーヒー」（精選版 日本国語大辞典・百科事典マイペディア・飲み物がわかる辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館・平凡社・講談社）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/アメリカンコーヒー",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-major",
+      "type": "dictionary",
+      "title": "「メジャー」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/メジャー",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-major-league",
+      "type": "dictionary",
+      "title": "「メジャーリーグ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/メジャーリーグ",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-minor",
+      "type": "dictionary",
+      "title": "「マイナー」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/マイナー",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-minor-league",
+      "type": "dictionary",
+      "title": "「マイナーリーグ」（精選版 日本国語大辞典・世界大百科事典）",
+      "author": null,
+      "publisher": "コトバンク（小学館・平凡社）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/マイナーリーグ",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-half",
+      "type": "dictionary",
+      "title": "「ハーフ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/ハーフ",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "jsr-2017-half",
+      "type": "academic",
+      "title": "戦後日本社会の「混血」「ハーフ」をめぐる言説編成と社会的帰結：人種編成論と節合概念の批判的援用（社会学評論 68巻2号 p.213-229）",
+      "author": "田口ローレンス吉孝",
+      "publisher": "日本社会学会",
+      "published_at": "2017",
+      "url": "https://doi.org/10.4057/jsr.68.213",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "gendai-2018-half",
+      "type": "media",
+      "title": "「日本人」はいつまで「単一民族」として語られるのか",
+      "author": "下地ローレンス吉孝",
+      "publisher": "現代ビジネス（講談社）",
+      "published_at": "2018-09-29",
+      "url": "https://gendai.media/articles/-/57709",
       "accessed_at": "2026-10-06"
     }
   ],
