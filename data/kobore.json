@@ -253,7 +253,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "単位"],
       "categories": ["接頭辞", "意味変化", "特定対象"],
-      "related": ["giga", "senchi", "mega", "super"],
+      "related": ["giga", "senchi", "mega", "super", "mile"],
       "sources": [
         {
           "id": "bipm-si-brochure",
@@ -2483,7 +2483,7 @@
       ],
       "tags": ["部分抽出", "意味変化", "芸能"],
       "categories": ["単語", "意味変化", "特定対象"],
-      "related": ["keitai", "commercial"],
+      "related": ["keitai", "commercial", "ekiden"],
       "sources": [
         {
           "id": "kotobank-taiga",
@@ -3000,7 +3000,7 @@
       ],
       "tags": ["固有名詞", "部分抽出", "意味変化", "スポーツ"],
       "categories": ["固有名詞", "意味拡張", "一般名詞化"],
-      "related": ["mister", "gachi", "nadeshiko", "gate", "athon"],
+      "related": ["mister", "gachi", "nadeshiko", "gate", "athon", "ekiden"],
       "sources": [
         {
           "id": "kotobank-koshien",
@@ -4915,6 +4915,283 @@
         "source_availability": 2
       },
       "updated_at": "2026-10-04"
+    },
+    {
+      "id": "ekiden",
+      "term": "駅伝",
+      "reading": "えきでん",
+      "origin": {
+        "term": "駅伝競走",
+        "extracted": "駅伝",
+        "remaining": "競走"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「駅伝競走」から「駅伝」がこぼれ、古代の交通制度を表す語がたすきをつなぐ長距離リレーを指すようになった例。",
+      "lead": "馬を乗り継ぐ古代の制度だった「駅伝」は、こぼれてたすきをつなぐレースになった。",
+      "origin_meaning": {
+        "text": "「駅伝」は、古代の公的な交通通信制度である駅制と伝馬の制のこと。「駅伝競走」では、区間ごとに走者が入れ替わるレースを、この乗り継ぎの制度にたとえた修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "駅伝競走",
+          "description": "「駅伝を見る」「箱根駅伝」のように、たすきをつなぐ長距離のチームリレーを指す。",
+          "status": "common"
+        },
+        {
+          "meaning": "古代の駅制と伝馬の制",
+          "description": "本来の意味。歴史の文脈で使う。",
+          "status": "rare"
+        }
+      ],
+      "semantic_change": {
+        "from": "古代の駅制と伝馬の制",
+        "to": "たすきをつなぐ長距離リレー競走",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "古代の駅制と伝馬の制",
+          "駅伝競走（区間ごとに走者をつなぐ長距離競走）",
+          "「駅伝」が独立",
+          "たすきをつなぐ長距離リレー競走"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "728",
+          "event": "精選版 日本国語大辞典は、古代の交通制度としての「駅伝」の初出の実例に『類聚三代格』（神亀5年・728）を挙げる。",
+          "source_ids": ["kotobank-ekiden"]
+        },
+        {
+          "period": "1917",
+          "event": "精選版 日本国語大辞典は、読売新聞（1917年3月1日）の「奠都記念駅伝競争とすることになった」を「駅伝競走」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-ekiden-kyoso"]
+        },
+        {
+          "period": "1917",
+          "event": "4月27日から3日間、京都・三条大橋から東京・上野不忍池まで23区間を走る東海道五十三次駅伝徒歩競走が行われる。",
+          "source_ids": ["kotobank-ekiden-kyoso"]
+        },
+        {
+          "period": "1920",
+          "event": "東京箱根間往復大学駅伝（箱根駅伝）が創設される。",
+          "source_ids": ["kotobank-ekiden-kyoso"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "正月は家族で駅伝を見るのが恒例だ。",
+          "type": "constructed",
+          "meaning": "駅伝競走"
+        },
+        {
+          "text": "律令制のもとで駅伝の制度が整えられた。",
+          "type": "constructed",
+          "meaning": "古代の駅制と伝馬の制"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「駅伝」は「駅伝競走」の前半がこぼれた言葉です。デジタル大辞泉と精選版 日本国語大辞典は、どちらも「駅伝」の意味のひとつに「『駅伝競走』の略」を挙げています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "「駅伝」はもともと、古代の駅制と伝馬の制を指す言葉です。精選版 日本国語大辞典によると、令制では諸道に約16キロメートルごとに駅を置いて駅馬を備え、郡家には伝馬を置きました。同辞典は『類聚三代格』（728）を初出の実例に挙げています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は、読売新聞（1917年3月1日）の「奠都記念駅伝競争とすることになった」を「駅伝競走」の初出の実例に挙げています。同じ記事によれば、当初は「マラソン・リレー」という名称でした。日本大百科全書は、同年4月の東海道五十三次駅伝徒歩競走を日本初の駅伝競走とし、読売新聞社の土岐善麿が武田千代三郎と相談して古代の交通制度にちなみ「駅伝」と名づけたと伝えています（改訂新版 世界大百科事典は、土岐が東海道五十三次にちなんでつけたといわれる、と記します）。単独の「駅伝」がレースの意味でいつから使われたかは、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "国の交通通信制度を指していた語が、たすきをつなぐ長距離リレーという特定の競技を指すようになりました。乗り継ぐ仕組みは共通していますが、対象は馬と役人の制度から走者とレースへ大きく変わっています。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "日本大百科全書が挙げる「箱根駅伝」「ニューイヤー駅伝」「全日本大学駅伝」のように、大会名でも「競走」を付けずに使われます。古代の制度を指す用法は、歴史の文脈に限られます。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "箱根駅伝が1987年にテレビで生中継されるようになって人気がさらに高まった（日本大百科全書）ように、正月の風物詩として広く親しまれたことで、短い呼び名が定着したと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "スポーツ"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["taiga", "koshien"],
+      "sources": [
+        {
+          "id": "kotobank-ekiden",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-ekiden-kyoso",
+          "role": "background"
+        }
+      ],
+      "confidence": "high",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-06"
+    },
+    {
+      "id": "mile",
+      "term": "マイル",
+      "reading": "まいる",
+      "origin": {
+        "term": "milia passuum",
+        "extracted": "マイル",
+        "remaining": "passuum",
+        "source_part": "milia"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_expansion"
+      ],
+      "summary": "ラテン語の「milia passuum（千の複歩）」から「milia（千）」がこぼれ、距離の単位を経て、航空会社のポイントまで指すようになった例。",
+      "lead": "「千歩」の「千」だった言葉は、こぼれて距離になり、やがてためるポイントになった。",
+      "origin_meaning": {
+        "text": "ラテン語の「milia」は「千」を表す「mille」の複数形。「milia passuum」は「千の複歩」、つまり左右一歩ずつを千回分歩いた距離のことで、「milia」は数を表す部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "距離の単位",
+          "description": "ヤード・ポンド法の長さの単位。1マイルは1609.344メートル。",
+          "status": "common"
+        },
+        {
+          "meaning": "航空会社のポイント",
+          "description": "「マイルをためる」「マイルで特典航空券に交換する」のように、マイレージサービスでたまるポイントを指す。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "千（の複歩）",
+        "to": "航空会社のポイント",
+        "mechanism": "part_extraction_and_shift",
+        "steps": [
+          "千の複歩（古代ローマの距離）",
+          "「milia」が独立",
+          "英語の距離の単位 mile",
+          "飛んだ距離に応じてたまるマイル",
+          "航空会社のポイント"
+        ]
+      },
+      "timeline": [
+        {
+          "event": "Online Etymology Dictionary によると、古代ローマの1マイルは1000複歩（約4,860フィート）だった。",
+          "source_ids": ["etymonline-mile"]
+        },
+        {
+          "event": "Online Etymology Dictionary によると、ラテン語の「milia」はゲルマン語に入って女性単数名詞と誤解され、古英語の「mil」になった。",
+          "source_ids": ["etymonline-mile"]
+        },
+        {
+          "period": "1580s",
+          "event": "Online Etymology Dictionary によると、英語の mile が「長い距離」の意味で漠然と使われるようになる。",
+          "source_ids": ["etymonline-mile"]
+        },
+        {
+          "period": "2015",
+          "event": "ニューズウィーク日本版は、デルタ航空が2015年から特典航空券の算定基準を飛行距離から支払った金額に変えると発表したことを伝えている。",
+          "source_ids": ["newsweekjapan-mileage"]
+        },
+        {
+          "period": "2019",
+          "event": "乗りものニュースの見出しに「飛行機の『マイル』ためてる？」とあり、ポイントとしての「マイル」が単独で使われている。",
+          "source_ids": ["trafficnews-2019-mile"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "飛行機の「マイル」ためてる？",
+          "type": "web",
+          "source_id": "trafficnews-2019-mile",
+          "meaning": "航空会社のポイント"
+        },
+        {
+          "text": "カードの支払いでマイルがたまった。",
+          "type": "constructed",
+          "meaning": "航空会社のポイント"
+        },
+        {
+          "text": "時速60マイルで走る。",
+          "type": "constructed",
+          "meaning": "距離の単位"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "「マイル」は、ラテン語の「milia passuum（千の複歩）」の前半がこぼれた言葉です。日本大百科全書は、1000複歩を意味する「ミリア・パッスス」が起源で、この「ミリア」がマイルになったと説明しています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "Online Etymology Dictionary によると、「milia」は「千」を表す「mille」の複数形です。古代ローマの1マイルは1000複歩（左右の足で一歩ずつ）で、約4,860フィートでした。「milia」は距離そのものではなく、数を表す部分でした。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "Online Etymology Dictionary によると、「milia」はゲルマン語に入ったとき女性単数名詞と誤解され、古英語の「mil」になりました。ヨーロッパ各地で長さはまちまちでしたが、イギリスではエリザベス1世の時代の法令で5,280フィートと定められました。「passuum」が落ちた時期は、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「千」という数が、距離の単位になりました。さらに航空会社のマイレージサービスでは、飛んだ距離に応じてたまるポイントを「マイル」と呼ぶようになりました。ニューズウィーク日本版は、デルタ航空が2015年から特典航空券の算定を飛行距離ではなく支払った金額で行うと発表したことを伝えています。距離との結びつきも薄れつつあるといえます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "日本では距離の単位としてより、「マイルをためる」「マイルで特典航空券に交換する」のように航空会社のポイントを指す場面で多く見かけます。乗りものニュースの見出し「飛行機の『マイル』ためてる？」（2019年）もその例です。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "日本ではメートル法が使われ、距離の単位としてのマイルになじみが薄いぶん、マイレージサービスのポイントという意味が目立つようになったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "単位", "海外"],
+      "categories": ["単語", "意味変化", "意味拡張"],
+      "related": ["kilo", "senchi"],
+      "sources": [
+        {
+          "id": "etymonline-mile",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-mile",
+          "role": "definition"
+        },
+        {
+          "id": "newsweekjapan-mileage",
+          "role": "background"
+        },
+        {
+          "id": "trafficnews-2019-mile",
+          "role": "usage"
+        }
+      ],
+      "confidence": "medium",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 2,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-06"
     }
   ],
   "sources": [
@@ -5847,6 +6124,66 @@
       "published_at": null,
       "url": "https://kotobank.jp/word/%E3%83%81%E3%82%A7%E3%83%AD",
       "accessed_at": "2026-10-04"
+    },
+    {
+      "id": "kotobank-ekiden",
+      "type": "dictionary",
+      "title": "「駅伝」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E9%A7%85%E4%BC%9D-444197",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-ekiden-kyoso",
+      "type": "dictionary",
+      "title": "「駅伝競走」（精選版 日本国語大辞典・日本大百科全書・改訂新版 世界大百科事典）",
+      "author": null,
+      "publisher": "コトバンク（小学館・平凡社）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E9%A7%85%E4%BC%9D%E7%AB%B6%E8%B5%B0-36214",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "etymonline-mile",
+      "type": "dictionary",
+      "title": "mile (etymology)",
+      "author": null,
+      "publisher": "Online Etymology Dictionary",
+      "published_at": null,
+      "url": "https://www.etymonline.com/word/mile",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "kotobank-mile",
+      "type": "dictionary",
+      "title": "「マイル」（日本大百科全書・ブリタニカ国際大百科事典 小項目事典）",
+      "author": null,
+      "publisher": "コトバンク（小学館・ブリタニカ・ジャパン）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/%E3%83%9E%E3%82%A4%E3%83%AB",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "newsweekjapan-mileage",
+      "type": "magazine",
+      "title": "変質する「航空会社のマイレージ・サービス」その背景は？",
+      "author": null,
+      "publisher": "ニューズウィーク日本版",
+      "published_at": null,
+      "url": "https://www.newsweekjapan.jp/articles/-/6962",
+      "accessed_at": "2026-10-06"
+    },
+    {
+      "id": "trafficnews-2019-mile",
+      "type": "media",
+      "title": "飛行機の「マイル」ためてる？ 交換最多は国内線特典航空券 効率よくためる方法は",
+      "author": "乗りものニュース編集部",
+      "publisher": "乗りものニュース",
+      "published_at": "2019-12-04",
+      "url": "https://trafficnews.jp/post/91845",
+      "accessed_at": "2026-10-06"
     }
   ],
   "tags": [
