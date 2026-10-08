@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 }
 
 const TYPES = [
-  { id: "kilo", title: "単語の一部分が独立" },
+  { id: "net", title: "単語の一部分が独立" },
   { id: "giga", title: "接頭辞・接尾辞などが独立" },
   { id: "mrs", title: "固有名詞の一部分が独立" },
   { id: "keitai", title: "独立後に意味が変化・拡張" },
