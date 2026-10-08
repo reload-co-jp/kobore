@@ -35,6 +35,20 @@ const Page = () => {
       </section>
 
       <section className="section">
+        <h2 className="section-title">
+          <Link href="/concept/">こぼれことばとは</Link>
+        </h2>
+        <div className="about">
+          <p>
+            「キログラム」が「キロ」に、「携帯電話」が「携帯」になったように、元の言葉の一部分だけが切り出され、独立した言葉として使われるようになったもの。このサイトではそれを「こぼれことば」と呼んでいます。
+          </p>
+          <p>
+            <Link href="/concept/">略語との違いや、こぼれ方の型を見る →</Link>
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
         <h2 className="section-title">今日のこぼれ</h2>
         <Link href={wordUrl(today)} className="today">
           <span className="today-term">{today.term}</span>
