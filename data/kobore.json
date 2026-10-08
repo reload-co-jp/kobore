@@ -7456,6 +7456,266 @@
         "source_availability": 2
       },
       "updated_at": "2026-10-09"
+    },
+    {
+      "id": "shortstop",
+      "term": "ショート",
+      "reading": "しょーと",
+      "origin": {
+        "term": "ショートストップ",
+        "extracted": "ショート",
+        "remaining": "ストップ"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「短い」を表す「ショート」が「ショートストップ」から単独で使われ、野球の遊撃手を指すようになった例。",
+      "lead": "「短い」という意味だった「ショート」は、こぼれて野球の守備位置になった。",
+      "origin_meaning": {
+        "text": "英語 short は「短い」。日本語でも「ショートストーリー」「ショートヘア」のように、長さや時間が短いことを表す。複合語「ショートストップ」の中では、前半の修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "遊撃手・遊撃の守備位置",
+          "description": "「ショートを守る」「ショートゴロ」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "短いこと",
+          "description": "「ショートストーリー」「ショートヘア」など、主に複合語の中で。",
+          "status": "common"
+        },
+        {
+          "meaning": "短絡（ショートサーキット）",
+          "description": "「配線がショートする」など。別のこぼれ方。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "短い",
+        "to": "野球の遊撃手・遊撃の守備位置",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "short（短い）",
+          "ショートストップ（遊撃手）",
+          "「ショート」が独立",
+          "野球の遊撃手・遊撃の守備位置"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1896",
+          "event": "精選版 日本国語大辞典は、正岡子規『松蘿玉液』（1896）の「短遮（ショルトストップ）」を「ショートストップ」の初出の実例として挙げる。",
+          "source_ids": ["kotobank-shortstop"]
+        },
+        {
+          "period": "1898",
+          "event": "精選版 日本国語大辞典は「ショート」の語義「『ショートストップ』の略」に、『新式ベースボール術』（1898）を出典として示す。",
+          "source_ids": ["kotobank-short"]
+        },
+        {
+          "event": "デジタル大辞泉は「ショート」の語義に「野球で、遊撃。また、遊撃手。ショートストップ」を載せ、「遊撃手」の項でも同義語に「ショート」を挙げる。",
+          "source_ids": ["kotobank-short", "kotobank-yugekishu"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "打球はショートの正面に飛んだ。",
+          "type": "constructed",
+          "meaning": "遊撃の守備位置"
+        },
+        {
+          "text": "少年野球ではずっとショートだった。",
+          "type": "constructed",
+          "meaning": "遊撃手"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "野球の「ショート」は「ショートストップ」の前半がこぼれた言葉です。精選版 日本国語大辞典は「ショート」の語義のひとつに「『ショートストップ』の略」を挙げ、デジタル大辞泉も「野球で、遊撃。また、遊撃手」を載せています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 short は「短い」という意味です。精選版 日本国語大辞典は、造語要素としての「ショート」を「短いの意」とし、「ショートトリップ」を例に挙げています。「ショートストップ」は二塁と三塁の間を守る内野手、つまり遊撃手のことで、同辞典は正岡子規『松蘿玉液』（1896）の「短遮（ショルトストップ）」を初出の実例に挙げています。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は「ショートストップの略」の語義に『新式ベースボール術』（1898）を出典として示しています。複合語の実例から数年で、短い形も使われていたことになります。ただし、これが単独用法の最初の例かどうかは、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「短い」という形容の語が、こぼれて特定の守備位置と、そこを守る選手を指す名詞になりました。広い「短い」から野球の遊撃手へと、指す対象が大きく狭まった例です。なお、同じ「ショート」は「ショートサーキット」からもこぼれていて、電気の「ショート」は別の意味として並んでいます。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "野球の話では「ショート」と言うのが普通で、「ショートストップ」はあまり聞きません。「ショートゴロ」「ショートを守る」のように、守備位置にも選手にも使います。正式な日本語の「遊撃手」と並んで使われ、デジタル大辞泉は「遊撃手」の項で「ショートストップ」「ショート」を同義語に挙げています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "試合の実況や会話では、守備位置の名前を短く言えるほうが便利です。野球の文脈なら「ショート」だけで遊撃手だとわかるため、後半の「ストップ」が落ちた形が広まったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "スポーツ"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["short-circuit"],
+      "sources": [
+        {
+          "id": "kotobank-short",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-shortstop",
+          "role": "origin"
+        },
+        {
+          "id": "kotobank-yugekishu",
+          "role": "usage"
+        }
+      ],
+      "confidence": "high",
+      "priority": 5,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 2,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-09"
+    },
+    {
+      "id": "short-circuit",
+      "term": "ショート",
+      "reading": "しょーと",
+      "origin": {
+        "term": "ショートサーキット",
+        "extracted": "ショート",
+        "remaining": "サーキット"
+      },
+      "classification": [
+        "part_extraction",
+        "independent_usage",
+        "meaning_shift",
+        "semantic_narrowing"
+      ],
+      "summary": "「短い」を表す「ショート」が「ショートサーキット」から単独で使われ、電気回路の短絡を指すようになった例。",
+      "lead": "「短い」という意味だった「ショート」は、こぼれて電気の事故になった。",
+      "origin_meaning": {
+        "text": "英語 short は「短い」。複合語「ショートサーキット（short circuit）」は「短い回路」の意で、電気が本来の道筋を通らず近道してしまう状態を指す。その中で「ショート」は前半の修飾部分だった。"
+      },
+      "current_meanings": [
+        {
+          "meaning": "短絡",
+          "description": "「配線がショートする」「ショートして火花が出た」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "短いこと",
+          "description": "「ショートストーリー」「ショートヘア」など、主に複合語の中で。",
+          "status": "common"
+        },
+        {
+          "meaning": "不足",
+          "description": "「資金ショート」など。",
+          "status": "common"
+        },
+        {
+          "meaning": "遊撃手",
+          "description": "野球で。別のこぼれ方。",
+          "status": "common"
+        }
+      ],
+      "semantic_change": {
+        "from": "短い",
+        "to": "電気回路の短絡",
+        "mechanism": "part_extraction_and_narrowing",
+        "steps": [
+          "short（短い）",
+          "ショートサーキット（短絡）",
+          "「ショート」が独立",
+          "電気回路の短絡（〜する）"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "1957",
+          "event": "精選版 日本国語大辞典は「ショート」の語義「『ショートサーキット』の略」の初出の実例として、茅誠司『アメリカの科学・ソ連の科学』（1957）の「電気寒暖計に掛ければショートしてしまう」を挙げる。",
+          "source_ids": ["kotobank-short"]
+        },
+        {
+          "event": "デジタル大辞泉は「ショート」の語義に「電気回路の電位差のある端子を、故意または過失で接触させること。短絡。ショートサーキット」を載せる。",
+          "source_ids": ["kotobank-short"]
+        }
+      ],
+      "usage_examples": [
+        {
+          "text": "コードが傷んでショートしたらしい。",
+          "type": "constructed",
+          "meaning": "短絡"
+        },
+        {
+          "text": "水がかかって基板がショートした。",
+          "type": "constructed",
+          "meaning": "短絡"
+        }
+      ],
+      "article": [
+        {
+          "heading": "何からこぼれた？",
+          "body": "電気の「ショート」は「ショートサーキット」の前半がこぼれた言葉です。精選版 日本国語大辞典は「ショート」の語義のひとつに「『ショートサーキット』の略」を挙げ、「ショートサーキット」の項でも末尾に「ショート」を添えています。"
+        },
+        {
+          "heading": "元々どういう意味だった？",
+          "body": "英語 short は「短い」という意味です。「ショートサーキット」は、精選版 日本国語大辞典によると「電気回路で、電位差のある二点間を導体で接続すること」で、大きな電流が流れて機器を破損するおそれがあるとしています。日本語では「短絡（たんらく）」とも言います。"
+        },
+        {
+          "heading": "いつ独立した？",
+          "body": "精選版 日本国語大辞典は「ショートサーキットの略」の初出の実例として、茅誠司『アメリカの科学・ソ連の科学』（1957）の「電気寒暖計に掛ければショートしてしまう」を挙げています。「ショートサーキット」そのものの初出は、同辞典の項目には示されておらず、現時点で確認できていません。"
+        },
+        {
+          "heading": "意味は変わった？",
+          "body": "「短い」という形容の語が、こぼれて電気の事故そのものを指す言葉になりました。さらに「ショートする」と動詞としても使われます。広い「短い」から電気回路の短絡へと、指す対象が狭まった例です。同じ「ショート」は「ショートストップ」からもこぼれていて、野球の遊撃手も指します。"
+        },
+        {
+          "heading": "今はどう使われる？",
+          "body": "家電や配線の話で「ショートした」と言えば、短絡が起きたことです。デジタル大辞泉は「配線盤がショートする」を例に挙げています。同辞典は「資金ショート」のような「不足」の意味も載せており、「ショート」は文脈によって指すものが大きく変わる言葉になっています。"
+        },
+        {
+          "heading": "なぜ定着した？",
+          "body": "「ショートサーキット」は長く、「短絡」は話し言葉ではやや硬い言葉です。電気の話の中なら「ショート」だけで意味が通じ、「〜する」を付けて動詞にもしやすいため、短い形が広まったと考えられます。"
+        }
+      ],
+      "tags": ["部分抽出", "意味変化", "暮らし"],
+      "categories": ["単語", "意味変化", "特定対象"],
+      "related": ["shortstop"],
+      "sources": [
+        {
+          "id": "kotobank-short",
+          "role": "definition"
+        },
+        {
+          "id": "kotobank-short-circuit",
+          "role": "origin"
+        }
+      ],
+      "confidence": "high",
+      "priority": 4,
+      "kobore_score": {
+        "part_extraction": 3,
+        "independent_usage": 3,
+        "meaning_shift": 3,
+        "semantic_expansion": 0,
+        "historical_interest": 1,
+        "usage_frequency": 2,
+        "source_availability": 2
+      },
+      "updated_at": "2026-10-09"
     }
   ],
   "sources": [
@@ -8907,6 +9167,46 @@
       "publisher": "コトバンク（小学館）",
       "published_at": null,
       "url": "https://kotobank.jp/word/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB",
+      "accessed_at": "2026-10-09"
+    },
+    {
+      "id": "kotobank-short",
+      "type": "dictionary",
+      "title": "「ショート」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/ショート",
+      "accessed_at": "2026-10-09"
+    },
+    {
+      "id": "kotobank-shortstop",
+      "type": "dictionary",
+      "title": "「ショートストップ」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/ショートストップ",
+      "accessed_at": "2026-10-09"
+    },
+    {
+      "id": "kotobank-yugekishu",
+      "type": "dictionary",
+      "title": "「遊撃手」（デジタル大辞泉）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/遊撃手",
+      "accessed_at": "2026-10-09"
+    },
+    {
+      "id": "kotobank-short-circuit",
+      "type": "dictionary",
+      "title": "「ショートサーキット」（デジタル大辞泉・精選版 日本国語大辞典）",
+      "author": null,
+      "publisher": "コトバンク（小学館）",
+      "published_at": null,
+      "url": "https://kotobank.jp/word/ショートサーキット",
       "accessed_at": "2026-10-09"
     }
   ],
