@@ -83,14 +83,17 @@ describe("search", () => {
       "burger",
       "gate",
       "hormone",
+      "jump",
       "junior",
       "koshien",
+      "magazine",
       "magic",
       "mister",
       "mrs",
       "muji",
       "nadeshiko",
       "santa",
+      "sunday",
     ])
     expect(search(docs, "キロ").map((d) => d.id)).toContain("kilo")
     expect(search(docs, "")).toEqual([])
