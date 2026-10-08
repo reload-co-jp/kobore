@@ -3,6 +3,7 @@ import { buildDoc, search } from "./search"
 import {
   getCategories,
   getSources,
+  toDecade,
   getTags,
   getWords,
   splitOrigin,
@@ -97,5 +98,13 @@ describe("search", () => {
     ])
     expect(search(docs, "キロ").map((d) => d.id)).toContain("kilo")
     expect(search(docs, "")).toEqual([])
+  })
+})
+
+describe("toDecade", () => {
+  it("3桁・4桁の年を年代にする", () => {
+    expect(toDecade("728")).toBe("720年代")
+    expect(toDecade("1994")).toBe("1990年代")
+    expect(toDecade("1990s")).toBe("1990年代")
   })
 })

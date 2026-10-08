@@ -244,19 +244,21 @@ export const getWordsByCategory = (id: string) =>
 
 /** "1990s" → "1990年代"、"2019" → "2019年" */
 export const formatPeriod = (p: string) =>
-  p.replace(/^(\d{4})s$/, "$1年代").replace(/^(\d{4})$/, "$1年")
+  p.replace(/^(\d+)s$/, "$1年代").replace(/^(\d+)$/, "$1年")
+
+/** "728" → "720年代"、"1994" → "1990年代" */
+export const toDecade = (p: string) =>
+  `${Math.floor(parseInt(p, 10) / 10) * 10}年代`
 
 /** タイムラインに現れる年代（"1990年代" など）の一覧 */
 export const getDecades = () =>
   [
     ...new Set(
       data.words.flatMap((w) =>
-        w.timeline.flatMap((t) =>
-          t.period?.match(/^\d{3}/) ? [`${t.period.slice(0, 3)}0年代`] : []
-        )
+        w.timeline.flatMap((t) => (t.period ? [toDecade(t.period)] : []))
       )
     ),
-  ].sort()
+  ].sort((a, b) => parseInt(a, 10) - parseInt(b, 10))
 
 /** 元の言葉を「前・こぼれた部分・後」に分ける */
 export const splitOrigin = (w: Word) => {
