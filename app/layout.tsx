@@ -42,6 +42,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
         </Link>
         <nav>
           <Link href="/search/">検索</Link>
+          <Link href="/concept/">こぼれことばとは</Link>
           <Link href="/about/">このサイトについて</Link>
         </nav>
       </header>
