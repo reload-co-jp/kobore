@@ -1,8 +1,32 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { SearchBox } from "@/components/SearchBox"
 import { WordGrid } from "@/components/WordCard"
-import { categoryUrl, searchUrl, tagUrl, TAGLINE, wordUrl } from "@/lib/site"
+import {
+  categoryUrl,
+  SITE_NAME,
+  searchUrl,
+  tagUrl,
+  TAGLINE,
+  wordUrl,
+} from "@/lib/site"
 import { getDecades, getTags, getWords } from "@/lib/words"
+
+const TITLE = `略された言葉の由来と意味の変化を解説｜${SITE_NAME}`
+const DESCRIPTION =
+  "「携帯」はなぜ電話を指すようになった？「ギガ」は何から生まれた？言葉の一部が独立し、意味が変わる過程を出典とともに解説します。"
+
+export const metadata: Metadata = {
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/" },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+}
 
 // ponytail: ビルド日で日替わり。毎日更新したければ日次ビルドを cron で回す
 const buildDay = Math.floor(Date.now() / 86_400_000)
@@ -23,14 +47,18 @@ const Page = () => {
   return (
     <>
       <section className="hero">
-        <h1 className="hero-tagline">
+        <p className="hero-tagline">
           {TAGLINE.split("、").map((s, i, a) => (
             <span key={i}>
               {s}
               {i < a.length - 1 && "、"}
             </span>
           ))}
+        </p>
+        <h1 className="hero-title">
+          言葉の一部が独立する由来と、意味の変化をたどる
         </h1>
+        <p className="hero-lead muted">{DESCRIPTION}</p>
         <SearchBox />
       </section>
 

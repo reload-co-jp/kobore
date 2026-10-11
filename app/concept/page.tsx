@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "こぼれことばとは",
   description:
     "元の言葉の一部分が切り出され、独立した言葉として使われるようになった「こぼれことば」とは何か。略語との違いや、こぼれ方の型を解説します。",
+  alternates: { canonical: "/concept/" },
 }
 
 const TYPES = [

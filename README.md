@@ -18,12 +18,12 @@ https://kobore.reload.co.jp
 
 たとえば、
 
-* キログラム → キロ
-* ギガバイト → ギガ
-* 携帯電話 → 携帯
-* インターネット → ネット
-* Mrs. GREEN APPLE → ミセス
-* 千原ジュニア → ジュニア
+- キログラム → キロ
+- ギガバイト → ギガ
+- 携帯電話 → 携帯
+- インターネット → ネット
+- Mrs. GREEN APPLE → ミセス
+- 千原ジュニア → ジュニア
 
 などを扱う。
 
@@ -46,11 +46,11 @@ https://kobore.reload.co.jp
 
 以下のような単純な略語は主役にしない。
 
-* パソコン
-* コンビニ
-* ファミレス
-* リモコン
-* ヒゲダン
+- パソコン
+- コンビニ
+- ファミレス
+- リモコン
+- ヒゲダン
 
 これらは複数の部分を組み合わせた一般的な略語であり、「一部分がこぼれて独立した」というサイトコンセプトから外れる。
 
@@ -108,15 +108,15 @@ SI接頭語
 
 重視するもの：
 
-* 語源
-* 歴史
-* 意味の変化
-* 用法
-* 世代による違い
-* 固有名詞から一般名詞への変化
-* 技術用語から日常語への変化
-* 実際の使用例
-* 出典
+- 語源
+- 歴史
+- 意味の変化
+- 用法
+- 世代による違い
+- 固有名詞から一般名詞への変化
+- 技術用語から日常語への変化
+- 実際の使用例
+- 出典
 
 記事を読んで、
 
@@ -130,14 +130,14 @@ SI接頭語
 
 以下を基本構成とする。
 
-* Next.js
-* TypeScript
-* 静的生成
-* JSON
-* CSS
-* 必要に応じてTailwind CSS
-* 検索：Pagefind / Fuse.js / MiniSearch等
-* GitHub Pages等での静的ホスティングを想定
+- Next.js
+- TypeScript
+- 静的生成
+- JSON
+- CSS
+- 必要に応じてTailwind CSS
+- 検索：Pagefind / Fuse.js / MiniSearch等
+- GitHub Pages等での静的ホスティングを想定
 
 バックエンド・DBは原則不要。
 
@@ -217,15 +217,17 @@ OGP画像の生成時にGoogle Fontsからフォントを取得するため、�
 
 ```json
 {
-  "words": [ /* 6.2 の単語データ */ ],
-  "sources": [ /* 9. 出典データ */ ],
+  "words": [/* 6.2 の単語データ */],
+  "sources": [/* 9. 出典データ */],
   "tags": [{ "name": "部分抽出", "description": "…" }],
-  "categories": [{ "id": "固有名詞", "name": "固有名詞からこぼれた", "description": "…" }]
+  "categories": [
+    { "id": "固有名詞", "name": "固有名詞からこぼれた", "description": "…" }
+  ]
 }
 ```
 
-* `words` の並び順は問わない（表示は `priority` の降順）
-* `tags[].name` と `categories[].id` はそのままURLになる（`/tags/部分抽出/`）
+- `words` の並び順は問わない（表示は `priority` の降順）
+- `tags[].name` と `categories[].id` はそのままURLになる（`/tags/部分抽出/`）
 
 ---
 
@@ -243,11 +245,7 @@ OGP画像の生成時にGoogle Fontsからフォントを取得するため、�
     "remaining": "バイト"
   },
 
-  "classification": [
-    "part_extraction",
-    "independent_usage",
-    "meaning_shift"
-  ],
+  "classification": ["part_extraction", "independent_usage", "meaning_shift"],
 
   "summary": "ギガバイトなどの一部だった「ギガ」が単独で使われるようになった例。",
 
@@ -276,9 +274,7 @@ OGP画像の生成時にGoogle Fontsからフォントを取得するため、�
     {
       "period": "1990s",
       "event": "出来事",
-      "source_ids": [
-        "source-001"
-      ]
+      "source_ids": ["source-001"]
     }
   ],
 
@@ -290,23 +286,13 @@ OGP画像の生成時にGoogle Fontsからフォントを取得するため、�
     }
   ],
 
-  "article": [
-    { "heading": "何からこぼれた？", "body": "本文" }
-  ],
+  "article": [{ "heading": "何からこぼれた？", "body": "本文" }],
 
-  "tags": [
-    "部分抽出",
-    "意味変化"
-  ],
+  "tags": ["部分抽出", "意味変化"],
 
-  "categories": [
-    "接頭辞",
-    "意味変化"
-  ],
+  "categories": ["接頭辞", "意味変化"],
 
-  "related": [
-    "kilo"
-  ],
+  "related": ["kilo"],
 
   "sources": [
     {
@@ -335,14 +321,14 @@ OGP画像の生成時にGoogle Fontsからフォントを取得するため、�
 
 補足フィールド：
 
-* `lead`：単語ページHero下の短い説明（14.1）
-* `semantic_change.steps`：意味変化フロー（16）。2つ以上
-* `article`：記事本文（18）。見出しと本文の配列
-* `categories`：所属カテゴリ（`categories[].id`）
-* `kobore_score`：こぼれ度（31）。非表示
-* `origin.source_part`：元の言葉の中での表記が `extracted` と異なる場合に指定（例：`"Mrs. GREEN APPLE"` の `"Mrs."` → `"ミセス"`）
-* `usage_examples[].source_id`：`constructed` 以外では必須
-* `timeline[].period`：`"1990s"`（年代）または `"2019"`（年）。不明なら省略
+- `lead`：単語ページHero下の短い説明（14.1）
+- `semantic_change.steps`：意味変化フロー（16）。2つ以上
+- `article`：記事本文（18）。見出しと本文の配列
+- `categories`：所属カテゴリ（`categories[].id`）
+- `kobore_score`：こぼれ度（31）。非表示
+- `origin.source_part`：元の言葉の中での表記が `extracted` と異なる場合に指定（例：`"Mrs. GREEN APPLE"` の `"Mrs."` → `"ミセス"`）
+- `usage_examples[].source_id`：`constructed` 以外では必須
+- `timeline[].period`：`"1990s"`（年代）または `"2019"`（年）。不明なら省略
 
 ---
 
@@ -363,16 +349,16 @@ reanalysis
 
 意味：
 
-| ID                 | 意味                |
-| ------------------ | ----------------- |
-| part_extraction    | 元の語の一部分が切り出された    |
-| independent_usage  | 切り出された部分が単独で使われる  |
-| meaning_shift      | 意味が変化した           |
-| semantic_expansion | 意味が広がった           |
-| semantic_narrowing | 意味が狭くなった          |
-| proper_noun_origin | 固有名詞由来            |
+| ID                 | 意味                               |
+| ------------------ | ---------------------------------- |
+| part_extraction    | 元の語の一部分が切り出された       |
+| independent_usage  | 切り出された部分が単独で使われる   |
+| meaning_shift      | 意味が変化した                     |
+| semantic_expansion | 意味が広がった                     |
+| semantic_narrowing | 意味が狭くなった                   |
+| proper_noun_origin | 固有名詞由来                       |
 | generalization     | 特定対象から一般的な対象へ広がった |
-| reanalysis         | 使用者による再解釈が起きた     |
+| reanalysis         | 使用者による再解釈が起きた         |
 
 ---
 
@@ -463,10 +449,10 @@ multiple_part_extraction
 
 また、
 
-* 語源
-* 略語としての成立
-* 独立語としての成立
-* 意味変化
+- 語源
+- 略語としての成立
+- 独立語としての成立
+- 意味変化
 
 を混同しない。
 
@@ -780,14 +766,14 @@ LOGO
 
 検索対象：
 
-* term
-* reading
-* origin.term
-* origin.extracted
-* summary
-* current_meanings
-* tags
-* related
+- term
+- reading
+- origin.term
+- origin.extracted
+- summary
+- current_meanings
+- tags
+- related
 
 検索例：
 
@@ -891,10 +877,10 @@ LOGO
 
 meta descriptionには、
 
-* 元の言葉
-* こぼれた部分
-* 現在の意味
-* 意味変化
+- 元の言葉
+- こぼれた部分
+- 現在の意味
+- 意味変化
 
 を自然に含める。
 
@@ -906,9 +892,9 @@ meta descriptionには、
 
 最低限：
 
-* WebSite
-* BreadcrumbList
-* Article / DefinedTerm相当
+- WebSite
+- BreadcrumbList
+- Article / DefinedTerm相当
 
 を検討。
 
@@ -942,14 +928,14 @@ JSONデータから自動生成する。
 
 方向性：
 
-* 白を基調
-* 大きなタイポグラフィ
-* 余白を広く取る
-* 文字を主役にする
-* カードを並べすぎない
-* 過剰な装飾を避ける
-* 「こぼれる」「切り出される」を視覚的に表現
-* スマートフォンでも読みやすくする
+- 白を基調
+- 大きなタイポグラフィ
+- 余白を広く取る
+- 文字を主役にする
+- カードを並べすぎない
+- 過剰な装飾を避ける
+- 「こぼれる」「切り出される」を視覚的に表現
+- スマートフォンでも読みやすくする
 
 特に、
 
@@ -971,9 +957,9 @@ JSONデータから自動生成する。
 
 ただし、
 
-* 元の言葉から一部分が離れる
-* 一部分が独立する
-* 意味が変化する
+- 元の言葉から一部分が離れる
+- 一部分が独立する
+- 意味が変化する
 
 というサイトの特徴を表現するため、短いCSSアニメーションは積極的に利用する。
 
@@ -987,19 +973,19 @@ JSONデータから自動生成する。
 
 ### 必須
 
-* 元の言葉が明確
-* どの部分が切り出されたか明確
-* 単独使用の根拠がある
-* 現在の意味が説明できる
-* 出典がある
+- 元の言葉が明確
+- どの部分が切り出されたか明確
+- 単独使用の根拠がある
+- 現在の意味が説明できる
+- 出典がある
 
 ### 推奨
 
-* 古い用例
-* 現代の用例
-* 意味変化の過程
-* 社会的背景
-* 複数の出典
+- 古い用例
+- 現代の用例
+- 意味変化の過程
+- 社会的背景
+- 複数の出典
 
 ---
 
@@ -1060,18 +1046,18 @@ TypeScriptの型定義（`lib/words.ts`）を作成する。
 
 ビルド時に以下を検証する（`validate()`）。
 
-* 必須フィールド
-* classificationの値
-* confidenceの値
-* 用例typeの値
-* source IDの存在
-* related IDの存在
-* tags / categories の存在
-* 重複ID
-* slug形式（英小文字・数字・ハイフン）
-* `origin.term` に切り出し部分が含まれるか
-* 実在の用例に出典があるか
-* `kobore_score` の範囲
+- 必須フィールド
+- classificationの値
+- confidenceの値
+- 用例typeの値
+- source IDの存在
+- related IDの存在
+- tags / categories の存在
+- 重複ID
+- slug形式（英小文字・数字・ハイフン）
+- `origin.term` に切り出し部分が含まれるか
+- 実在の用例に出典があるか
+- `kobore_score` の範囲
 
 不正なJSONが存在する場合はビルドを失敗させる。`pnpm test` でも同じ検証を実行する。
 
@@ -1089,13 +1075,13 @@ data/kobore.json
 
 の `words` を変更するだけで、
 
-* トップページ
-* 単語ページ
-* タグページ
-* 検索結果
-* 関連語
-* OGP
-* JSON-LD
+- トップページ
+- 単語ページ
+- タグページ
+- 検索結果
+- 関連語
+- OGP
+- JSON-LD
 
 に反映される設計にする。
 
@@ -1216,4 +1202,3 @@ https://kobore.reload.co.jp/search
 **「言葉の一部分が、元の場所からこぼれ落ちて、ひとり歩きを始める」**
 
 というコンセプトを、データ構造・記事構成・UI・デザインのすべてで一貫させること。
-

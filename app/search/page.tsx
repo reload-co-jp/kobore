@@ -4,7 +4,11 @@ import { buildDoc } from "@/lib/search"
 import { formatPeriod, getCategories, getWords, toDecade } from "@/lib/words"
 import { SearchResults } from "./SearchResults"
 
-export const metadata: Metadata = { title: "検索" }
+// 検索結果はクエリ毎の独立コンテンツではないため索引させない（クロールは許可）
+export const metadata: Metadata = {
+  title: "検索",
+  robots: { index: false, follow: true },
+}
 
 const Page = () => {
   const categories = getCategories()

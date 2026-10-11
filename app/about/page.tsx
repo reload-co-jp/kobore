@@ -1,6 +1,11 @@
 import type { Metadata } from "next"
 
-export const metadata: Metadata = { title: "このサイトについて" }
+export const metadata: Metadata = {
+  title: "このサイトについて",
+  description:
+    "略称が生まれ、広まり、意味を変えていく過程に注目する「こぼれことば」の趣旨。言葉の由来を知り、変わっていく言葉に気づくきっかけを目指しています。",
+  alternates: { canonical: "/about/" },
+}
 
 const Page = () => (
   <>

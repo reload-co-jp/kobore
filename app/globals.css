@@ -111,6 +111,13 @@ main {
   font-family: var(--serif);
   font-size: clamp(2.25rem, 7vw, 4.5rem);
   line-height: 1.4;
+  margin-bottom: 24px;
+}
+.hero-title {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+.hero-lead {
   margin-bottom: 48px;
 }
 .hero-tagline span {
