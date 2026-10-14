@@ -251,6 +251,27 @@ export const getWordsByTag = (tag: string) =>
 export const getWordsByCategory = (id: string) =>
   data.words.filter((w) => w.categories.includes(id))
 
+/** 各言葉の値を数え、多い順に [値, 数] で返す。exclude は数えない */
+export const countBy = (
+  words: Word[],
+  key: (w: Word) => string[],
+  exclude?: string
+) => {
+  const count = new Map<string, number>()
+  for (const v of words.flatMap(key))
+    if (v !== exclude) count.set(v, (count.get(v) ?? 0) + 1)
+  return [...count].sort((a, b) => b[1] - a[1])
+}
+
+/** こぼれた時期（timeline の kobore）が分かる言葉を古い順に */
+export const getKoboreTimeline = (words: Word[]) =>
+  words
+    .flatMap((word) => {
+      const period = word.timeline.find((t) => t.kobore)?.period
+      return period ? [{ word, period }] : []
+    })
+    .sort((a, b) => parseInt(a.period, 10) - parseInt(b.period, 10))
+
 /** "1990s" → "1990年代"、"2019" → "2019年" */
 export const formatPeriod = (p: string) =>
   p.replace(/^(\d+)s$/, "$1年代").replace(/^(\d+)$/, "$1年")
