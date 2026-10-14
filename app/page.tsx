@@ -97,6 +97,12 @@ const Page = () => {
           <Link href={categoryUrl("意味変化")}>意味が変わった言葉</Link>
         </h2>
         <WordGrid words={shifted} />
+        <p>
+          <Link href="/columns/meaning-shift/">
+            コラム：「ギガが減る」はなぜ通じる？こぼれたあとに意味が変わった言葉と時代
+            →
+          </Link>
+        </p>
       </section>
 
       <section className="section">
