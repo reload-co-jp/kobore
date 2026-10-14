@@ -7,6 +7,7 @@ import { SourceList } from "@/components/SourceList"
 import { SemanticFlow, WordOrigin } from "@/components/WordOrigin"
 import { WordTimeline } from "@/components/WordTimeline"
 import {
+  categoryUrl,
   SITE_NAME,
   SITE_URL,
   tagUrl,
@@ -18,10 +19,12 @@ import {
   CLASSIFICATIONS,
   CONFIDENCE,
   USAGE_TYPES,
+  getCategories,
   getRelated,
   getSourcesFor,
   getWord,
   getWords,
+  getWordsByCategory,
 } from "@/lib/words"
 
 type Props = { params: Promise<{ slug: string }> }
@@ -55,6 +58,12 @@ const Page = async ({ params }: Props) => {
   const related = getRelated(w)
   const sources = getSourcesFor(w)
   const url = `${SITE_URL}${wordUrl(w)}`
+  const categories = getCategories().filter((c) => w.categories.includes(c.id))
+  // related を補う内部リンク。related が空の言葉にも他記事への導線を作る
+  const category = categories[0]
+  const siblings = getWordsByCategory(category.id)
+    .filter((s) => s.id !== w.id && !w.related.includes(s.id))
+    .slice(0, 6)
 
   return (
     <article className="word">
@@ -207,6 +216,16 @@ const Page = async ({ params }: Props) => {
         </section>
       )}
 
+      {siblings.length > 0 && (
+        <section className="section">
+          <h2 className="section-title">
+            <Link href={categoryUrl(category.id)}>{category.name}言葉</Link>
+            をもっと見る
+          </h2>
+          <RelatedWords word={w} related={siblings} />
+        </section>
+      )}
+
       <section className="section">
         <h2 className="section-title">出典</h2>
         <SourceList sources={sources} />
@@ -214,6 +233,13 @@ const Page = async ({ params }: Props) => {
 
       <footer className="word-footer">
         <ul className="inline-list">
+          {categories.map((c) => (
+            <li key={c.id}>
+              <Link href={categoryUrl(c.id)} className="chip">
+                {c.name}
+              </Link>
+            </li>
+          ))}
           {w.tags.map((t) => (
             <li key={t}>
               <Link href={tagUrl(t)} className="chip">

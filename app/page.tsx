@@ -10,7 +10,7 @@ import {
   TAGLINE,
   wordUrl,
 } from "@/lib/site"
-import { getDecades, getTags, getWords } from "@/lib/words"
+import { getCategories, getDecades, getTags, getWords } from "@/lib/words"
 
 const TITLE = `略された言葉の由来と意味の変化を解説｜${SITE_NAME}`
 const DESCRIPTION =
@@ -108,6 +108,19 @@ const Page = () => {
             <li key={w.id}>
               <Link href={wordUrl(w)}>{w.term}</Link>
               <span className="muted">← {w.origin.term}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">こぼれ方から探す</h2>
+        <ul className="inline-list">
+          {getCategories().map((c) => (
+            <li key={c.id}>
+              <Link href={categoryUrl(c.id)} className="chip">
+                {c.name}
+              </Link>
             </li>
           ))}
         </ul>

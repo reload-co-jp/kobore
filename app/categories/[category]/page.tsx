@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { WordGrid } from "@/components/WordCard"
-import { categoryUrl } from "@/lib/site"
+import { categoryUrl, listSummary } from "@/lib/site"
 import { getCategories, getWordsByCategory } from "@/lib/words"
 
 type Props = { params: Promise<{ category: string }> }
@@ -19,9 +19,10 @@ export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
   const c = await find(params)
+  const words = getWordsByCategory(c.id)
   return {
-    title: c.name,
-    description: c.description,
+    title: `${c.name}言葉の一覧（${words.length}語）`,
+    description: `${c.description}${listSummary(words)}`,
     alternates: { canonical: categoryUrl(c.id) },
   }
 }
