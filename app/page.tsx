@@ -117,6 +117,12 @@ const Page = () => {
             </li>
           ))}
         </ul>
+        <p>
+          <Link href="/columns/proper-nouns/">
+            コラム：「マガジンで連載中」はどの雑誌？普通名詞で呼ばれる固有名詞たち
+            →
+          </Link>
+        </p>
       </section>
 
       <section className="section">

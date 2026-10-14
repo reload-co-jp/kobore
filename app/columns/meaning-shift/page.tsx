@@ -1,65 +1,12 @@
-import type { Metadata } from "next"
 import Link from "next/link"
-import { FC } from "react"
-import { JsonLd } from "@/components/JsonLd"
-import { SemanticFlow } from "@/components/WordOrigin"
-import { categoryUrl, SITE_NAME, SITE_URL, wordUrl } from "@/lib/site"
-import { getWord } from "@/lib/words"
+import { Column, Flow, W } from "@/components/Column"
+import { columnMetadata } from "@/lib/columns"
+import { categoryUrl } from "@/lib/site"
 
-const PATH = "/columns/meaning-shift/"
-const TITLE =
-  "「ギガが減る」はなぜ通じる？こぼれたあとに意味が変わった言葉と時代"
-const DESCRIPTION =
-  "コマーシャル、スーパー、高速、レジ、携帯、メール、ネット、ギガ、マイル。言葉の一部がこぼれて独立したあと、意味が変わったり広がったりした例を、テレビ・流通・道路・通信など当時の暮らしの変化とともに読みます。"
-const PUBLISHED = "2026-10-15"
-
-export const metadata: Metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: PATH },
-  openGraph: {
-    type: "article",
-    title: TITLE,
-    description: DESCRIPTION,
-    url: PATH,
-  },
-}
-
-/** 掲載語へのリンク。存在しない id ならビルドで落ちる */
-const W: FC<{ id: string }> = ({ id }) => {
-  const w = getWord(id)!
-  return <Link href={wordUrl(w)}>{w.term}</Link>
-}
-
-const Flow: FC<{ id: string }> = ({ id }) => (
-  <SemanticFlow word={getWord(id)!} />
-)
+export const metadata = columnMetadata("meaning-shift")
 
 const Page = () => (
-  <article className="word">
-    <JsonLd
-      data={{
-        "@context": "https://schema.org",
-        "@type": "Article",
-        headline: TITLE,
-        description: DESCRIPTION,
-        datePublished: PUBLISHED,
-        dateModified: PUBLISHED,
-        inLanguage: "ja",
-        mainEntityOfPage: `${SITE_URL}${PATH}`,
-        publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
-      }}
-    />
-
-    <nav className="breadcrumb" aria-label="パンくず">
-      <Link href="/">{SITE_NAME}</Link> / <span>コラム</span>
-    </nav>
-
-    <header className="page-header">
-      <h1>{TITLE}</h1>
-      <p className="muted">{PUBLISHED}</p>
-    </header>
-
+  <Column slug="meaning-shift">
     <div className="prose">
       <p>
         「今月もうギガがない」と言われて、10億倍が足りないのかと思う人はまずいません。言葉の一部がこぼれて独立すると、もとの言葉の意味から離れて、まったく別のものを指しはじめることがあります。
@@ -217,7 +164,7 @@ const Page = () => (
         からどうぞ。
       </p>
     </section>
-  </article>
+  </Column>
 )
 
 export default Page
