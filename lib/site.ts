@@ -18,6 +18,9 @@ export const listSummary = (words: Word[]) =>
     .map((w) => `「${w.term}」`)
     .join("")}など${words.length}語の由来と意味の変化。`
 
+/** "1950年代" → "/decades/#1950" */
+export const decadeUrl = (decade: string) => `/decades/#${parseInt(decade, 10)}`
+
 export const wordUrl = (w: Word) => `/words/${w.id}/`
 export const tagUrl = (tag: string) => `/tags/${encodeURIComponent(tag)}/`
 export const categoryUrl = (id: string) =>

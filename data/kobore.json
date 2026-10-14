@@ -961,6 +961,7 @@
         },
         {
           "period": "1955",
+          "kobore": true,
           "event": "「コマーシャルメッセージ」の略としての「コマーシャル」の用例。精選版 日本国語大辞典は古川ロッパ日記（1955年7月17日）の「ヘンなコムマーシャルが出ないからとＮＨＫにしたら」を初出の実例として挙げる。",
           "source_ids": ["kotobank-commercial"]
         }
@@ -1071,6 +1072,7 @@
       "timeline": [
         {
           "period": "1935",
+          "kobore": true,
           "event": "「センチメートル」の略としての「センチ」の用例。精選版 日本国語大辞典は豊田三郎『弔花』（1935）の「彼等の頭から十五センチと離れてゐない天井が」を初出の実例として挙げる。",
           "source_ids": ["kotobank-senchi"]
         },
@@ -1333,6 +1335,7 @@
         },
         {
           "period": "1968",
+          "kobore": true,
           "event": "「高速道路」の略としての「高速」の用例。精選版 日本国語大辞典は五木寛之『裸の町』（1968）の「高速を百五十キロで来たわ」を初出の実例として挙げる。",
           "source_ids": ["kotobank-kosoku"]
         }
@@ -1953,6 +1956,7 @@
       "timeline": [
         {
           "period": "1908",
+          "kobore": true,
           "event": "精選版 日本国語大辞典は、杉村楚人冠『大英游記』（1908）の「護謨輪(タイヤ)が二度迄もパンクをやったが」を初出の実例として挙げる。",
           "source_ids": ["kotobank-punk"]
         },
@@ -2083,6 +2087,7 @@
         },
         {
           "period": "1955",
+          "kobore": true,
           "event": "略語「レジ」の初出の実例として、椎名麟三『愛の証言』（1955）の「レジの人が」が挙げられている。",
           "source_ids": ["kotobank-reji"]
         }
@@ -2202,6 +2207,7 @@
         },
         {
           "period": "1925",
+          "kobore": true,
           "event": "略語「ホーム」の初出の実例として、土屋文明『ふゆくさ』（1925）の「蕎麦食ひにゆくホームは凍れり」が挙げられている。",
           "source_ids": ["kotobank-home"]
         }
@@ -3201,6 +3207,7 @@
       "timeline": [
         {
           "period": "1872",
+          "kobore": true,
           "event": "精選版 日本国語大辞典は、『京都新聞』50号（1872）の「ミシンを以て（ミシンは西洋縫工の器械なり）」を初出の実例として挙げる。",
           "source_ids": ["kotobank-mishin"]
         },
@@ -3570,6 +3577,7 @@
         },
         {
           "period": "1988",
+          "kobore": true,
           "event": "精選版 日本国語大辞典は、「電子メール」の略としての「メール」の出典に『新・十年後』（1988）を挙げる。",
           "source_ids": ["kotobank-mail"]
         }
@@ -3699,6 +3707,7 @@
         },
         {
           "period": "1962",
+          "kobore": true,
           "event": "精選版 日本国語大辞典は、略語「スーパー」の出典に『流通革命』（1962）を挙げる。",
           "source_ids": ["kotobank-super"]
         }
@@ -3823,6 +3832,7 @@
         },
         {
           "period": "1957",
+          "kobore": true,
           "event": "「マジックインキ」の略としての初出の実例として、黒田初子『山への誘い』（1957）の「外に『マジック』で大きく内容を書いておく」が挙げられている。",
           "source_ids": ["kotobank-magic"]
         },
@@ -4206,6 +4216,7 @@
         },
         {
           "period": "1832",
+          "kobore": true,
           "event": "omnibus の口語的な略として bus が確認される。",
           "source_ids": ["etymonline-bus"]
         }
@@ -4332,6 +4343,7 @@
         },
         {
           "period": "1973",
+          "kobore": true,
           "event": "「〜にまつわるスキャンダル」を表す接尾辞 -gate が確認される。",
           "source_ids": ["etymonline-gate-suffix"]
         }
@@ -4443,6 +4455,7 @@
         },
         {
           "period": "1931",
+          "kobore": true,
           "event": "-athon を使った語の例として walkathon（1931）が確認される。",
           "source_ids": ["etymonline-athon"]
         },
@@ -4583,6 +4596,7 @@
         },
         {
           "period": "1965",
+          "kobore": true,
           "event": "-aholic を使った最初の例として sugarholic、foodoholic（1965）が確認される。",
           "source_ids": ["etymonline-aholic"]
         },
@@ -4716,6 +4730,7 @@
         },
         {
           "period": "1803",
+          "kobore": true,
           "event": "英語で、pianoforte の短縮形として楽器の piano が確認される。",
           "source_ids": ["etymonline-piano"]
         },
@@ -4839,6 +4854,7 @@
         },
         {
           "period": "1857",
+          "kobore": true,
           "event": "violoncello の短縮形として cello が確認される。",
           "source_ids": ["etymonline-cello"]
         },
@@ -5777,6 +5793,7 @@
         },
         {
           "period": "1972",
+          "kobore": true,
           "event": "精選版 日本国語大辞典は、畑山博『いつか汽笛を鳴らして』（1972）を、half-blood の略としての「ハーフ」の初出の実例として挙げる。",
           "source_ids": ["kotobank-half"]
         }
@@ -5911,6 +5928,7 @@
         },
         {
           "period": "1900",
+          "kobore": true,
           "event": "「おひや」（水）の用例。精選版 日本国語大辞典は小杉天外『初すがた』（1900年）の「お冷水(ヒヤ)一杯お呉れな」を初出の実例として挙げる。",
           "source_ids": ["kotobank-ohiya"]
         }
@@ -6039,6 +6057,7 @@
         },
         {
           "period": "1953",
+          "kobore": true,
           "event": "音楽を指す「クラシック」の用例。精選版 日本国語大辞典は高見順『この神のへど』（1953年）の「クラシックをやってますの」を初出の実例として挙げる。",
           "source_ids": ["kotobank-classic"]
         }
@@ -6154,6 +6173,7 @@
       "timeline": [
         {
           "period": "1981",
+          "kobore": true,
           "event": "「シングル盤」の略としての用例。精選版 日本国語大辞典は中島梓『にんげん動物園』（1981年）の「シングルだったりすると、十分もたずに次の…レコードをかけかえなくてはならない」を初出の実例として挙げる。",
           "source_ids": ["kotobank-single"]
         }
@@ -6269,6 +6289,7 @@
         },
         {
           "period": "1928",
+          "kobore": true,
           "event": "「デパート」の用例。精選版 日本国語大辞典は龍胆寺雄『放浪時代』（1928年）の「百貨店(デパアト)の前がいいだらう」を初出の実例として挙げ、語誌で「デパート」の語形は昭和初期にかけて普及したとする。",
           "source_ids": ["kotobank-depart"]
         }
@@ -6388,6 +6409,7 @@
         },
         {
           "period": "1959",
+          "kobore": true,
           "event": "「バイト」の用例。精選版 日本国語大辞典は三浦朱門『セルロイドの塔』（1959年）の「スポーツ、バイト〈略〉そしていくらかの勉強に関することに至るまで」を初出の実例として挙げる。",
           "source_ids": ["kotobank-baito"]
         }
@@ -7033,6 +7055,7 @@
       "timeline": [
         {
           "period": "1927",
+          "kobore": true,
           "event": "服を指す「ワンピース」の用例。精選版 日本国語大辞典は芥川龍之介『歯車』（1927年）の「赤いワン・ピイスを着た女は」を初出の実例として挙げる。",
           "source_ids": ["kotobank-onepiece"]
         }
@@ -7257,6 +7280,7 @@
       "timeline": [
         {
           "period": "1975",
+          "kobore": true,
           "event": "食品包装用の膜を指す「ラップ」の用例。精選版 日本国語大辞典は中上健次『岬』（1975年）の「姉は、ラップで皿をおおう」を初出の実例として挙げる。",
           "source_ids": ["kotobank-wrap"]
         }
@@ -7513,6 +7537,7 @@
         },
         {
           "period": "1898",
+          "kobore": true,
           "event": "精選版 日本国語大辞典は「ショート」の語義「『ショートストップ』の略」に、『新式ベースボール術』（1898）を出典として示す。",
           "source_ids": ["kotobank-short"]
         },
@@ -7645,6 +7670,7 @@
       "timeline": [
         {
           "period": "1957",
+          "kobore": true,
           "event": "精選版 日本国語大辞典は「ショート」の語義「『ショートサーキット』の略」の初出の実例として、茅誠司『アメリカの科学・ソ連の科学』（1957）の「電気寒暖計に掛ければショートしてしまう」を挙げる。",
           "source_ids": ["kotobank-short"]
         },

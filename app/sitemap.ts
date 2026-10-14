@@ -8,6 +8,7 @@ const sitemap = (): MetadataRoute.Sitemap => [
   { url: `${SITE_URL}/` },
   { url: `${SITE_URL}/concept/` },
   { url: `${SITE_URL}/about/` },
+  { url: `${SITE_URL}/decades/` },
   ...getWords().map((w) => ({
     url: `${SITE_URL}${wordUrl(w)}`,
     lastModified: w.updated_at,

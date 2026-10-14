@@ -4,13 +4,13 @@ import { SearchBox } from "@/components/SearchBox"
 import { WordGrid } from "@/components/WordCard"
 import {
   categoryUrl,
+  decadeUrl,
   SITE_NAME,
-  searchUrl,
   tagUrl,
   TAGLINE,
   wordUrl,
 } from "@/lib/site"
-import { getCategories, getDecades, getTags, getWords } from "@/lib/words"
+import { getCategories, getKoboreDecades, getTags, getWords } from "@/lib/words"
 
 const TITLE = `略された言葉の由来と意味の変化を解説｜${SITE_NAME}`
 const DESCRIPTION =
@@ -127,11 +127,13 @@ const Page = () => {
       </section>
 
       <section className="section">
-        <h2 className="section-title">年代から探す</h2>
+        <h2 className="section-title">
+          <Link href="/decades/">こぼれた年代から探す</Link>
+        </h2>
         <ul className="inline-list">
-          {getDecades().map((d) => (
-            <li key={d}>
-              <Link href={searchUrl(d)}>{d}</Link>
+          {getKoboreDecades().map(({ decade }) => (
+            <li key={decade}>
+              <Link href={decadeUrl(decade)}>{decade}</Link>
             </li>
           ))}
         </ul>

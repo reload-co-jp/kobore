@@ -1,5 +1,7 @@
+import Link from "next/link"
 import { FC } from "react"
-import { formatPeriod, Word } from "@/lib/words"
+import { decadeUrl } from "@/lib/site"
+import { formatPeriod, toDecade, Word } from "@/lib/words"
 
 export const WordTimeline: FC<{ word: Word }> = ({ word: w }) => (
   <ol className="timeline">
@@ -9,6 +11,11 @@ export const WordTimeline: FC<{ word: Word }> = ({ word: w }) => (
           <span className="timeline-period">{formatPeriod(t.period)}</span>
         )}
         <span>{t.event}</span>
+        {t.kobore && t.period && (
+          <Link href={decadeUrl(toDecade(t.period))} className="chip">
+            こぼれた時期
+          </Link>
+        )}
       </li>
     ))}
   </ol>

@@ -329,6 +329,7 @@ OGP画像の生成時にGoogle Fontsからフォントを取得するため、�
 - `origin.source_part`：元の言葉の中での表記が `extracted` と異なる場合に指定（例：`"Mrs. GREEN APPLE"` の `"Mrs."` → `"ミセス"`）
 - `usage_examples[].source_id`：`constructed` 以外では必須
 - `timeline[].period`：`"1990s"`（年代）または `"2019"`（年）。不明なら省略
+- `timeline[].kobore`：`true` で「こぼれた時期」を示す。こぼれた形がこぼれた意味で単独使用された初出・初確認の出来事に1つだけ付ける（`period` 必須）。定着・報道見出しなど初出でない出来事や、別の意味の用例には付けない。該当がなければ付けない。年代ページ（`/decades/`）はこの印だけから作る
 
 ---
 

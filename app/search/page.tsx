@@ -14,8 +14,9 @@ const Page = () => {
   const categories = getCategories()
   const docs = getWords().map((w) =>
     buildDoc(w, [
+      // 年代で引けるのはこぼれた時期（kobore）だけ。年代ページと揃える
       ...w.timeline.flatMap((t) =>
-        t.period ? [formatPeriod(t.period), toDecade(t.period)] : []
+        t.kobore && t.period ? [formatPeriod(t.period), toDecade(t.period)] : []
       ),
       ...w.categories.map((id) => categories.find((c) => c.id === id)!.name),
     ])

@@ -34,6 +34,10 @@ describe("validate", () => {
     w.sources.push({ id: "missing", role: "x" })
     w.tags.push("未登録")
     w.usage_examples.push({ text: "実例", type: "newspaper", meaning: "x" })
+    w.timeline.push(
+      { kobore: true, event: "x", source_ids: [] },
+      { kobore: true, period: "2000", event: "y", source_ids: [] }
+    )
     ws.push({ ...w })
     const errors = run(ws).join("\n")
     for (const s of [
@@ -44,6 +48,8 @@ describe("validate", () => {
       "未登録",
       "source_id",
       "word id の重複",
+      "kobore は1つまで",
+      "period が必要",
     ])
       expect(errors).toContain(s)
   })

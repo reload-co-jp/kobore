@@ -71,7 +71,13 @@ export type Word = {
     mechanism: string
     steps: string[]
   }
-  timeline: { period?: string; event: string; source_ids: string[] }[]
+  timeline: {
+    period?: string
+    /** こぼれた形がこぼれた意味で単独使用された初出・初確認の出来事 */
+    kobore?: true
+    event: string
+    source_ids: string[]
+  }[]
   usage_examples: {
     text: string
     type: UsageType
@@ -172,6 +178,9 @@ export const validate = ({
       err(`id は英小文字・数字・ハイフンのみ: ${w.id}`)
     if (!w.origin.term.includes(w.origin.source_part ?? w.origin.extracted))
       err(`origin.term に切り出し部分が含まれていません`)
+    const kobore = w.timeline.filter((t) => t.kobore)
+    if (kobore.length > 1) err(`timeline の kobore は1つまで`)
+    if (kobore.some((t) => !t.period)) err(`kobore の出来事には period が必要`)
     if (w.semantic_change.steps?.length < 2)
       err(`semantic_change.steps は2つ以上必要です`)
     w.classification
@@ -250,15 +259,24 @@ export const formatPeriod = (p: string) =>
 export const toDecade = (p: string) =>
   `${Math.floor(parseInt(p, 10) / 10) * 10}年代`
 
-/** タイムラインに現れる年代（"1990年代" など）の一覧 */
-export const getDecades = () =>
-  [
-    ...new Set(
-      data.words.flatMap((w) =>
-        w.timeline.flatMap((t) => (t.period ? [toDecade(t.period)] : []))
-      )
-    ),
-  ].sort((a, b) => parseInt(a, 10) - parseInt(b, 10))
+/** こぼれた時期（timeline の kobore）を年代ごとにまとめる。古い順 */
+export const getKoboreDecades = () => {
+  const map = new Map<string, { word: Word; period: string }[]>()
+  for (const word of data.words) {
+    const period = word.timeline.find((t) => t.kobore)?.period
+    if (!period) continue
+    const d = toDecade(period)
+    map.set(d, [...(map.get(d) ?? []), { word, period }])
+  }
+  return [...map]
+    .sort(([a], [b]) => parseInt(a, 10) - parseInt(b, 10))
+    .map(([decade, words]) => ({
+      decade,
+      words: words.sort(
+        (a, b) => parseInt(a.period, 10) - parseInt(b.period, 10)
+      ),
+    }))
+}
 
 /** 元の言葉を「前・こぼれた部分・後」に分ける */
 export const splitOrigin = (w: Word) => {
