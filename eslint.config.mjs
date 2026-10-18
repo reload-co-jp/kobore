@@ -13,6 +13,12 @@ export default [
   ...fixupConfigRules(pluginReact.configs.flat.recommended),
   ...fixupConfigRules(jsxA11y.flatConfigs.recommended),
   {
+    files: ["scripts/**/*.mjs"],
+    languageOptions: {
+      globals: { console: "readonly", process: "readonly", URL: "readonly" },
+    },
+  },
+  {
     plugins: {
       "react-hooks": pluginReactHooks,
     },

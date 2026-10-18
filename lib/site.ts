@@ -1,14 +1,20 @@
-import type { Word } from "./words"
+import { originTerms, type Word } from "./words"
 
 export const SITE_URL = "https://kobore.reload.co.jp"
 export const SITE_NAME = "こぼれことば"
 export const TAGLINE = "言葉からこぼれた、もうひとつの意味。"
 
+/** 「キログラム」「キロメートル」 */
+const quotedOrigins = (w: Word) =>
+  originTerms(w)
+    .map((t) => `「${t}」`)
+    .join("")
+
 export const wordTitle = (w: Word) =>
-  `「${w.term}」は何の略？「${w.origin.term}」からこぼれた言葉の意味と由来`
+  `「${w.term}」は何の略？${quotedOrigins(w)}からこぼれた言葉の意味と由来`
 
 export const wordDescription = (w: Word) =>
-  `「${w.term}」は「${w.origin.term}」から「${w.origin.extracted}」がこぼれた言葉。` +
+  `「${w.term}」は${quotedOrigins(w)}から「${w.origin.extracted}」がこぼれた言葉。` +
   `元は${w.semantic_change.from}だったが、今は${w.current_meanings[0].meaning}を指す。${w.summary}`
 
 /** 一覧ページの description 用。「「A」「B」「C」など N語の由来と意味の変化。」 */

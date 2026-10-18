@@ -1,7 +1,14 @@
+import { readFileSync } from "node:fs"
 import { describe, expect, it } from "vitest"
+import { COLUMNS } from "./columns"
 import { buildDoc, search } from "./search"
+import { wordTitle } from "./site"
 import {
   getCategories,
+  getRelated,
+  getWord,
+  getWordsByTag,
+  isIndexableList,
   getSources,
   toDecade,
   getTags,
@@ -112,5 +119,56 @@ describe("toDecade", () => {
     expect(toDecade("728")).toBe("720年代")
     expect(toDecade("1994")).toBe("1990年代")
     expect(toDecade("1990s")).toBe("1990年代")
+  })
+})
+
+describe("getRelated", () => {
+  it("自身・重複を含まず、関連度順に並ぶ", () => {
+    for (const w of getWords()) {
+      const r = getRelated(w)
+      const ids = r.map((x) => x.word.id)
+      expect(ids).not.toContain(w.id)
+      expect(new Set(ids).size).toBe(ids.length)
+      expect(r.length).toBeLessThanOrEqual(6)
+      expect(r.every((x) => x.reasons.length > 0)).toBe(true)
+      expect(r.map((x) => x.score)).toEqual(
+        [...r.map((x) => x.score)].sort((a, b) => b - a)
+      )
+    }
+  })
+
+  it("同じ部分がこぼれた語を最優先する", () => {
+    const [top] = getRelated(getWord("shortstop")!)
+    expect(top.word.id).toBe("short-circuit")
+    expect(top.reasons[0]).toBe("同じ「ショート」がこぼれた言葉")
+  })
+
+  it("共通点の薄い語は出さない", () => {
+    expect(getRelated(getWord("all")!)).toEqual([])
+  })
+})
+
+describe("origin.also", () => {
+  it("複数の元の言葉をタイトルに含める", () => {
+    expect(wordTitle(getWord("kilo")!)).toBe(
+      "「キロ」は何の略？「キログラム」「キロメートル」からこぼれた言葉の意味と由来"
+    )
+  })
+})
+
+describe("isIndexableList", () => {
+  it("ほぼ全語が並ぶタグは noindex", () => {
+    expect(isIndexableList(getWordsByTag("部分抽出"))).toBe(false)
+    expect(isIndexableList(getWordsByTag("音楽"))).toBe(true)
+  })
+})
+
+describe("COLUMNS", () => {
+  it("words が本文の <W id> と一致する", () => {
+    for (const c of COLUMNS) {
+      const src = readFileSync(`app/columns/${c.slug}/page.tsx`, "utf8")
+      const ids = [...src.matchAll(/<W id="([^"]+)"/g)].map((m) => m[1])
+      expect([...new Set(ids)].sort()).toEqual([...c.words].sort())
+    }
   })
 })

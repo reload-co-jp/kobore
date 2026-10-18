@@ -1,7 +1,14 @@
 import type { MetadataRoute } from "next"
 import { COLUMNS, columnUrl } from "@/lib/columns"
 import { categoryUrl, SITE_URL, tagUrl, wordUrl } from "@/lib/site"
-import { getCategories, getTags, getWords } from "@/lib/words"
+import {
+  getCategories,
+  getTags,
+  getWords,
+  getWordsByCategory,
+  getWordsByTag,
+  isIndexableList,
+} from "@/lib/words"
 
 export const dynamic = "force-static"
 
@@ -19,8 +26,12 @@ const sitemap = (): MetadataRoute.Sitemap => [
     url: `${SITE_URL}${wordUrl(w)}`,
     lastModified: w.updated_at,
   })),
-  ...getTags().map((t) => ({ url: `${SITE_URL}${tagUrl(t.name)}` })),
-  ...getCategories().map((c) => ({ url: `${SITE_URL}${categoryUrl(c.id)}` })),
+  ...getTags()
+    .filter((t) => isIndexableList(getWordsByTag(t.name)))
+    .map((t) => ({ url: `${SITE_URL}${tagUrl(t.name)}` })),
+  ...getCategories()
+    .filter((c) => isIndexableList(getWordsByCategory(c.id)))
+    .map((c) => ({ url: `${SITE_URL}${categoryUrl(c.id)}` })),
 ]
 
 export default sitemap

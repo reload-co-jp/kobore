@@ -55,6 +55,8 @@ export type Word = {
     remaining: string
     /** 元の言葉の中での表記（"Mrs." など）。省略時は extracted */
     source_part?: string
+    /** 同じ部分がこぼれたほかの元の言葉（キロ ← キロメートル など） */
+    also?: string[]
   }
   classification: Classification[]
   summary: string
@@ -178,6 +180,9 @@ export const validate = ({
       err(`id は英小文字・数字・ハイフンのみ: ${w.id}`)
     if (!w.origin.term.includes(w.origin.source_part ?? w.origin.extracted))
       err(`origin.term に切り出し部分が含まれていません`)
+    w.origin.also
+      ?.filter((a) => !a.includes(w.origin.extracted))
+      .forEach((a) => err(`origin.also に切り出し部分が含まれていません: ${a}`))
     const kobore = w.timeline.filter((t) => t.kobore)
     if (kobore.length > 1) err(`timeline の kobore は1つまで`)
     if (kobore.some((t) => !t.period)) err(`kobore の出来事には period が必要`)
@@ -245,11 +250,97 @@ export const getSourcesFor = (w: Word) =>
     ...data.sources.find((s) => s.id === ref.id)!,
     role: ref.role,
   }))
-export const getRelated = (w: Word) => w.related.map((id) => getWord(id)!)
+export type RelatedWord = { word: Word; reasons: string[]; score: number }
+
+/** 関連語の特徴。半数超の言葉が持つ特徴（部分抽出・意味変化など）は区別に役立たないので使わない */
+const features = (w: Word) => {
+  const period = w.timeline.find((t) => t.kobore)?.period
+  return [
+    `x:${w.origin.extracted}`,
+    ...w.classification.map((c) => `c:${c}`),
+    ...w.tags.map((t) => `t:${t}`),
+    ...w.categories.map((c) => `k:${c}`),
+    ...(period ? [`d:${toDecade(period)}`] : []),
+  ]
+}
+const featureLabel = (f: string) => {
+  const [kind, v] = [f[0], f.slice(2)]
+  if (kind === "x") return `同じ「${v}」がこぼれた言葉`
+  if (kind === "c") return `同じ${CLASSIFICATIONS[v as Classification]}の言葉`
+  if (kind === "t") return `#${v}`
+  if (kind === "k") return data.categories.find((c) => c.id === v)!.name
+  return `同じ${v}にこぼれた`
+}
+
+/**
+ * 使う特徴と、その珍しさ（idf）。半数超の言葉が持つ特徴は除く。
+ * 分類・タグ・カテゴリで同じ言葉の集合を表すもの（固有名詞由来と #固有名詞 など）は1つにまとめ、二重に数えない。
+ * 年代だけの一致は関連が弱いので重みを半分にする。
+ */
+const featureWeights = () => {
+  const members = new Map<string, string[]>()
+  for (const w of data.words)
+    for (const f of new Set(features(w)))
+      members.set(f, [...(members.get(f) ?? []), w.id])
+  const seen = new Set<string>()
+  const weights = new Map<string, number>()
+  for (const [f, ids] of members) {
+    const key = ids.join(",")
+    if (ids.length > data.words.length / 2 || seen.has(key)) continue
+    seen.add(key)
+    const idf = Math.log(data.words.length / ids.length)
+    weights.set(f, f.startsWith("d:") ? idf / 2 : idf)
+  }
+  return weights
+}
+
+/**
+ * 関連語を関連度の高い順に返す。
+ * 同じ部分がこぼれた語 > 編集部が選んだ related > 珍しい特徴（分類・タグ・カテゴリ・年代）を多く共有する語。
+ * 関連度が min 未満の語は、無関係とみなして出さない。
+ */
+export const getRelated = (
+  w: Word,
+  { limit = 6, min = 2 } = {}
+): RelatedWord[] => {
+  const weights = featureWeights()
+  const mine = new Set(features(w))
+  return data.words
+    .filter((o) => o.id !== w.id)
+    .map((o) => {
+      const shared = [...new Set(features(o))]
+        .filter((f) => mine.has(f) && weights.has(f))
+        .sort((a, b) => weights.get(b)! - weights.get(a)!)
+      const curated = w.related.includes(o.id) || o.related.includes(w.id)
+      const sameExtract = shared.some((f) => f.startsWith("x:"))
+      const score =
+        shared.reduce((n, f) => n + weights.get(f)!, 0) +
+        (sameExtract ? 10 : 0) +
+        (curated ? 5 : 0)
+      const reasons = shared.slice(0, 2).map(featureLabel)
+      if (!reasons.length) reasons.push("編集部が選んだ関連語")
+      return { word: o, reasons, score }
+    })
+    .filter((r) => r.score >= min)
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        b.word.priority - a.word.priority ||
+        a.word.id.localeCompare(b.word.id)
+    )
+    .slice(0, limit)
+}
 export const getWordsByTag = (tag: string) =>
   data.words.filter((w) => w.tags.includes(tag))
 export const getWordsByCategory = (id: string) =>
   data.words.filter((w) => w.categories.includes(id))
+
+/**
+ * 一覧ページを検索エンジンに載せるか。全体の8割を超える語が並ぶ一覧（#部分抽出 など）は
+ * トップページとほぼ同じ内容になるので noindex にし、サイトマップからも外す
+ */
+export const isIndexableList = (words: Word[]) =>
+  words.length > 0 && words.length <= data.words.length * 0.8
 
 /** 各言葉の値を数え、多い順に [値, 数] で返す。exclude は数えない */
 export const countBy = (
@@ -298,6 +389,12 @@ export const getKoboreDecades = () => {
       ),
     }))
 }
+
+/** 元の言葉すべて（origin.term と origin.also） */
+export const originTerms = (w: Word) => [
+  w.origin.term,
+  ...(w.origin.also ?? []),
+]
 
 /** 元の言葉を「前・こぼれた部分・後」に分ける */
 export const splitOrigin = (w: Word) => {

@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { Breadcrumb } from "@/components/Breadcrumb"
 import { PeriodRange, WordListSections } from "@/components/WordListSections"
+import { columnUrl, getColumnsFor } from "@/lib/columns"
 import { listSummary, tagUrl } from "@/lib/site"
-import { countBy, getTags, getWordsByTag } from "@/lib/words"
+import { countBy, getTags, getWordsByTag, isIndexableList } from "@/lib/words"
 
 type Props = { params: Promise<{ tag: string }> }
 
@@ -25,6 +27,7 @@ export const generateMetadata = async ({
     title: `#${tag.name}のこぼれことば一覧（${words.length}語）`,
     description: `${tag.description}${listSummary(words)}`,
     alternates: { canonical: tagUrl(tag.name) },
+    ...(!isIndexableList(words) && { robots: { index: false, follow: true } }),
   }
 }
 
@@ -35,8 +38,13 @@ const Page = async ({ params }: Props) => {
   const others = getTags().filter(
     (t) => t.name !== tag.name && !co.some(([n]) => n === t.name)
   )
+  const columns = getColumnsFor(
+    words.map((w) => w.id),
+    2
+  )
   return (
     <>
+      <Breadcrumb items={[{ name: `#${tag.name}`, url: tagUrl(tag.name) }]} />
       <header className="page-header">
         <p className="muted">タグ</p>
         <h1>#{tag.name}</h1>
@@ -76,6 +84,19 @@ const Page = async ({ params }: Props) => {
           ))}
         </ul>
       </section>
+      {columns.length > 0 && (
+        <section className="section">
+          <h2 className="section-title">関連するコラム</h2>
+          <ul className="examples">
+            {columns.map((col) => (
+              <li key={col.slug}>
+                <Link href={columnUrl(col.slug)}>{col.title}</Link>
+                <span className="muted">{col.description}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </>
   )
 }

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { FC, ReactNode } from "react"
+import { Breadcrumb } from "@/components/Breadcrumb"
 import { JsonLd } from "@/components/JsonLd"
 import { SemanticFlow } from "@/components/WordOrigin"
 import { columnUrl, getColumn } from "@/lib/columns"
@@ -31,9 +32,12 @@ export const Column: FC<{ slug: string; children: ReactNode }> = ({
           },
         }}
       />
-      <nav className="breadcrumb" aria-label="パンくず">
-        <Link href="/">{SITE_NAME}</Link> / <Link href="/columns/">コラム</Link>
-      </nav>
+      <Breadcrumb
+        items={[
+          { name: "コラム", url: "/columns/" },
+          { name: c.title, url: columnUrl(slug) },
+        ]}
+      />
       <header className="page-header">
         <h1>{c.title}</h1>
         <p className="muted">{c.published}</p>

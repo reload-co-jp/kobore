@@ -1,11 +1,13 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import { Breadcrumb } from "@/components/Breadcrumb"
 import { JsonLd } from "@/components/JsonLd"
 import { RelatedWords } from "@/components/RelatedWords"
 import { SourceList } from "@/components/SourceList"
 import { SemanticFlow, WordOrigin } from "@/components/WordOrigin"
 import { WordTimeline } from "@/components/WordTimeline"
+import { columnUrl, getColumnsFor } from "@/lib/columns"
 import {
   categoryUrl,
   SITE_NAME,
@@ -24,7 +26,7 @@ import {
   getSourcesFor,
   getWord,
   getWords,
-  getWordsByCategory,
+  originTerms,
 } from "@/lib/words"
 
 type Props = { params: Promise<{ slug: string }> }
@@ -59,11 +61,7 @@ const Page = async ({ params }: Props) => {
   const sources = getSourcesFor(w)
   const url = `${SITE_URL}${wordUrl(w)}`
   const categories = getCategories().filter((c) => w.categories.includes(c.id))
-  // related を補う内部リンク。related が空の言葉にも他記事への導線を作る
-  const category = categories[0]
-  const siblings = getWordsByCategory(category.id)
-    .filter((s) => s.id !== w.id && !w.related.includes(s.id))
-    .slice(0, 6)
+  const columns = getColumnsFor([w.id])
 
   return (
     <article className="word">
@@ -71,18 +69,6 @@ const Page = async ({ params }: Props) => {
         data={{
           "@context": "https://schema.org",
           "@graph": [
-            {
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                {
-                  "@type": "ListItem",
-                  position: 1,
-                  name: SITE_NAME,
-                  item: `${SITE_URL}/`,
-                },
-                { "@type": "ListItem", position: 2, name: w.term, item: url },
-              ],
-            },
             {
               "@type": "Article",
               headline: wordTitle(w),
@@ -98,7 +84,7 @@ const Page = async ({ params }: Props) => {
               about: {
                 "@type": "DefinedTerm",
                 name: w.term,
-                alternateName: w.origin.term,
+                alternateName: originTerms(w),
                 description: w.current_meanings
                   .map((m) => m.meaning)
                   .join("、"),
@@ -114,16 +100,14 @@ const Page = async ({ params }: Props) => {
         }}
       />
 
-      <nav className="breadcrumb" aria-label="パンくず">
-        <Link href="/">{SITE_NAME}</Link> / <span>{w.term}</span>
-      </nav>
+      <Breadcrumb items={[{ name: w.term, url: wordUrl(w) }]} />
 
       <header className="word-hero">
         <h1 className="word-term">
           {w.term}
           <span className="word-reading">{w.reading}</span>
         </h1>
-        <p className="word-origin">← {w.origin.term}</p>
+        <p className="word-origin">← {originTerms(w).join("／")}</p>
         <p className="word-lead">{w.lead}</p>
       </header>
 
@@ -132,7 +116,7 @@ const Page = async ({ params }: Props) => {
       <dl className="facts">
         <div>
           <dt>元の言葉</dt>
-          <dd>{w.origin.term}</dd>
+          <dd>{originTerms(w).join("、")}</dd>
         </div>
         <div>
           <dt>こぼれた部分</dt>
@@ -209,20 +193,33 @@ const Page = async ({ params }: Props) => {
         </ul>
       </section>
 
-      {related.length > 0 && (
-        <section className="section">
-          <h2 className="section-title">関連するこぼれことば</h2>
-          <RelatedWords word={w} related={related} />
-        </section>
-      )}
+      <section className="section">
+        <h2 className="section-title">関連するこぼれことば</h2>
+        {related.length > 0 && <RelatedWords word={w} related={related} />}
+        {/* 関連語が少ないときの受け皿。無関係な語は並べず、一覧ページへ案内する */}
+        {related.length < 3 && (
+          <p className="muted">
+            {categories.map((c, i) => (
+              <span key={c.id}>
+                {i > 0 && "・"}
+                <Link href={categoryUrl(c.id)}>{c.name}言葉の一覧</Link>
+              </span>
+            ))}
+            からも探せます。
+          </p>
+        )}
+      </section>
 
-      {siblings.length > 0 && (
+      {columns.length > 0 && (
         <section className="section">
-          <h2 className="section-title">
-            <Link href={categoryUrl(category.id)}>{category.name}言葉</Link>
-            をもっと見る
-          </h2>
-          <RelatedWords word={w} related={siblings} />
+          <h2 className="section-title">「{w.term}」が登場するコラム</h2>
+          <ul className="examples">
+            {columns.map((c) => (
+              <li key={c.slug}>
+                <Link href={columnUrl(c.slug)}>{c.title}</Link>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

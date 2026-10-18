@@ -513,6 +513,12 @@ main {
   font-size: 1.25rem;
   margin-right: 8px;
 }
+.related-reason {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
 
 .word-footer {
   margin-top: 96px;
